@@ -8,13 +8,13 @@ por 2.
     • Usa una estructura if-else para mostrar el mensaje adecuado. */
     
 console.log(`*******************************************************`);
-console.log(`Ejercicio 4: Verificar si un número es positivo, negativo o cero `);
+console.log(`Ejercicio 4: Verificar si un número es part o impar `);
 console.log(`*******************************************************`);
 
 // Importamos prompt-sync
 const prompt6 = require('prompt-sync')(); 
 
-// Pedimos al usuario que ingrese los números
+// Pedimos al usuario que ingrese el número
 const input = prompt6("Ingresá un número entero: ");
 // parseInt convierte el texto a número entero
 const numIngresado = parseInt(input);
