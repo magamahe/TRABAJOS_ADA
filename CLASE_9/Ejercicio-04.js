@@ -5,14 +5,17 @@ Verifica si el nombre ingresado es igual a tu nombre.*/
 const prompt = require('prompt-sync')();
 
 // Tu nombre real (el que querés comparar)
-const nom = "Agustina"; // Podés cambiarlo por el tuyo
+const nom = "Agustina";
 
-// Pedir al usuario que ingrese su nombre
-let nombre = prompt("Ingrese su nombre: ").trim(); // trim() elimina espacios innecesarios
+// Pedir al usuario que ingrese su nombre y eliminar espacios
+let nombre = prompt("Ingrese su nombre: ").trim();
 
-// Comparar los nombres
-if (nombre === nom) {
+// Comparar convirtiendo ambos a minúsculas
+if (nombre.toLowerCase() === nom.toLowerCase()) {
   console.log(`¡Hola ${nombre}! Tenemos el mismo nombre`);
 } else {
   console.log(`Hola ${nombre}, tu nombre es diferente al mío`);
 }
+
+
+
