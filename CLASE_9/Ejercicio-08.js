@@ -11,6 +11,9 @@ let lado2 = parseFloat(prompt("Ingrese la longitud del lado 2: "));
 let lado3 = parseFloat(prompt("Ingrese la longitud del lado 3: "));
 
 // Verificamos que los lados sean válidos y formen un triángulo
+    // 1. Cada lado debe ser mayor que cero (no hay triángulos con lados negativos o de longitud cero).
+    //2. La suma de dos lados debe ser siempre mayor que el tercero, en todas sus combinaciones.
+    //Si esas condiciones se cumplen, puedes calcular área, perímetro, o clasificar el triángulo.
 if (
   lado1 > 0 && lado2 > 0 && lado3 > 0 &&
   lado1 + lado2 > lado3 &&

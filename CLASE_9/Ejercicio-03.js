@@ -14,6 +14,7 @@ let condicion1 = (input1 === "true");
 let condicion2 = (input2 === "true");
 
 // Mostramos resultados de combinaciones lógicas
+//console.log(typeof(condicion1));
 console.log("\na Resultados lógicos:");
 console.log(`condicion1 AND condicion2: ${condicion1 && condicion2}`);
 console.log(`condicion1 OR condicion2:  ${condicion1 || condicion2}`);

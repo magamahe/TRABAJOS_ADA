@@ -6,12 +6,13 @@ const prompt = require('prompt-sync')();
 
 // Pedimos la edad al usuario
 let edad = parseInt(prompt("Ingrese su edad: "));
+const edad_promedio = 18;
 
 // Verificamos si es mayor o menor de edad
-if (edad >= 18) {
+if (edad >= edad_promedio) {
   console.log(" Sos mayor de edad. ¡Bienvenido/a al sistema!");
-} else if (edad >= 0) {
+} else if (edad > 0 && edad < edad_promedio) {
   console.log(" Sos menor de edad. El acceso está restringido.");
 } else {
-  console.log(" EEdad inválida. Por favor ingresá un número positivo.");
+  console.log(" Edad inválida. Por favor ingresá un número positivo.");
 }
