@@ -27,3 +27,61 @@ if (
   console.log(`NOT condicion1:            ${!condicion1}`);
   console.log(`NOT condicion2:            ${!condicion2}`);
 }
+
+
+
+
+////////// Para los que no entienden las lineas anteriores forma de hacerlo mas largo pero entendible
+//
+//const prompt = require("prompt-sync")();
+
+//let var1 = prompt ("ingrese la primer variable booleana - true/false-:").toLowerCase();
+//let var2 = prompt ("ingrese la primer variable booleana:- true/false-").toLowerCase();
+
+//let valor1;
+//let valor2;
+
+/*Cond1	Cond2	Rdo(&&)
+true	true	true
+true	false	false
+false	true	false
+false	false	false */
+
+/* Cond1 Cond2 Rdo(||) 
+true  true  true 
+true  false  true 
+false  true  true 
+false  false  false */
+
+//pregunto si lo ingresado  es distinto a "true" o "false".
+//if ((var1 !== "true" && var1 !== "false") || (var2 !== "true" && var2 !== "false")){
+//    prompt(" unos de los valores no es booleano")
+//}
+
+// pregunto que valor en string tomo la variable 1 y la transformo a booleano
+//if (var1 === "true"){
+//    valor1 = true;
+//    console.log(`valor1: ${valor1}`);
+//} else {
+//    valor1= false;
+//} 
+
+// pregunto que valor en string tomo la variable 2 y la transformo a booleano
+//if (var2 === "true"){
+//    valor2 = true;
+//     console.log(`valor2: ${valor2}`);
+//} else {
+//    valor2= false;
+//     console.log(`valor2: ${valor2}`);
+//}
+
+  // Mostramos resultados de combinaciones lógicas
+  //console.log("\n✅ Resultados lógicos:");
+  //console.log(`valor1 AND valor2: ${valor1 && valor2}`);
+  //console.log(`valor1 OR  valor2: ${valor1 || valor2}`);
+  //console.log(`NOT valor1:            ${!valor1}`);
+  //console.log(`NOT valor2:            ${!valor2}`);
+
+
+
+
