@@ -10,8 +10,11 @@ const prompt = require("prompt-sync")();
 // Pide al usuario que ingrese un número y lo convierte a tipo decimal (float)
 let numero = parseFloat(prompt("Ingresa un número: ")); 
 
+//Verifica si el valor ingresado es un número válido
+if (isNaN(numero)) {
+    console.log("Error: Lo ingresado no es un número válido.");
 // Verifica si el número es mayor que cero
-if (numero > 0) {
+}else if (numero > 0) {
     console.log("El número es positivo."); // Muestra un mensaje si el número es positivo
 }
 // Si el número no es mayor que cero, verifica si es menor que cero
@@ -22,7 +25,6 @@ else if (numero < 0) {
 else {
     console.log("El número es cero."); // Muestra un mensaje si el número es exactamente cero
 }
-
 
 
 

@@ -10,7 +10,8 @@ let numero = parseInt(prompt("Introduce un número positivo: "));
 console.log(`Contando desde 1 hasta ${numero}:`);
 if (isNaN(numero) || numero <= 0) {
     console.log("Por favor, introduce un número positivo válido.");
-    return;
+    process.exit();  // Esto termina el programa aquí mismo
+    //return; para dentro de un main() o función, no en el ámbito global
 }   
 
 for(let i = 1; i <= numero; i++) {

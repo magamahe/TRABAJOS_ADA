@@ -7,9 +7,10 @@ Vamos a programar un semáforo. Escribe un programa que le pida al usuario ingre
 Si el usuario ingresa un color inválido, el programa debe mostrar un mensaje: "Color no reconocido, ingresa rojo, amarillo o verde."
 Utiliza un switch para resolver este ejercicio.
  */
-
 const prompt = require('prompt-sync')();
-let colorSemaforo = prompt("Ingresa un color del semáforo (rojo, amarillo, verde): ").toLowerCase();
+
+let colorSemaforo = prompt("Ingresa un color del semáforo (rojo, amarillo, verde): ").toLowerCase().trim();
+
 switch (colorSemaforo) {
     case 'rojo':
         console.log("Alto, no puedes avanzar.");
@@ -22,4 +23,4 @@ switch (colorSemaforo) {
         break;
     default:
         console.log("Color no reconocido, ingresa rojo, amarillo o verde.");
-}   
+}
