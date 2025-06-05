@@ -15,25 +15,35 @@
 // 4.	Implementa una condición para verificar si la variable nada es null y muestra un mensaje si es así.
 
 
+// Declaración de variables
 let verdadero = true;
 let texto = "El perro corre rápido.";
 let numero = 42;
 let nada = null;
 
+// Operación matemática
 let suma_num = numero + 10;
 console.log(`La suma del número (${numero} + 10) es: ${suma_num}`);
-console.log(`----------------`);
+console.log('----------------');
+
 let resta_num = numero - 5;
 console.log(`La resta del número (${numero} - 5) es: ${resta_num}`);
-console.log(`----------------`);
+console.log('----------------');
 
-let suma_string = texto + " y ladra mucho.";
-console.log(`La suma del texto ("${texto}" + " "y ladra mucho.") es "${suma_string}"`);
-console.log(`----------------`);
+// Concatenación de strings
+let suma_string = texto + " Y ladra mucho.";
+console.log(`Concatenación de texto: "${suma_string}"`);
+console.log('----------------');
 
-verdadero ? console.log("La variable 'verdadero' es true.") : console.log("La variable 'verdadero' es false.");
-console.log(`----------------`);
+// Verificación booleana
+verdadero
+  ? console.log("La variable 'verdadero' es true.")
+  : console.log("La variable 'verdadero' es false.");
+console.log('----------------');
 
-nada === null ? console.log(`la variable nada es ${nada}`) : console.log(`la variable nada no es null, es ${nada}`);
+// Verificación de null
+nada === null
+  ? console.log("La variable 'nada' es null.")
+  : console.log(`La variable 'nada' no es null, su valor es: ${nada}`);
 
 

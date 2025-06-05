@@ -7,4 +7,10 @@
 const prompt = require("prompt-sync")({ sigint: true });
 let temp_celsius = parseFloat(prompt("Ingrese la temperatura en grados Celsius: "));
 let temp_fahrenheit = temp_celsius * 9 / 5 + 32;
-console.log(`La temperatura ${temp_celsius}°C en grados Fahrenheit es: ${temp_fahrenheit.toFixed(1)}°F`);
+
+if (isNaN(temp_celsius)) {
+    console.log("Error: Debes ingresar un número válido.");
+} else {
+    let temp_fahrenheit = temp_celsius * 9 / 5 + 32;
+    console.log(`La temperatura ${temp_celsius}°C en grados Fahrenheit es: ${temp_fahrenheit.toFixed(1)}°F`);
+}

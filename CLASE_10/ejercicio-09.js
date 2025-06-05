@@ -6,8 +6,14 @@
 const prompt = require('prompt-sync')();
 let peso = parseFloat(prompt("Ingrese su peso en kg: "));
 let altura = parseFloat(prompt("Ingrese su altura en metros: "));
-let imc = peso / (altura * altura);
-console.log("----------")
-console.log(`Su peso es: ${peso} kg`);
-console.log(`Su altura es: ${altura} m`);
-console.log(`Su Índice de Masa Corporal (IMC) (peso / (altura * altura)) es: ${imc.toFixed(1)}`);
+
+
+if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
+    console.log("Error: Por favor ingrese valores numéricos válidos para peso y altura.");
+} else {
+    let imc = peso / (altura * altura);
+    console.log("----------");
+    console.log(`Su peso es: ${peso} kg`);
+    console.log(`Su altura es: ${altura} m`);
+    console.log(`Su Índice de Masa Corporal (IMC) es: ${imc.toFixed(1)}`);
+}

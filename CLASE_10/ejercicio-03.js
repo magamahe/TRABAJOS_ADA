@@ -5,11 +5,10 @@ const prompt = require("prompt-sync")();
 
 const EDAD_MINIMA = 18;
 const EDAD_MAXIMA = 99;
-edad = parseInt(prompt("Por favor, ingresa tu edad:"));
+edad = parseInt(prompt("Por favor, ingresa tu edad: "));
 
-(edad < EDAD_MINIMA || edad > EDAD_MAXIMA) 
-  ? console.log(`La edad ingresada (${edad}) no es válida. Debe estar entre ${EDAD_MINIMA} y ${EDAD_MAXIMA} años.`) 
-  : console.log(`La edad ingresada (${edad}) es válida.`);
+const mensaje = (edad < EDAD_MINIMA || edad > EDAD_MAXIMA)
+    ? `La edad ingresada ${edad} años no es válida. Debe estar entre ${EDAD_MINIMA} y ${EDAD_MAXIMA} años.`
+    : `La edad ingresada ${edad} años es válida y esta comprendida entre ${EDAD_MINIMA} y ${EDAD_MAXIMA} años..`;
 
-
-
+console.log(mensaje);

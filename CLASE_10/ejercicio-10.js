@@ -5,11 +5,16 @@
 const prompt = require('prompt-sync')();
 let precioOriginal = parseFloat(prompt("Ingrese el precio original del producto: "));
 let porcentajeDescuento = parseFloat(prompt("Ingrese el porcentaje de descuento: "));
-let montoDescuento = precioOriginal * (porcentajeDescuento / 100);
-let precioFinal = precioOriginal - montoDescuento;
 
-console.log("----------");
-console.log(`Precio original: $${precioOriginal.toFixed(2)}`);
-console.log(`Porcentaje de descuento: ${porcentajeDescuento}%`);    
-console.log(`Monto de descuento: $${montoDescuento.toFixed(2)}`);
-console.log(`Precio final después del descuento: $${precioFinal.toFixed(2)}`);
+if (isNaN(precioOriginal) || isNaN(porcentajeDescuento) || precioOriginal < 0 || porcentajeDescuento < 0) {
+    console.log("Error: Ingrese valores numéricos válidos y positivos.");
+} else {
+    let montoDescuento = precioOriginal * (porcentajeDescuento / 100);
+    let precioFinal = precioOriginal - montoDescuento;
+
+    console.log("----------");
+    console.log(`Precio original: $${precioOriginal.toFixed(2)}`);
+    console.log(`Porcentaje de descuento: ${porcentajeDescuento}%`);
+    console.log(`Monto de descuento: $${montoDescuento.toFixed(2)}`);
+    console.log(`Precio final después del descuento: $${precioFinal.toFixed(2)}`);
+}
