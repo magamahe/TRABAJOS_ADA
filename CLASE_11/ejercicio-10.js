@@ -33,11 +33,13 @@ const numeroSecreto = Math.floor(Math.random() * 10) + 1;
 let acertado = false;
 
 for (let intento = 1; intento <= 3; intento++) {
-    let respuesta = parseInt(prompt(`Intento ${intento}: Adivina el número (1-10): `));
+    let respuesta = parseInt(prompt(`Intento ${intento}: Adivina el número entre 1 y 10: `));
 
     if (isNaN(respuesta) || respuesta < 1 || respuesta > 10) {
         console.log("Por favor, ingresa un número válido entre 1 y 10.");
+        //console.log(intento);
         intento--; // No cuenta este intento
+       //console.log(intento);
         continue;
         /* CONTINUE 
         Porque detiene la lógica del juego si la entrada es inválida, para que:

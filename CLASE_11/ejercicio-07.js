@@ -2,12 +2,10 @@
 Consigna:
 Crea un programa que le pida al usuario dos números y una operación matemática a realizar: suma, resta, multiplicación o división. Según la operación ingresada, el programa deberá calcular y mostrar el resultado. Si el usuario ingresa una operación inválida, el programa debe mostrar un mensaje de error. Usa switch para resolverlo.
  */
-// Importa el módulo 'prompt-sync' para leer datos del usuario
+
 const prompt = require("prompt-sync")(); 
 
-// Pide al usuario que ingrese el primer número y lo convierte a float
 let numero1 = parseFloat(prompt("Ingresa el primer número: "));
-// Pide al usuario que ingrese el segundo número y lo convierte a float
 let numero2 = parseFloat(prompt("Ingresa el segundo número: "));
 
 // Valida que los números ingresados sean válidos
