@@ -9,8 +9,10 @@ Crear un programa que permita registrar las notas de varios estudiantes usando a
  */
 
 const prompt = require('prompt-sync')();
+
 let notas =[];
 let cant_estudiantes = parseInt(prompt("Ingrese la cantidad de estudiantes: "));
+
 for (let i = 0; i < cant_estudiantes; i++) {
     let nota = parseFloat(prompt(`Ingrese la nota del estudiante ${i + 1}: `));
     notas[i] = nota;

@@ -21,4 +21,4 @@ while (true) {
     suma += numero; // Sumar el número ingresado a la suma total
 }
 
-console.log(`La suma de los números ingresados es: ${suma}`);
+console.log(`La suma de los números ingresados es: ${suma}`); 

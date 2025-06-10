@@ -12,11 +12,16 @@ Nuestra tarea es contar la cantidad de números impares que hay desde el número
  */
 
 const prompt = require('prompt-sync')();
+
 let num_x = parseInt(prompt("Ingrese un número entero: "));
 let mun_impares = 0;
+let impares = []; // Aquí se guardarán los números impares
+
 for(let i =0; i<=num_x; i++){
     if(i % 2 !== 0){
         mun_impares++;
+        impares.push(i);
     }
 }  
 console.log(`La cantidad de números impares desde 0 hasta ${num_x} (inclusive) es: ${mun_impares}`);
+console.log("Números impares:", impares.join(", "));
