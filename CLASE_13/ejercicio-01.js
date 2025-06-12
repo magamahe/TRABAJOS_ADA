@@ -5,24 +5,23 @@ parámetros: la base y la altura de un triángulo. La función debe devolver el
 Pista: Usa la fórmula: 
 AREA = (BASE X ALTURA)/2 */
 
-function calcularAreaTriangulo(base, altura) {
-  // Validar si base o altura no son números
-  if (typeof base !== 'number' || typeof altura !== 'number') {
+
+function calcularAreaTriangulo(base, altura){
+  if ( isNaN(base)  || isNaN(altura)) {
     return "Error: La base y la altura deben ser números.";
   }
-
-  // Validar si base o altura son menores o iguales a cero
   if (base <= 0 || altura <= 0) {
     return "Error: La base y la altura deben ser mayores que cero.";
   }
-
-  // Si todo está bien, calcular el área
-  const area = (base * altura) / 2;
-  return area;
+    return (base * altura) /2;
 }
-console.log(`El área del triángulo es ${calcularAreaTriangulo(5, 10)}`);
+
+console.log(`El área del triángulo es ${calcularAreaTriangulo(5, 10)}`); // El área del triángulo es 25
 console.log(calcularAreaTriangulo(5, '10')); // Error: La base y la altura deben ser números.
-console.log(calcularAreaTriangulo(5, -10)); // Error: La base y la altura deben ser mayores que cero.   
-console.log(calcularAreaTriangulo(0, 10)); // Error: La base y la altura deben ser mayores que cero.    
+console.log(calcularAreaTriangulo(5, -10)); // Error: La base y la altura deben ser mayores que cero. 
+console.log(calcularAreaTriangulo(0, 10)); // Error: La base y la altura deben ser mayores que cero.
 console.log(calcularAreaTriangulo(5, 0)); // Error: La base y la altura deben ser mayores que cero.
+
+
+
 

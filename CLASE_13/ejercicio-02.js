@@ -2,6 +2,7 @@
 Crea una función expresada llamada encontrarMayor que reciba dos 
 números como parámetros y devuelva el número mayor. */
 
+
 const encontrarMayor = function(num1, num2) {
   if (typeof num1 !== 'number' || typeof num2 !== 'number') {
     return "Error: Ambos parámetros deben ser números.";

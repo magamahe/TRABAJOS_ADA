@@ -3,15 +3,11 @@ Crea una función declarada llamada esPar que reciba un número y devuelva
 "Es par" si el número es par o "Es impar" si el número es impar. Usa una 
 variable local para guardar el resultado.  */
 
-function esPar(numero) {
+function esPar(num) {
   // Variable local para guardar resultado
   let resultado;
 
-  if (numero % 2 === 0) {
-    resultado = "Es par";
-  } else {
-    resultado = "Es impar";
-  }
+  (num % 2 === 0) ? resultado = "Es par" : resultado = "Es impar";
 
   return resultado;
 }

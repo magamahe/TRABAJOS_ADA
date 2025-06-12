@@ -12,10 +12,11 @@ function mostrarMensaje() {
   const saludoLocal = "Hola desde el scope local";
   
   // Imprimir ambos mensajes
-  console.log(saludoGlobal);
+  //console.log(saludoGlobal);
   console.log(saludoLocal);
 }
 
 // Ejecutar función
 mostrarMensaje();
-
+// Imprimir variable global fuera de la función
+console.log(saludoGlobal);
