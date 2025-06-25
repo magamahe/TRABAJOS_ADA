@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini juego: Adivina el número</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background: #e0f7fa;
+    }
+    input, button {
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+    }
+    #mensaje {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎲 Adivina el número del 1 al 5</h1>
+
+  <input id="inputNumero" type="number" min="1" max="5" placeholder="Escribí un número" />
+  <button onclick="adivinar()">Adivinar</button>
+
+  <div id="mensaje"></div>
+
+  <script>
+    // Número secreto que la computadora elige al cargar la página
+    const numeroSecreto = Math.floor(Math.random() * 5) + 1;
+
+    function adivinar() {
+      const input = document.getElementById('inputNumero');
+      const mensaje = document.getElementById('mensaje');
+      const numeroUsuario = Number(input.value);
+
+      if (numeroUsuario < 1 || numeroUsuario > 5 || isNaN(numeroUsuario)) {
+        mensaje.textContent = "Por favor, ingresá un número válido entre 1 y 5.";
+        return;
+      }
+
+      if (numeroUsuario === numeroSecreto) {
+        mensaje.textContent = "🎉 ¡Correcto! Adivinaste el número.";
+      } else {
+        mensaje.textContent = `❌ No es el número. El secreto era ${numeroSecreto}.`;
+      }
+    }
+  </script>
+
+</body>
+</html>

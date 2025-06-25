@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Quiz JS Completo</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
+  .question { margin-bottom: 25px; }
+  button { padding: 10px 25px; margin-top: 10px; }
+  .result { font-weight: bold; margin-top: 20px; font-size: 1.2em; white-space: pre-wrap; }
+  label {
+    cursor: pointer;
+  }
+  label.correct {
+    color: green;
+    font-weight: bold;
+  }
+  label.incorrect {
+    color: red;
+    font-weight: bold;
+  }
+  .icon {
+    font-weight: bold;
+    margin-left: 8px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Quiz JS Completo</h1>
+<div id="quiz"></div>
+<button id="submitBtn">Enviar respuestas</button>
+<div id="result" class="result"></div>
+
+<script>
+const questions = [
+  // Funciones
+  {
+    pregunta: "¿Cuál es una característica de una función declarada?",
+    opciones: [
+      "Se puede usar antes de ser declarada",
+      "No puede recibir parámetros",
+      "No tiene nombre",
+      "Siempre es anónima"
+    ],
+    correcta: "Se puede usar antes de ser declarada"
+  },
+  {
+    pregunta: "¿Qué tipo de función se asigna a una variable?",
+    opciones: [
+      "Función declarada",
+      "Función expresada",
+      "Función flecha",
+      "Ninguna de las anteriores"
+    ],
+    correcta: "Función expresada"
+  },
+  {
+    pregunta: "¿Cuál es la sintaxis correcta para una función flecha que suma dos números?",
+    opciones: [
+      "(a, b) => a + b",
+      "function(a, b) { return a + b; }",
+      "function suma(a, b) { return a + b; }",
+      "(a, b) => { return a + b; }"
+    ],
+    correcta: "(a, b) => a + b"
+  },
+  // Arrays
+  {
+    pregunta: "¿Qué método agrega un elemento al final de un array?",
+    opciones: ["push()", "pop()", "shift()", "unshift()"],
+    correcta: "push()"
+  },
+  {
+    pregunta: "¿Qué método elimina el primer elemento de un array?",
+    opciones: ["pop()", "push()", "shift()", "unshift()"],
+    correcta: "shift()"
+  },
+  {
+    pregunta: "¿Qué método devuelve un nuevo array con elementos que cumplen una condición?",
+    opciones: ["map()", "filter()", "reduce()", "forEach()"],
+    correcta: "filter()"
+  },
+  {
+    pregunta: "¿Qué método devuelve la posición del primer elemento encontrado en un array?",
+    opciones: ["indexOf()", "lastIndexOf()", "find()", "includes()"],
+    correcta: "indexOf()"
+  },
+  {
+    pregunta: "¿Qué hace el método `join()` en un array?",
+    opciones: [
+      "Une los elementos en una cadena con un separador",
+      "Separa una cadena en un array",
+      "Elimina elementos del array",
+      "Ordena los elementos"
+    ],
+    correcta: "Une los elementos en una cadena con un separador"
+  },
+  // Strings
+  {
+    pregunta: "¿Qué hace el método `split()` en un string?",
+    opciones: [
+      "Une elementos en una cadena",
+      "Divide un string en un array",
+      "Reemplaza texto en un string",
+      "Busca un texto dentro de un string"
+    ],
+    correcta: "Divide un string en un array"
+  },
+  {
+    pregunta: "¿Qué hace el método `replace()` en un string?",
+    opciones: [
+      "Reemplaza todas las ocurrencias de un texto",
+      "Reemplaza la primera ocurrencia de un texto",
+      "Elimina un texto",
+      "Convierte un string a mayúsculas"
+    ],
+    correcta: "Reemplaza la primera ocurrencia de un texto"
+  },
+  // Callbacks
+  {
+    pregunta: "¿Qué es un callback en JavaScript?",
+    opciones: [
+      "Una función que se pasa como argumento a otra función",
+      "Una variable especial",
+      "Un tipo de bucle",
+      "Un método de array"
+    ],
+    correcta: "Una función que se pasa como argumento a otra función"
+  },
+  {
+    pregunta: "¿Cuál de estas funciones es un callback en este código?\n`[1,2,3].map(n => n * 2);`",
+    opciones: [
+      "`map`",
+      "`n => n * 2`",
+      "`[1,2,3]`",
+      "Ninguna"
+    ],
+    correcta: "`n => n * 2`"
+  },
+  // Condicionales y Bucles
+  {
+    pregunta: "¿Qué palabra clave se usa para ejecutar código si una condición es verdadera?",
+    opciones: ["if", "for", "while", "switch"],
+    correcta: "if"
+  },
+  {
+    pregunta: "¿Cuál es la estructura correcta de un bucle `for`?",
+    opciones: [
+      "for (let i = 0; i < 10; i++) { }",
+      "for (i < 10; i++) { }",
+      "for i = 0 to 10 { }",
+      "for (let i = 0; i++) { }"
+    ],
+    correcta: "for (let i = 0; i < 10; i++) { }"
+  },
+  {
+    pregunta: "¿Qué diferencia principal tiene un `do...while` respecto a un `while`?",
+    opciones: [
+      "El `do...while` ejecuta el bloque al menos una vez",
+      "El `while` siempre ejecuta al menos una vez",
+      "No hay diferencia",
+      "El `do...while` no tiene condición"
+    ],
+    correcta: "El `do...while` ejecuta el bloque al menos una vez"
+  },
+  {
+    pregunta: "¿Cuál es la condición correcta para un bucle `while`?",
+    opciones: [
+      "while (condición) { }",
+      "while { condición }",
+      "while [condición] { }",
+      "while: condición { }"
+    ],
+    correcta: "while (condición) { }"
+  },
+  // Preguntas nuevas para llegar a 20
+  {
+    pregunta: "¿Cuál es la diferencia principal entre función declarada y función expresada?",
+    opciones: [
+      "La función declarada puede usarse antes de declararse, la expresada no",
+      "La función expresada no puede tener parámetros",
+      "La función declarada no puede retornar valores",
+      "No hay diferencia"
+    ],
+    correcta: "La función declarada puede usarse antes de declararse, la expresada no"
+  },
+  {
+    pregunta: "¿Qué método de array devuelve un solo elemento que cumple la condición?",
+    opciones: [
+      "filter()",
+      "find()",
+      "map()",
+      "reduce()"
+    ],
+    correcta: "find()"
+  },
+  {
+    pregunta: "¿Cómo conviertes un string en un array usando un separador?",
+    opciones: [
+      "split()",
+      "join()",
+      "slice()",
+      "splice()"
+    ],
+    correcta: "split()"
+  },
+  {
+    pregunta: "¿Qué estructura permite ejecutar código mientras una condición sea verdadera?",
+    opciones: [
+      "if",
+      "for",
+      "while",
+      "switch"
+    ],
+    correcta: "while"
+  }
+];
+
+// Renderizar preguntas y opciones
+const quizDiv = document.getElementById("quiz");
+
+questions.forEach((q, i) => {
+  const div = document.createElement("div");
+  div.classList.add("question");
+  div.innerHTML = `<p><strong>${i + 1}. ${q.pregunta}</strong></p>`;
+
+  q.opciones.forEach(opcion => {
+    const safeOption = opcion.replace(/\s+/g, "_").replace(/[`()]/g, '');
+    const id = `q${i}_op_${safeOption}`;
+    div.innerHTML += `
+      <label for="${id}">
+        <input type="radio" name="q${i}" value="${opcion}" id="${id}">
+        ${opcion}
+      </label><br>`;
+  });
+
+  quizDiv.appendChild(div);
+});
+
+document.getElementById("submitBtn").addEventListener("click", () => {
+  let score = 0;
+
+  // Deshabilitar botón para que no puedan enviar más
+  document.getElementById("submitBtn").disabled = true;
+
+  questions.forEach((q, i) => {
+    const selected = document.querySelector(`input[name="q${i}"]:checked`);
+    const options = document.getElementsByName(`q${i}`);
+
+    // Para cada opción, sacar el label correspondiente
+    options.forEach(optionInput => {
+      const label = optionInput.parentElement;
+
+      // Limpiar clases e iconos previos si hay
+      label.classList.remove("correct", "incorrect");
+      const oldIcon = label.querySelector(".icon");
+      if (oldIcon) oldIcon.remove();
+    });
+
+    if (selected && selected.value === q.correcta) {
+      score++;
+    }
+
+    options.forEach(optionInput => {
+      const label = optionInput.parentElement;
+      // Si esta opción es la correcta
+      if (optionInput.value === q.correcta) {
+        label.classList.add("correct");
+        label.insertAdjacentHTML("beforeend", `<span class="icon" aria-label="Correcto">✔️</span>`);
+      }
+
+      // Si la opción es la seleccionada y es incorrecta
+      if (selected && optionInput === selected && optionInput.value !== q.correcta) {
+        label.classList.add("incorrect");
+        label.insertAdjacentHTML("beforeend", `<span class="icon" aria-label="Incorrecto">❌</span>`);
+      }
+
+      // Deshabilitar todas las opciones para que no puedan cambiar
+      optionInput.disabled = true;
+    });
+  });
+
+  document.getElementById("result").textContent = `Tu puntaje: ${score} / ${questions.length}`;
+});
+</script>
+
+</body>
+</html>

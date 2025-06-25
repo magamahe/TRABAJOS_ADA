@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego: ¿Declarada o Expresada?</title>
+
+  <!-- Estilos CSS: diseño de fondo, botones y tarjetas -->
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin: 1rem auto;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      background-color: #6200ea;
+      color: white;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .result {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Título principal del juego -->
+  <h1>🎮 Juego: ¿Declarada o Expresada?</h1>
+
+  <!-- Tarjeta principal del juego -->
+  <div class="card" id="game">
+    <!-- Aquí se mostrará el código del desafío -->
+    <pre id="code"></pre>
+
+    <!-- Botones de respuesta -->
+    <div>
+      <button onclick="responder('declarada')">Declarada</button>
+      <button onclick="responder('expresada')">Expresada</button>
+    </div>
+
+    <!-- Resultado de la respuesta (correcto o incorrecto) -->
+    <div class="result" id="feedback"></div>
+  </div>
+
+  <!-- Pantalla final (oculta al principio) -->
+  <div class="card hidden" id="final">
+    <h2>🎉 Juego terminado</h2>
+    <p id="puntaje"></p>
+    <button onclick="reiniciarJuego()">Volver a jugar</button>
+  </div>
+
+  <!-- JavaScript del juego -->
+  <script>
+    // Lista de desafíos (array de objetos)
+    const desafios = [
+      {
+        // Función declarada: se puede usar antes de declararla
+        codigo: `saludar();\nfunction saludar() {\n  console.log("¡Hola!");\n}`,
+        respuesta: "declarada"
+      },
+      {
+        // Función expresada: se guarda en una variable (no se puede usar antes)
+        codigo: `let saludar = function() {\n  console.log("¡Hola!");\n};\nsaludar();`,
+        respuesta: "expresada"
+      },
+      {
+        codigo: `console.log(mensaje());\nfunction mensaje() {\n  return "¡Todo bien!";\n}`,
+        respuesta: "declarada"
+      },
+      {
+        codigo: `mensaje();\nlet mensaje = function() {\n  console.log("¡Hola!");\n};`,
+        respuesta: "expresada"
+      }
+    ];
+
+    // Variables para saber en qué desafío vamos y cuántos puntos llevamos
+    let actual = 0;
+    let puntos = 0;
+
+    // Función que muestra el desafío actual en la pantalla
+    function mostrarDesafio() {
+      document.getElementById('code').textContent = desafios[actual].codigo;
+      document.getElementById('feedback').textContent = '';
+    }
+
+    // Función que se llama cuando el usuario responde
+    function responder(tipo) {
+      const correcto = desafios[actual].respuesta; // La respuesta correcta
+      const feedback = document.getElementById('feedback');
+
+      //

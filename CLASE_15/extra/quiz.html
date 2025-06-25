@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Quiz JS - Código y Salida (20 preguntas)</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9fc;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 14px;
+  }
+  .pregunta {
+    background: white;
+    margin-bottom: 25px;
+    padding: 15px 20px;
+    border-radius: 8px;
+  }
+  .pregunta h3 {
+    margin-bottom: 10px;
+  }
+  .opcion {
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .opcion:hover {
+    background-color: #e0e0f0;
+  }
+  .opcion input {
+    margin-right: 10px;
+  }
+  .resultado {
+    margin-top: 12px;
+    font-weight: bold;
+  }
+  .correcta {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+    position: relative;
+  }
+  .correcta::after {
+    content: "✓";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: #28a745;
+  }
+  .incorrecta {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+    position: relative;
+  }
+  .incorrecta::after {
+    content: "✗";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: #dc3545;
+  }
+  #btn-revisar {
+    display: block;
+    margin: 30px auto 60px auto;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 220px;
+  }
+  #btn-revisar:hover {
+    background-color: #0056b3;
+  }
+  #resultado-final {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Quiz de JavaScript - Arrays y Strings (Código y Salida)</h1>
+
+<form id="quiz-form"></form>
+
+<button id="btn-revisar">Revisar respuestas</button>
+
+<div id="resultado-final"></div>
+
+<script>
+const preguntas = [
+  {
+    pregunta: `¿Cuál es la salida de este código?`,
+    codigo: `console.log(typeof null);`,
+    opciones: ["'null'", "'object'", "'undefined'", "'boolean'"],
+    correcta: 1
+  },
+  {
+    pregunta: `¿Qué imprime este código?`,
+    codigo: `
+let arr = [1, 2, 3];
+console.log(arr.pop());
+console.log(arr.length);
+    `,
+    opciones: ["3 y 2", "3 y 3", "2 y 3", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué resultado tendrá esta comparación?`,
+    codigo: `console.log('5' == 5);`,
+    opciones: ["true", "false", "TypeError", "undefined"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué imprime este fragmento?`,
+    codigo: `
+const texto = "Hola Mundo";
+console.log(texto.indexOf("Mundo"));
+    `,
+    opciones: ["5", "-1", "4", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Cuál será el resultado?`,
+    codigo: `
+let palabra = "reconocer";
+let palabraInvertida = palabra.split("").reverse().join("");
+console.log(palabra === palabraInvertida);
+    `,
+    opciones: ["true", "false", "undefined", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué imprime este código?`,
+    codigo: `
+const arr = ["a", "b", "c"];
+console.log(arr.join("-"));
+    `,
+    opciones: ["a-b-c", "abc", "a,b,c", "a - b - c"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué devuelve este método?`,
+    codigo: `
+const arr = [1, 2, 3, 4];
+console.log(arr.slice(1, 3));
+    `,
+    opciones: ["[2, 3]", "[1, 2, 3]", "[3, 4]", "[2, 3, 4]"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué resultado tiene este código?`,
+    codigo: `
+const frutas = ["manzana", "banana", "cereza"];
+frutas.push("naranja");
+console.log(frutas.length);
+    `,
+    opciones: ["4", "3", "5", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Cuál es la salida?`,
+    codigo: `
+const str = "Hola Mundo";
+console.log(str.charAt(4));
+    `,
+    opciones: ["' ' (espacio)", "'M'", "'a'", "'o'"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué imprime este código?`,
+    codigo: `
+let nombres = ["Ana", "Juan", "Sofía"];
+console.log(nombres.indexOf("Juan"));
+    `,
+    opciones: ["1", "0", "-1", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué muestra este código?`,
+    codigo: `
+const texto = "JavaScript";
+console.log(texto.includes("Script"));
+    `,
+    opciones: ["true", "false", "undefined", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué devuelve este fragmento?`,
+    codigo: `
+const arr = [10, 20, 30, 40];
+const nuevo = arr.filter(num => num > 20);
+console.log(nuevo);
+    `,
+    opciones: ["[30, 40]", "[10, 20]", "[20, 30, 40]", "[]"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué resultado da este código?`,
+    codigo: `
+let palabra = "JavaScript";
+console.log(palabra.toLowerCase());
+    `,
+    opciones: ["javascript", "JavaScript", "JAVASCRIPT", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué imprime esta expresión?`,
+    codigo: `
+const arr = [1, 2, 3, 4];
+console.log(arr.shift());
+console.log(arr.length);
+    `,
+    opciones: ["1 y 3", "1 y 4", "2 y 4", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué pasa aquí?`,
+    codigo: `
+const texto = "  Hola  ";
+console.log(texto.trim());
+    `,
+    opciones: ["'Hola'", "'  Hola  '", "'Hola  '", "'  Hola'"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué devuelve este método?`,
+    codigo: `
+const arr = [1, 2, 3];
+arr.unshift(0);
+console.log(arr);
+    `,
+    opciones: ["[0, 1, 2, 3]", "[1, 2, 3, 0]", "[1, 2, 3]", "[0]"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Cuál es el resultado?`,
+    codigo: `
+const palabra = "abracadabra";
+console.log(palabra.indexOf("cad"));
+    `,
+    opciones: ["4", "-1", "3", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué muestra este código?`,
+    codigo: `
+const arr = [1, 2, 3, 4];
+console.log(arr.includes(3));
+    `,
+    opciones: ["true", "false", "undefined", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué devuelve esta expresión?`,
+    codigo: `
+const str = "JavaScript";
+console.log(str.substring(4, 10));
+    `,
+    opciones: ["Script", "JavaS", "Script ", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué imprime esta expresión?`,
+    codigo: `
+const palabra = "Hola Mundo";
+console.log(palabra.split(" ").length);
+    `,
+    opciones: ["2", "1", "10", "Error"],
+    correcta: 0
+  },
+  {
+    pregunta: `¿Qué resultado da este código?`,
+    codigo: `
+const arr = ["x", "y", "z"];
+const nuevo = arr.map(letra => letra.toUpperCase());
+console.log(nuevo);
+    `,
+    opciones: ["['X', 'Y', 'Z']", "['x', 'y', 'z']", "['x', 'Y', 'Z']", "Error"],
+    correcta: 0
+  }
+];
+
+// Función para crear quiz dinámicamente
+function crearQuiz() {
+  const form = document.getElementById('quiz-form');
+  preguntas.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.classList.add('pregunta');
+    div.innerHTML = `
+      <h3>Pregunta ${i + 1}: ${item.pregunta}</h3>
+      <pre>${item.codigo.trim()}</pre>
+      ${item.opciones.map((op, idx) => `
+        <label class="opcion" data-pregunta="${i}" data-opcion="${idx}">
+          <input type="radio" name="pregunta${i}" value="${idx}" />
+          ${op}
+        </label>
+      `).join('')}
+      <div class="resultado"></div>
+    `;
+    form.appendChild(div);
+  });
+}
+
+// Función para revisar respuestas y mostrar resultado
+function revisarRespuestas() {
+  let correctas = 0;
+  preguntas.forEach((item, i) => {
+    const opciones = document.getElementsByName(`pregunta${i}`);
+    let respuestaSeleccionada = -1;
+    opciones.forEach(opcion => {
+      if (opcion.checked) respuestaSeleccionada = parseInt(opcion.value);
+    });
+
+    const divPregunta = opciones[0].closest('.pregunta');
+    const resultadoDiv = divPregunta.querySelector('.resultado');
+
+    // Limpiar clases previas
+    divPregunta.querySelectorAll('label').forEach(label => {
+      label.classList.remove('correcta', 'incorrecta');
+    });
+
+    if (respuestaSeleccionada === item.correcta) {
+      correctas++;
+      const labelCorrecta = divPregunta.querySelector(`label[data-opcion="${item.correcta}"]`);
+      labelCorrecta.classList.add('correcta');
+      resultadoDiv.textContent = "¡Respuesta correcta!";
+      resultadoDiv.style.color = "#155724";
+    } else if (respuestaSeleccionada === -1) {
+      resultadoDiv.textContent = "No seleccionaste ninguna opción.";
+      resultadoDiv.style.color = "#856404";
+    } else {
+      const labelSeleccionada = divPregunta.querySelector(`label[data-opcion="${respuestaSeleccionada}"]`);
+      labelSeleccionada.classList.add('incorrecta');
+      const labelCorrecta = divPregunta.querySelector(`label[data-opcion="${item.correcta}"]`);
+      labelCorrecta.classList.add('correcta');
+      resultadoDiv.innerHTML = `Respuesta incorrecta. La correcta es: <strong>${item.opciones[item.correcta]}</strong>`;
+      resultadoDiv.style.color = "#721c24";
+    }
+  });
+
+  const resultadoFinal = document.getElementById('resultado-final');
+  resultadoFinal.textContent = `Resultado: ${correctas} / ${preguntas.length} respuestas correctas`;
+}
+
+document.getElementById('btn-revisar').addEventListener('click', revisarRespuestas);
+
+// Crear el quiz al cargar la página
+crearQuiz();
+</script>
+
+</body>
+</html>

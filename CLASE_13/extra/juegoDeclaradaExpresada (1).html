@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego: ¿Declarada o Expresada?</title>
+  <style>
+    body { font-family: sans-serif; background: #f9f9f9; text-align: center; padding: 2rem; }
+    .card { background: white; padding: 1.5rem; margin: 1rem auto; border-radius: 10px; max-width: 600px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    button { padding: 0.5rem 1rem; margin: 0.5rem; font-size: 1rem; cursor: pointer; border-radius: 5px; border: none; background-color: #6200ea; color: white; }
+    .hidden { display: none; }
+    .result { font-size: 1.2rem; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>🎮 Juego: ¿Declarada o Expresada?</h1>
+  <div class="card" id="game">
+    <pre id="code"></pre>
+    <div>
+      <button onclick="responder('declarada')">Declarada</button>
+      <button onclick="responder('expresada')">Expresada</button>
+    </div>
+    <div class="result" id="feedback"></div>
+  </div>
+
+  <div class="card hidden" id="final">
+    <h2>🎉 Juego terminado</h2>
+    <p id="puntaje"></p>
+    <button onclick="reiniciarJuego()">Volver a jugar</button>
+  </div>
+
+  <script>
+    const desafios = [
+      {
+        codigo: `saludar();\nfunction saludar() {\n  console.log("¡Hola!");\n}`,
+        respuesta: "declarada"
+      },
+      {
+        codigo: `let saludar = function() {\n  console.log("¡Hola!");\n};\nsaludar();`,
+        respuesta: "expresada"
+      },
+      {
+        codigo: `console.log(mensaje());\nfunction mensaje() {\n  return "¡Todo bien!";\n}`,
+        respuesta: "declarada"
+      },
+      {
+        codigo: `mensaje();\nlet mensaje = function() {\n  console.log("¡Hola!");\n};`,
+        respuesta: "expresada"
+      }
+    ];
+
+    let actual = 0;
+    let puntos = 0;
+
+    function mostrarDesafio() {
+      document.getElementById('code').textContent = desafios[actual].codigo;
+      document.getElementById('feedback').textContent = '';
+    }
+
+    function responder(tipo) {
+      const correcto = desafios[actual].respuesta;
+      const feedback = document.getElementById('feedback');
+      if (tipo === correcto) {
+        feedback.textContent = '✅ ¡Correcto!';
+        puntos++;
+      } else {
+        feedback.textContent = `❌ Era una función ${correcto}.`;
+      }
+      actual++;
+      setTimeout(() => {
+        if (actual < desafios.length) {
+          mostrarDesafio();
+        } else {
+          document.getElementById('game').classList.add('hidden');
+          document.getElementById('final').classList.remove('hidden');
+          document.getElementById('puntaje').textContent = `Obtuviste ${puntos}/${desafios.length} puntos.`;
+        }
+      }, 1500);
+    }
+
+    function reiniciarJuego() {
+      actual = 0;
+      puntos = 0;
+      document.getElementById('final').classList.add('hidden');
+      document.getElementById('game').classList.remove('hidden');
+      mostrarDesafio();
+    }
+
+    mostrarDesafio();
+  </script>
+</body>
+</html>

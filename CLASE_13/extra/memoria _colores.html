@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini juego: Memoria de colores</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background: #fff;
+    }
+    .color-btn {
+      width: 100px;
+      height: 100px;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.3s;
+    }
+    .color-btn.active {
+      opacity: 1;
+      box-shadow: 0 0 10px #000;
+    }
+    #mensaje {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧠 Juego: Memoria de colores</h1>
+  <p>Sigue la secuencia y clickea los colores en orden</p>
+
+  <div>
+    <button class="color-btn" id="rojo" style="background: #e53935;"></button>
+    <button class="color-btn" id="verde" style="background: #43a047;"></button>
+    <button class="color-btn" id="azul" style="background: #1e88e5;"></button>
+    <button class="color-btn" id="amarillo" style="background: #fdd835;"></button>
+  </div>
+
+  <button onclick="iniciarJuego()">Iniciar Juego</button>
+
+  <div id="mensaje"></div>
+
+  <script>
+    const colores = ['rojo', 'verde', 'azul', 'amarillo'];
+    let secuencia = [];
+    let indiceJugador = 0;
+    let jugando = false;
+
+    function delay(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function mostrarSecuencia() {
+      for (let color of secuencia) {
+        const btn = document.getElementById(color);
+        btn.classList.add('active');
+        await delay(600);
+        btn.classList.remove('active');
+        await delay(200);
+      }
+    }
+
+    async function iniciarJuego() {
+      secuencia = [];
+      indiceJugador = 0;
+      jugando = true;
+      document.getElementById('mensaje').textContent = 'Mirá la secuencia';
+      await delay(500);
+      agregarColor();
+      await mostrarSecuencia();
+      document.getElementById('mensaje').textContent = 'Tu turno: clickea la secuencia';
+    }
+
+    function agregarColor() {
+      const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+      secuencia.push(colorAleatorio);
+    }
+
+    function manejarClick(color) {
+      if (!jugando) return;
+
+      const btn = document.getElementById(color);
+      btn.classList.add('active');
+      setTimeout(() => btn.classList.remove('active'), 300);
+
+      if (color === secuencia[indiceJugador]) {
+        indiceJugador++;
+        if (indiceJugador === secuencia.length) {
+          indiceJugador = 0;
+          agregarColor();
+          document.getElementById('mensaje').textContent = '¡Muy bien! Mirá la nueva secuencia';
+          mostrarSecuencia().then(() => {
+            document.getElementById('mensaje').textContent = 'Tu turno: clickea la secuencia';
+          });
+        }
+      } else {
+        document.getElementById('mensaje').textContent = `¡Error! La secuencia era de ${secuencia.length} colores. Jugá de nuevo.`;
+        jugando = false;
+      }
+    }
+
+    // Agregar event listeners a los botones de colores
+    colores.forEach(color => {
+      document.getElementById(color).addEventListener('click', () => manejarClick(color));
+    });
+  </script>
+
+</body>
+</html>

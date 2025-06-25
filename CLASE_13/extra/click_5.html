@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini juego: Clic rápido</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background: #fff3e0;
+    }
+    button {
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      cursor: pointer;
+    }
+    #contador {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    #mensaje {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>⏱️ Juego: Clic rápido</h1>
+  <button id="botonClic">¡Haz clic!</button>
+  <div id="contador">Clicks: 0</div>
+  <div id="mensaje"></div>
+
+  <script>
+    let clicks = 0;
+    let juegoTerminado = false;
+
+    const boton = document.getElementById('botonClic');
+    const contador = document.getElementById('contador');
+    const mensaje = document.getElementById('mensaje');
+
+    boton.addEventListener('click', () => {
+      if (juegoTerminado) return; // si terminó, no contar más clicks
+      clicks++;
+      contador.textContent = `Clicks: ${clicks}`;
+    });
+
+    // Después de 5 segundos, termina el juego
+    setTimeout(() => {
+      juegoTerminado = true;
+      mensaje.textContent = `⏰ ¡Tiempo terminado! Total clicks: ${clicks}`;
+      boton.disabled = true; // desactivar botón para que no se pueda seguir clickeando
+    }, 5000);
+  </script>
+
+</body>
+</html>
