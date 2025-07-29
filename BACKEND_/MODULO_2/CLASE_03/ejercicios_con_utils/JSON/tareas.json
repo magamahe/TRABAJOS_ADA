@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "descripcion": "comprar pan"
+  },
+  {
+    "id": 3,
+    "descripcion": "comprar manteca"
+  },
+  {
+    "id": 4,
+    "descripcion": "comprar aceite"
+  }
+]
