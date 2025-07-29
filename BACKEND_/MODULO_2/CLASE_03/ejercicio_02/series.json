@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "nombre": "mi casita",
+    "temporadas": 2
+  },
+  {
+    "id": 2,
+    "nombre": "mi autito",
+    "temporadas": 1
+  }
+]
