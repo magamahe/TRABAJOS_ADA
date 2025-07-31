@@ -2,7 +2,6 @@
 - Crea un array de objetos que represente una lista de estudiantes.
 - Cada estudiante debe tener las propiedades: nombre, edad, curso y notas (un array de números).
 - Exporta este array usando module.exports. */
-
 const estudiantes = [
     {
         nombre: 'Maria',
