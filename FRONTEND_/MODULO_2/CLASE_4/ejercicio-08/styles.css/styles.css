@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+}
+
+h1 { text-align: center; }
+
+.termometro {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.termometro li {
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Gradiente visual desde azul a rojo */
+.termometro li:nth-child(1)  { background-color: hsl(240, 100%, 50%); } /* 0°C */
+.termometro li:nth-child(2)  { background-color: hsl(216, 100%, 50%); } /* 5°C */
+.termometro li:nth-child(3)  { background-color: hsl(192, 100%, 50%); } /* 10°C */
+.termometro li:nth-child(4)  { background-color: hsl(168, 100%, 50%); } /* 15°C */
+.termometro li:nth-child(5)  { background-color: hsl(144, 100%, 50%); } /* 20°C */
+.termometro li:nth-child(6)  { background-color: hsl(120, 100%, 50%); } /* 25°C */
+.termometro li:nth-child(7)  { background-color: hsl(96, 100%, 50%); }  /* 30°C */
+.termometro li:nth-child(8)  { background-color: hsl(72, 100%, 50%); }  /* 35°C */
+.termometro li:nth-child(9)  { background-color: hsl(48, 100%, 50%); }  /* 40°C */
+.termometro li:nth-child(10) { background-color: hsl(24, 100%, 50%); }  /* 45°C */
+.termometro li:nth-child(11) { background-color: hsl(0,   100%, 50%); }  /* 50°C */
+
+.termometro .strong {
+  font-weight: bold;
+  font-size: 25px;
+}

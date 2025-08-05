@@ -1,0 +1,15 @@
+body{ font-family: Arial, sans-serif;}
+
+h1{font-size: 50px;}
+h2{font-size: 30px;}
+h3{font-size: 25px;}
+
+.fecha{
+    color: lightslategray;
+    font-size: 15px;
+}
+
+.monton{ color: red;}
+.montop{color: green;}
+
+

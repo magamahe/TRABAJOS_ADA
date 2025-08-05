@@ -1,0 +1,49 @@
+/* Fuente Montserrat aplicada al body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: #212121; /* fondo oscuro */
+  color: #FAFAFA; /* texto claro */
+}
+
+/* Título */
+h1 {
+  font-size: 120px;
+  font-weight: 900;
+}
+
+/* Párrafo */
+p {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* Colores para palabras clave */
+.nombre {
+  color: #ff6b6b;   /* rosa fuerte */
+}
+
+.clave1 {
+  color: #4ecdc4;   /* verde agua */
+}
+
+.clave2 {
+  color: #ffa502;   /* naranja pastel */
+}
+
+.clave3 {
+  color: #1e90ff;   /* azul brillante */
+}
+
+
+.clave1 {
+  color: #4ecdc4; /* verde agua */
+}
+
+.clave2 {
+  color: #ffa502; /* naranja pastel */
+}
+
+.clave3 {
+  color: #1e90ff; /* azul brillante */
+}

@@ -1,0 +1,7 @@
+body{font-family:'Franklin Gothic Medium'}
+h1{font-size: 40px;}
+h2{font-size: 30px;}
+h3{font-size: 20px;}
+.realizada{background-color: rgb(0,0,255) ;}
+.pendiente{background-color: rgb(0,255,0);}
+.cancelada{background-color: rgb(255,0,0);}

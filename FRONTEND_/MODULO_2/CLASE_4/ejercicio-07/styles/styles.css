@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1{font-size: 50px;}
+h2{font-size: 30px;}
+
+/* Colores de fondo para cada paleta */
+
+/* Moderna - HEX */
+.moderna li:nth-child(1) { background-color: #1F2937; }
+.moderna li:nth-child(2) { background-color: #3B82F6; }
+.moderna li:nth-child(3) { background-color: #10B981; }
+.moderna li:nth-child(4) { background-color: #F59E0B; }
+.moderna li:nth-child(5) { background-color: #EF4444; }
+
+/* Pastel - RGB */
+.pastel li:nth-child(1) { background-color: rgb(253, 230, 138); color: #222; }
+.pastel li:nth-child(2) { background-color: rgb(251, 207, 232); color: #222; }
+.pastel li:nth-child(3) { background-color: rgb(167, 243, 208); color: #222; }
+.pastel li:nth-child(4) { background-color: rgb(191, 219, 254); color: #222; }
+.pastel li:nth-child(5) { background-color: rgb(252, 165, 165); color: #222; }
+
+/* Vibrante - HSL */
+.vibrante li:nth-child(1) { background-color: hsl(340, 100%, 50%); } /* Fucsia fuerte */
+.vibrante li:nth-child(2) { background-color: hsl(200, 100%, 50%); } /* Azul vibrante */
+.vibrante li:nth-child(3) { background-color: hsl(120, 100%, 40%); } /* Verde intenso */
+.vibrante li:nth-child(4) { background-color: hsl(45, 100%, 50%); }  /* Amarillo dorado */
+.vibrante li:nth-child(5) { background-color: hsl(280, 100%, 60%); } /* Violeta fuerte */

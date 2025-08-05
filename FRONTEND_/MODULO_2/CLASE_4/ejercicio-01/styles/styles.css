@@ -1,0 +1,30 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 120px;
+  font-weight: 900;
+}
+
+p {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.nombre {
+  color: #ff6b6b; /* rosa fuerte */
+}
+
+.clave1 {
+  color: #4ecdc4; /* verde agua */
+}
+
+.clave2 {
+  color: #ffa502; /* naranja pastel */
+}
+
+.clave3 {
+  color: #1e90ff; /* azul brillante */
+}
