@@ -3,22 +3,24 @@ body {
   background: #f0f0f0;
 }
 
-h1 { text-align: center; }
+h1 {
+  text-align: center;
+}
 
 .termometro {
   list-style: none;
   padding: 0;
-  width: 300px;
+  width: 18.75rem; /* 300px */
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: 1.25rem; /* 20px */
   overflow: hidden;
 }
 
 .termometro li {
-  padding: 15px;
+  padding: 0.9375rem; /* 15px */
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
 }
 
 /* Gradiente visual desde azul a rojo */
@@ -36,5 +38,5 @@ h1 { text-align: center; }
 
 .termometro .strong {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.5625rem; /* 25px */
 }

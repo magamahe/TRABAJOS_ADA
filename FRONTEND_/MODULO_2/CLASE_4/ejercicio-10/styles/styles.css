@@ -1,7 +1,68 @@
-body{font-family:'Franklin Gothic Medium'}
-h1{font-size: 40px;}
-h2{font-size: 30px;}
-h3{font-size: 20px;}
-.realizada{background-color: rgb(0,0,255) ;}
-.pendiente{background-color: rgb(0,255,0);}
-.cancelada{background-color: rgb(255,0,0);}
+body {
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+  margin: 1rem auto;
+  max-width: 500px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h3 {
+  font-size: 1.25rem; /* 20px */
+  margin: 0;
+  font-weight: 600;
+  color: #222;
+}
+
+span {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  min-width: 100px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.15);
+}
+
+/* Estados con colores más suaves */
+.realizada {
+  background-color: #007bff; /* azul */
+}
+
+.pendiente {
+  background-color: #28a745; /* verde */
+}
+
+.cancelada {
+  background-color: #dc3545; /* rojo */
+}

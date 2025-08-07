@@ -1,27 +1,35 @@
-body{font-family:'Segoe UI';}
-h2{font-size: 30px;}
-h3{font-size: 20px;}
-
-.usuario a{
-    color: rgb(64, 177, 214);
-    text-decoration: none;
+body {
+  font-family: 'Segoe UI';
 }
 
-.tiempo{
-    font-size: 12px;
-    color: gray;
+h2 {
+  font-size: 1.875rem; /* 30px */
+}
+
+h3 {
+  font-size: 1.25rem; /* 20px */
+}
+
+.usuario a {
+  color: rgb(64, 177, 214);
+  text-decoration: none;
+}
+
+.tiempo {
+  font-size: 0.75rem; /* 12px */
+  color: gray;
 }
 
 .icono {
   background-color: #f0f0f0;
-  padding: 4px 6px;
-  border-radius: 5px;
-  margin-right: 8px;
+  padding: 0.25rem 0.375rem; /* 4px 6px */
+  border-radius: 0.3125rem; /* 5px */
+  margin-right: 0.5rem; /* 8px */
   position: relative;
 }
 
 .icono:not(:last-child)::after {
   content: "|";
-  margin-left: 8px;
+  margin-left: 0.5rem; /* 8px */
   color: gray;
 }

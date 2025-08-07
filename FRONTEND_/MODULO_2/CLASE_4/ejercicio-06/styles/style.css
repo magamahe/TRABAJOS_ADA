@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Pacifico&family=Bebas+Neue&family=Lobster&family=Orbitron&family=Shadows+Into+Light&family=Press+Start+2P&family=Fugaz+One&family=Caveat&family=Monoton&display=swap');
+
+body {
+  font-size: 2rem;
+  background-color: #111;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+li {
+  list-style: none;
+  margin: 1rem 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  font-size: 3rem;
+  background-size: 200%; /* Ensancha el degradado */
+  background-position: right; /* Inicia desde la derecha */
+  text-transform: uppercase; /* Opcional para que se vea más */
+}
+
+/* Fruta por fruta: fuente y degradado */
+
+.banana {
+  font-family: 'Rubik Moonrocks', cursive;
+  background-image: linear-gradient(to right, #f9d423, #ff4e50);
+}
+
+.manzana {
+  font-family: 'Pacifico', cursive;
+  background-image: linear-gradient(to right, #b31217, #e52d27);
+}
+
+.kiwi {
+  font-family: 'Bebas Neue', sans-serif;
+  background-image: linear-gradient(to right, #76b852, #8DC26F);
+}
+
+.uva {
+  font-family: 'Lobster', cursive;
+  background-image: linear-gradient(to right, #6441a5, #2a0845);
+}
+
+.ciruela {
+  font-family: 'Orbitron', sans-serif;
+  background-image: linear-gradient(to right, #a73737, #7a2828);
+}
+
+.mandarina {
+  font-family: 'Shadows Into Light', cursive;
+  background-image: linear-gradient(to right, #f7971e, #ffd200);
+}
+
+.sandia {
+  font-family: 'Press Start 2P', cursive;
+  background-image: linear-gradient(to right, #56ab2f, #a8e063);
+}
+
+.papaya {
+  font-family: 'Fugaz One', cursive;
+  background-image: linear-gradient(to right, #e96443, #904e95);
+}
+
+.melon {
+  font-family: 'Caveat', cursive;
+  background-image: linear-gradient(to right, #fceabb, #f8b500);
+}
+
+.lima {
+  font-family: 'Monoton', cursive;
+  background-image: linear-gradient(to right, #00ff00, #00cc66);
+}

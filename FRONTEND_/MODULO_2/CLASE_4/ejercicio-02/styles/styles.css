@@ -8,13 +8,13 @@ body {
 
 /* Título */
 h1 {
-  font-size: 120px;
+  font-size: 7.5rem; /* 120px / 16 = 7.5rem */
   font-weight: 900;
 }
 
 /* Párrafo */
 p {
-  font-size: 48px;
+  font-size: 3rem; /* 48px / 16 = 3rem */
   font-weight: 700;
 }
 
@@ -33,17 +33,4 @@ p {
 
 .clave3 {
   color: #1e90ff;   /* azul brillante */
-}
-
-
-.clave1 {
-  color: #4ecdc4; /* verde agua */
-}
-
-.clave2 {
-  color: #ffa502; /* naranja pastel */
-}
-
-.clave3 {
-  color: #1e90ff; /* azul brillante */
 }

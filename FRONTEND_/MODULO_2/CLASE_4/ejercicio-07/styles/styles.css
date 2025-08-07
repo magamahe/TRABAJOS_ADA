@@ -2,8 +2,13 @@ body {
   font-family: Arial, sans-serif;
 }
 
-h1{font-size: 50px;}
-h2{font-size: 30px;}
+h1 {
+  font-size: 3.125rem; /* 50px */
+}
+
+h2 {
+  font-size: 1.875rem; /* 30px */
+}
 
 /* Colores de fondo para cada paleta */
 
@@ -22,8 +27,8 @@ h2{font-size: 30px;}
 .pastel li:nth-child(5) { background-color: rgb(252, 165, 165); color: #222; }
 
 /* Vibrante - HSL */
-.vibrante li:nth-child(1) { background-color: hsl(340, 100%, 50%); } /* Fucsia fuerte */
-.vibrante li:nth-child(2) { background-color: hsl(200, 100%, 50%); } /* Azul vibrante */
-.vibrante li:nth-child(3) { background-color: hsl(120, 100%, 40%); } /* Verde intenso */
-.vibrante li:nth-child(4) { background-color: hsl(45, 100%, 50%); }  /* Amarillo dorado */
-.vibrante li:nth-child(5) { background-color: hsl(280, 100%, 60%); } /* Violeta fuerte */
+.vibrante li:nth-child(1) { background-color: hsl(340, 100%, 50%); }
+.vibrante li:nth-child(2) { background-color: hsl(200, 100%, 50%); }
+.vibrante li:nth-child(3) { background-color: hsl(120, 100%, 40%); }
+.vibrante li:nth-child(4) { background-color: hsl(45, 100%, 50%); }
+.vibrante li:nth-child(5) { background-color: hsl(280, 100%, 60%); }

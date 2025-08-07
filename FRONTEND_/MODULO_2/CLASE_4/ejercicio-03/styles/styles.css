@@ -1,40 +1,39 @@
-.titulo{
-    font-family: Roboto;
-    font-size: 50px;
+.titulo {
+  font-family: Roboto;
+  font-size: 3.125rem; /* 50px / 16 = 3.125rem */
 }
 
-.publicado{
-    color: grey;
+.publicado {
+  color: grey;
 }
 
-.publicado a{
-    color: lightblue;
-    text-decoration: none;;
-
+.publicado a {
+  color: lightblue;
+  text-decoration: none;
 }
-
 
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px / 16 = 1.125rem */
 }
 
-.italica{
-    font-style: italic;
-}
-.negrita{
-    font-weight: bold ;
+.italica {
+  font-style: italic;
 }
 
-.cursiva{
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
+.negrita {
+  font-weight: bold;
 }
 
-.cursiva_negrita .bold{
-    font-weight: bold;
+.cursiva {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
 }
 
-.cursiva_negrita .italic{
-    font-style: italic;
+.cursiva_negrita .bold {
+  font-weight: bold;
+}
+
+.cursiva_negrita .italic {
+  font-style: italic;
 }
