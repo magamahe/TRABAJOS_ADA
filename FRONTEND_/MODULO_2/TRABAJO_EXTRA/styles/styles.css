@@ -1,0 +1,36 @@
+
+/* body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+} */
+
+/* Para que el footer quede centrado */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #f5f5f5; /* opcional, para que resalte un poco */
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Para que la lista del nav-top quede sin puntos y sin subrayado azul en los enlaces */
+.nav-top ul {
+    list-style: none;           /* Quita los puntos */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;     /* Coloca los <li> uno debajo del otro */
+    gap: 12px;                  /* Espacio vertical entre ellos */
+}
+
+.nav-top li {
+    color: black;
+    font-weight: 600;
+}
+
+/* Opcional: efecto hover para que se note que es clickeable */
+.nav-top ul li a:hover {
+    color: #555; /* gris oscuro al pasar el mouse */
+}
