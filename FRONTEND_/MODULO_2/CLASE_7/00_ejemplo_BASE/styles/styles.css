@@ -1,0 +1,134 @@
+/* ====== Reset y tema mínimo ====== */
+* { box-sizing: border-box; } /* Incluye bordes en el cálculo del ancho/alto */
+html, body { margin: 0; padding: 0; } /* Saca márgenes por defecto del navegador */
+:root { /* Variables CSS reutilizables */
+  --bg: #f7f7fb; /* Color de fondo suave */
+  --text: #222; /* Color de texto principal */
+  --card: #ffffff; /* Fondo de tarjetas/boxes */
+  --muted: #d9d9e3; /* Gris clarito para bordes */
+  --primary: #6ec1e4; /* Azul pastel para detalles */
+}
+
+body { /* Estilos base del body */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; /* Tipografía */
+  background: var(--bg); /* Fondo */
+  color: var(--text); /* Texto */
+  padding: 24px; /* Respiración general */
+  line-height: 1.4; /* Altura de línea agradable */
+}
+
+/* ====== Estructura general ====== */
+.site-header, .site-footer { /* Header y footer comparten estilos */
+  background: var(--card); /* Fondo blanco */
+  border: 1px solid var(--muted); /* Borde sutil */
+  padding: 16px; /* Espaciado interno */
+  border-radius: 12px; /* Esquinas redondeadas */
+  box-shadow: 0 1px 2px rgba(0,0,0,.04); /* Sombra muy suave */
+}
+
+.logo { /* Título principal */
+  margin: 0; /* Sin espacio extra alrededor */
+}
+
+.demo { /* Secciones de demostración */
+  background: var(--card); /* Fondo blanco */
+  border: 1px dashed var(--muted); /* Borde punteado para distinguir */
+  padding: 16px; /* Espaciado */
+  margin: 24px 0; /* Separación vertical entre secciones */
+  border-radius: 12px; /* Esquinas redondeadas */
+}
+
+.demo-title { /* Título de cada demo */
+  margin: 0 0 12px; /* Abajo 12px */
+}
+
+.hint { /* Texto de ayuda */
+  font-size: 0.95rem; /* Leve reducción */
+  opacity: 0.85; /* Un poco atenuado */
+}
+
+/* ====== DEMO 1: fila con flex-grow ====== */
+.row { /* Contenedor de las cajas A, B, C */
+  display: flex; /* Activa Flexbox en fila por defecto */
+  gap: 12px; /* Espacio entre cajas */
+  border: 1px solid var(--muted); /* Borde para visualizar límites */
+  padding: 12px; /* Respiración interna */
+  background: #f0f8ff; /* Fondo suave azulado */
+}
+
+.box { /* Estilo base de cada caja */
+  background: #e8f4ff; /* Fondo de la caja */
+  border: 1px solid var(--muted); /* Borde sutil */
+  border-radius: 12px; /* Esquinas redondeadas */
+  padding: 12px; /* Espacio dentro de la caja */
+  text-align: center; /* Centra el texto */
+  flex-basis: 0; /* Base 0 para que el grow reparta todo el espacio libre */
+  /* Nota: sin esta línea, el contenido puede influir en el ancho mínimo */
+}
+
+.a { flex-grow: 1; } /* A crece en proporción 1 */
+.b { flex-grow: 2; } /* B crece el doble que A y C */
+.c { flex-grow: 1; } /* C crece en proporción 1 */
+
+/* ====== DEMO 2: layout 2 columnas ====== */
+.layout { /* Contenedor principal del layout */
+  display: flex; /* Activa Flexbox */
+  gap: 16px; /* Espacio entre columnas */
+  align-items: stretch; /* Ambas columnas con la misma altura visual */
+}
+
+.sidebar { /* Columna izquierda fija */
+  flex: 0 0 220px; /* grow:0 (no crece), shrink:0 (no se achica), base:220px */
+  background: var(--card); /* Fondo */
+  border: 1px solid var(--muted); /* Borde */
+  border-radius: 12px; /* Esquinas */
+  padding: 16px; /* Espacio interno */
+}
+
+.menu { /* Lista simple del sidebar */
+  list-style: none; /* Saca las viñetas "•" */
+  margin: 12px 0 0; /* Separación superior */
+  padding: 0; /* Sin padding */
+}
+
+.menu li { /* Ítems del menú */
+  padding: 8px 10px; /* Altura/espacio de cada ítem */
+  border: 1px solid var(--muted); /* Borde de cada opción */
+  border-radius: 10px; /* Esquinas */
+  margin-bottom: 8px; /* Separación entre ítems */
+}
+
+.main { /* Columna derecha flexible */
+  flex: 1; /* Ocupa todo el espacio restante */
+  background: var(--card); /* Fondo */
+  border: 1px solid var(--muted); /* Borde */
+  border-radius: 12px; /* Esquinas */
+  padding: 16px; /* Espacio interno */
+}
+
+.cards { /* Contenedor de tarjetas dentro del main */
+  display: flex; /* Activa Flexbox para tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas salten a nueva línea */
+  gap: 12px; /* Espacio entre tarjetas */
+  margin-top: 12px; /* Separación respecto al título */
+}
+
+.card { /* Tarjeta individual */
+  flex: 1 1 220px; /* grow:1 (puede crecer), shrink:1 (se achica), base:220px */
+  padding: 16px; /* Espacio interno */
+  border: 1px solid var(--muted); /* Borde */
+  border-radius: 12px; /* Esquinas */
+  background: #f9fcff; /* Fondo levemente distinto */
+  min-height: 70px; /* Altura mínima para que se note */
+}
+
+/* ====== Footer ====== */
+.site-footer { /* Pie de página */
+  margin-top: 24px; /* Separación del contenido anterior */
+  text-align: center; /* Centra el texto del footer */
+}
+
+/* ====== Pequeños ajustes responsivos ====== */
+@media (max-width: 720px) { /* Reglas para pantallas chicas */
+  .layout { flex-direction: column; } /* Columnas apiladas */
+  .sidebar { flex-basis: auto; } /* Sidebar toma ancho auto en columna */

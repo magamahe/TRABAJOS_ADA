@@ -1,0 +1,163 @@
+body {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1.25rem;/* /20px; */
+}
+
+.bandera {
+  width: 18.75rem; /* 300px */
+  height: 12.5rem; /* 200px */
+  margin: 1.25rem auto;
+  position: relative;
+  display: inline-block;
+}
+
+/* Horizontales */
+.argentina .franja,
+.alemania .franja,
+.rusia .franja {
+  height: 4.166rem; /* 66.66px */
+  width: 18.75rem; /* 300px */
+}
+
+.argentina .celeste { background-color: #74ACDF; }
+.argentina .blanca { background-color: white; }
+
+.alemania .negra { background-color: black; }
+.alemania .roja { background-color: red; }
+.alemania .amarilla { background-color: #FFCE00; }
+
+.rusia .blanca { background-color: white; }
+.rusia .azul { background-color: #0033A0; }
+.rusia .roja { background-color: #CE1126; }
+
+/* Verticales */
+.francia .franja,
+.italia .franja,
+.mexico .franja {
+  float: left;
+  height: 12.5rem; /* 200px */
+  width: 6.25rem; /* 100px */
+}
+
+.francia .azul-vertical { background-color: #0055A4; }
+.francia .blanca-vertical { background-color: white; }
+.francia .roja-vertical { background-color: #EF4135; }
+
+.italia .verde-vertical { background-color: #009246; }
+.italia .blanca-vertical { background-color: white; }
+.italia .roja-vertical { background-color: #CE2B37; }
+
+.mexico .verde-vertical { background-color: #006847; }
+.mexico .blanca-vertical { background-color: white; }
+.mexico .roja-vertical { background-color: #CE1126; }
+
+/* SOL BANDERA ARGENTINA*/
+.argentina .franja.blanca {
+  position: relative;
+}
+
+.sol {
+  width: 3.75rem; /* 60px */
+  height: 3.75rem;/* 60px */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sol_de_Mayo-Bandera_de_Argentina.svg/504px-Sol_de_Mayo-Bandera_de_Argentina.svg.png?20240903211632');
+  background-size: contain; /*magen de fondo se escala*/
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%; /*Mueve el punto de referencia */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*ESCUDO BANDERA MEXICO*/
+.mexico .franja.blanca-vertical {
+  position: relative;
+}
+
+.escudo-mexico {
+  width: 3.75rem; /* 60px */
+  height: 3.75rem;/* 60px */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Coat_of_arms_of_Mexico.svg/579px-Coat_of_arms_of_Mexico.svg.png?20190904201729');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* REPUBLICA DOMINICANA */
+.dominicana {
+  background-color: white;
+}
+
+.dominicana .cuadro {
+  width: 9.375rem; /* 150px */
+  height: 6.25rem; /* 100px */
+  position: absolute;
+}
+
+.dominicana .cuadro.azul:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  background-color: #002D62;
+}
+
+.dominicana .cuadro.rojo:nth-of-type(2) {
+  top: 0;
+  right: 0;
+  background-color: #CE1126;
+}
+
+.dominicana .cuadro.rojo:nth-of-type(3) {
+  bottom: 0;
+  left: 0;
+  background-color: #CE1126;
+}
+
+.dominicana .cuadro.azul:nth-of-type(4) {
+  bottom: 0;
+  right: 0;
+  background-color: #002D62;
+}
+
+.cruz-vertical {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 100%;
+  background-color: white;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.cruz-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: white;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.escudo-dominicano {
+  width: 40px;
+  height: 40px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Coat_of_arms_of_the_Dominican_Republic.svg/336px-Coat_of_arms_of_the_Dominican_Republic.svg.png?20250516143321');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+

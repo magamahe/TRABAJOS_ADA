@@ -1,0 +1,67 @@
+body {
+  background-color: #f2f7f8;
+  margin: 0;            /* para que el body ocupe toda la pantalla */
+  height: 100vh;        /* altura total ventana */
+  display: flex;        /* usar flexbox para centrar */
+  justify-content: center; /* centrar horizontal */
+  align-items: center;     /* centrar vertical */
+   font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+
+.notification {
+  display: flex;
+  flex-direction: column; /* ahora los hijos en columna, uno abajo del otro */
+  align-items: centerlef;    /* centrar contenido horizontal */
+  background: #fbfbfc;
+  color: black;
+  border-radius: 8px;
+  padding: 24px 32px;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  gap: 12px;              /* espacio entre hijos */
+  /* elimina text-align:center porque lo controla flex */
+}
+
+.icon {
+  font-size: 48px;
+  margin: 0;
+  align-self: flex-start; /* fuerza que este hijo quede alineado a la izquierda */
+}
+
+.title {
+  font-weight: bold;
+  margin: 0;
+  font-size: 20px;
+  text-align: left
+}
+
+.message {
+  font-size: 14px;
+  opacity: 0.8;
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: left;  /* texto centrado */
+}
+
+.highlight{
+    color: rgb(63, 141, 231);
+}
+
+.close-btn { background: linear-gradient(90deg, #548aff 0%, #4464d9 100%);
+  border-radius: 5px;
+  width: 120px;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(84, 138, 255, 0.5);
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+    background: linear-gradient(90deg, #4464d9 0%, #548aff 100%);
+}

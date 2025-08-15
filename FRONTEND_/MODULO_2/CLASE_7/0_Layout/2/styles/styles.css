@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column-reverse
+}
+
+header {
+    background: #ff9999;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #9999ff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20;
+}
+
+nav {
+    background: #99ff99;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    background: #ffff99;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Horizontal */
+    align-items: center;     /* Vertical */
+}

@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* ocupa todo el espacio disponible */
+}
+
+
+.footer-card {
+    background-color: #fefefe;
+    padding: 40px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #1c1c2b;
+    border-radius: 12px 12px 0 0; /* solo redondear arriba */
+    box-sizing: border-box;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: top;
+    gap: 8px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between; /* distribuye las columnas uniformemente */
+    gap: 40px; /* opcional: separa columnas con un mínimo de espacio */
+    width: 100%; /* importante para ocupar todo el ancho del contenedor */
+}
+
+
+.column {
+    flex: 1; /* cada columna toma el mismo ancho */
+    min-width: 120px; /* evita que se achiquen demasiado */
+}
+
+.column h4 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.column p {
+    font-size: 14px;
+    margin: 4px 0;
+    cursor: pointer;
+    color: #4b4b63;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.footer-center {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex: 1; /* toma todo el espacio disponible */
+}
+
+.footer-left {
+  flex-shrink: 0; /* no se encoge */
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0; /* no se encoge */
+  color: #4b4b63;
+  cursor: pointer;
+}

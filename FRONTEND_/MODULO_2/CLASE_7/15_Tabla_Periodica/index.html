@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla Periódica con Flexbox</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  
+   <div class="periodic-table">
+  <!-- Periodo 1 -->
+<div class="element non-metal" style="--col: 1;">
+  <div class="number">1</div>
+  <div class="symbol">H</div>
+  <div class="name">Hidrógeno</div>
+  <div class="mass">1.008</div>
+</div>
+<div class="element noble-gas" style="--col: 18;">
+  <div class="number">2</div>
+  <div class="symbol">He</div>
+  <div class="name">Helio</div>
+  <div class="mass">4.0026</div>
+</div>
+
+<!-- Periodo 2 -->
+<div class="element alkali-metal" style="--col: 1;">
+  <div class="number">3</div>
+  <div class="symbol">Li</div>
+  <div class="name">Litio</div>
+  <div class="mass">6.94</div>
+</div>
+<div class="element alkaline-earth" style="--col: 2;">
+  <div class="number">4</div>
+  <div class="symbol">Be</div>
+  <div class="name">Berilio</div>
+  <div class="mass">9.0122</div>
+</div>
+<div class="element metalloid" style="--col: 13;">
+  <div class="number">5</div>
+  <div class="symbol">B</div>
+  <div class="name">Boro</div>
+  <div class="mass">10.81</div>
+</div>
+<div class="element non-metal" style="--col: 14;">
+  <div class="number">6</div>
+  <div class="symbol">C</div>
+  <div class="name">Carbono</div>
+  <div class="mass">12.011</div>
+</div>
+<div class="element non-metal" style="--col: 15;">
+  <div class="number">7</div>
+  <div class="symbol">N</div>
+  <div class="name">Nitrógeno</div>
+  <div class="mass">14.007</div>
+</div>
+<div class="element non-metal" style="--col: 16;">
+  <div class="number">8</div>
+  <div class="symbol">O</div>
+  <div class="name">Oxígeno</div>
+  <div class="mass">15.999</div>
+</div>
+<div class="element halogen" style="--col: 17;">
+  <div class="number">9</div>
+  <div class="symbol">F</div>
+  <div class="name">Flúor</div>
+  <div class="mass">18.998</div>
+</div>
+<div class="element noble-gas" style="--col: 18;">
+  <div class="number">10</div>
+  <div class="symbol">Ne</div>
+  <div class="name">Neón</div>
+  <div class="mass">20.180</div>
+</div>
+
+<!-- Periodo 3 -->
+<div class="element alkali-metal" style="--col: 1;">
+  <div class="number">11</div>
+  <div class="symbol">Na</div>
+  <div class="name">Sodio</div>
+  <div class="mass">22.990</div>
+</div>
+<div class="element alkaline-earth" style="--col: 2;">
+  <div class="number">12</div>
+  <div class="symbol">Mg</div>
+  <div class="name">Magnesio</div>
+  <div class="mass">24.305</div>
+</div>
+<div class="element post-transition" style="--col: 13;">
+  <div class="number">13</div>
+  <div class="symbol">Al</div>
+  <div class="name">Aluminio</div>
+  <div class="mass">26.982</div>
+</div>
+<div class="element metalloid" style="--col: 14;">
+  <div class="number">14</div>
+  <div class="symbol">Si</div>
+  <div class="name">Silicio</div>
+  <div class="mass">28.085</div>
+</div>
+<div class="element non-metal" style="--col: 15;">
+  <div class="number">15</div>
+  <div class="symbol">P</div>
+  <div class="name">Fósforo</div>
+  <div class="mass">30.974</div>
+</div>
+<div class="element non-metal" style="--col: 16;">
+  <div class="number">16</div>
+  <div class="symbol">S</div>
+  <div class="name">Azufre</div>
+  <div class="mass">32.06</div>
+</div>
+<div class="element halogen" style="--col: 17;">
+  <div class="number">17</div>
+  <div class="symbol">Cl</div>
+  <div class="name">Cloro</div>
+  <div class="mass">35.45</div>
+</div>
+<div class="element noble-gas" style="--col: 18;">
+  <div class="number">18</div>
+  <div class="symbol">Ar</div>
+  <div class="name">Argón</div>
+  <div class="mass">39.948</div>
+</div>
+
+<!-- Periodo 4 -->
+<div class="element alkali-metal" style="--col: 1;">
+  <div class="number">19</div>
+  <div class="symbol">K</div>
+  <div class="name">Potasio</div>
+  <div class="mass">39.098</div>
+</div>
+<div class="element alkaline-earth" style="--col: 2;">
+  <div class="number">20</div>
+  <div class="symbol">Ca</div>
+  <div class="name">Calcio</div>
+  <div class="mass">40.078</div>
+</div>
+<div class="element transition-metal" style="--col: 3;">
+  <div class="number">21</div>
+  <div class="symbol">Sc</div>
+  <div class="name">Escandio</div>
+  <div class="mass">44.956</div>
+</div>
+<div class="element transition-metal" style="--col: 4;">
+  <div class="number">22</div>
+  <div class="symbol">Ti</div>
+  <div class="name">Titanio</div>
+  <div class="mass">47.867</div>
+</div>
+<div class="element transition-metal" style="--col: 5;">
+  <div class="number">23</div>
+  <div class="symbol">V</div>
+  <div class="name">Vanadio</div>
+  <div class="mass">50.942</div>
+</div>
+<div class="element transition-metal" style="--col: 6;">
+  <div class="number">24</div>
+  <div class="symbol">Cr</div>
+  <div class="name">Cromo</div>
+  <div class="mass">51.996</div>
+</div>
+<div class="element transition-metal" style="--col: 7;">
+  <div class="number">25</div>
+  <div class="symbol">Mn</div>
+  <div class="name">Manganeso</div>
+  <div class="mass">54.938</div>
+</div>
+<div class="element transition-metal" style="--col: 8;">
+  <div class="number">26</div>
+  <div class="symbol">Fe</div>
+  <div class="name">Hierro</div>
+  <div class="mass">55.845</div>
+</div>
+<div class="element transition-metal" style="--col: 9;">
+  <div class="number">27</div>
+  <div class="symbol">Co</div>
+  <div class="name">Cobalto</div>
+  <div class="mass">58.933</div>
+</div>
+<div class="element transition-metal" style="--col: 10;">
+  <div class="number">28</div>
+  <div class="symbol">Ni</div>
+  <div class="name">Níquel</div>
+  <div class="mass">58.693</div>
+</div>
+<div class="element transition-metal" style="--col: 11;">
+  <div class="number">29</div>
+  <div class="symbol">Cu</div>
+  <div class="name">Cobre</div>
+  <div class="mass">63.546</div>
+</div>
+<div class="element transition-metal" style="--col: 12;">
+  <div class="number">30</div>
+  <div class="symbol">Zn</div>
+  <div class="name">Zinc</div>
+  <div class="mass">65.38</div>
+</div>
+<div class="element post-transition" style="--col: 13;">
+  <div class="number">31</div>
+  <div class="symbol">Ga</div>
+  <div class="name">Galio</div>
+  <div class="mass">69.723</div>
+</div>
+<div class="element metalloid" style="--col: 14;">
+  <div class="number">32</div>
+  <div class="symbol">Ge</div>
+  <div class="name">Germanio</div>
+  <div class="mass">72.630</div>
+</div>
+<div class="element metalloid" style="--col: 15;">
+  <div class="number">33</div>
+  <div class="symbol">As</div>
+  <div class="name">Arsénico</div>
+  <div class="mass">74.922</div>
+</div>
+<div class="element non-metal" style="--col: 16;">
+  <div class="number">34</div>
+  <div class="symbol">Se</div>
+  <div class="name">Selenio</div>
+  <div class="mass">78.971</div>
+</div>
+<div class="element halogen" style="--col: 17;">
+  <div class="number">35</div>
+  <div class="symbol">Br</div>
+  <div class="name">Bromo</div>
+  <div class="mass">79.904</div>
+</div>
+<div class="element noble-gas" style="--col: 18;">
+  <div class="number">36</div>
+  <div class="symbol">Kr</div>
+  <div class="name">Kriptón</div>
+  <div class="mass">83.798</div>
+</div>
+
+<!-- Periodo 5 -->
+<div class="element alkali-metal" style="--col: 1;">
+  <div class="number">37</div>
+  <div class="symbol">Rb</div>
+  <div class="name">Rubidio</div>
+  <div class="mass">85.468</div>
+</div>
+<div class="element alkaline-earth" style="--col: 2;">
+  <div class="number">38</div>
+  <div class="symbol">Sr</div>
+  <div class="name">Estroncio</div>
+  <div class="mass">87.62</div>
+</div>
+<div class="element transition-metal" style="--col: 3;">
+  <div class="number">39</div>
+  <div class="symbol">Y</div>
+  <div class="name">Itrio</div>
+  <div class="mass">88.906</div>
+</div>
+<div class="element transition-metal" style="--col: 4;">
+  <div class="number">40</div>
+  <div class="symbol">Zr</div>
+  <div class="name">Circonio</div>
+  <div class="mass">91.224</div>
+</div>
+<div class="element transition-metal" style="--col: 5;">
+  <div class="number">41</div>
+  <div class="symbol">Nb</div>
+  <div class="name">Niobio</div>
+  <div class="mass">92.906</div>
+</div>
+<div class="element transition-metal" style="--col: 6;">
+  <div class="number">42</div>
+  <div class="symbol">Mo</div>
+  <div class="name">Molibdeno</div>
+  <div class="mass">95.95</div>
+</div>
+<div class="element transition-metal" style="--col: 7;">
+  <div class="number">43</div>
+  <div class="symbol">Tc</div>
+  <div class="name">Tecnecio</div>
+  <div class="mass">98</div>
+</div>
+<div class="element transition-metal" style="--col: 8;">
+  <div class="number">44</div>
+  <div class="symbol">Ru</div>
+  <div class="name">Rutenio</div>
+  <div class="mass">101.07</div>
+</div>
+<div class="element transition-metal" style="--col: 9;">
+  <div class="number">45</div>
+  <div class="symbol">Rh</div>
+  <div class="name">Rodio</div>
+  <div class="mass">102.91</div>
+</div>
+<div class="element transition-metal" style="--col: 10;">
+  <div class="number">46</div>
+  <div class="symbol">Pd</div>
+  <div class="name">Paladio</div>
+  <div class="mass">106.42</div>
+</div>
+<div class="element transition-metal" style="--col: 11;">
+  <div class="number">47</div>
+  <div class="symbol">Ag</div>
+  <div class="name">Plata</div>
+  <div class="mass">107.87</div>
+</div>
+<div class="element transition-metal" style="--col: 12;">
+  <div class="number">48</div>
+  <div class="symbol">Cd</div>
+  <div class="name">Cadmio</div>
+  <div class="mass">112.41</div>
+</div>
+<div class="element post-transition" style="--col: 13;">
+  <div class="number">49</div>
+  <div class="symbol">In</div>
+  <div class="name">Indio</div>
+  <div class="mass">114.82</div>
+</div>
+<div class="element post-transition" style="--col: 14;">
+  <div class="number">50</div>
+  <div class="symbol">Sn</div>
+  <div class="name">Estaño</div>
+  <div class="mass">118.71</div>
+</div>
+<div class="element metalloid" style="--col: 15;">
+  <div class="number">51</div>
+  <div class="symbol">Sb</div>
+  <div class="name">Antimonio</div>
+  <div class="mass">121.76</div>
+</div>
+<div class="element metalloid" style="--col: 16;">
+  <div class="number">52</div>
+  <div class="symbol">Te</div>
+  <div class="name">Telurio</div>
+  <div class="mass">127.60</div>
+</div>
+<div class="element halogen" style="--col: 17;">
+  <div class="number">53</div>
+  <div class="symbol">I</div>
+  <div class="name">Yodo</div>
+  <div class="mass">126.90</div>
+</div>
+<div class="element noble-gas" style="--col: 18;">
+  <div class="number">54</div>
+  <div class="symbol">Xe</div>
+  <div class="name">Xenón</div>
+  <div class="mass">131.29</div>
+</div>
+
+<!-- Periodo 6 -->
+<div class="element alkali-metal" style="--col: 1;">
+  <div class="number">55</div>
+  <div class="symbol">Cs</div>
+  <div class="name">Cesio</div>
+  <div class="mass">132.91</div>
+</div>
+<div class="element alkaline-earth" style="--col: 2;">
+  <div class="number">56</div>
+  <div class="symbol">Ba</div>
+  <div class="name">Bario</div>
+  <div class="mass">137.33</div>
+</div>
+<!-- Espacio para los lantánidos (bloque f) -->
+<div class="element lanthanide" style="--col: 3;">
+  <div class="number">57-71</div>
+  <div class="symbol">La-Lu</div>
+  <div class="name">Lantanidos</div>
+  <div class="mass">138.91</div>
+</div>
+<div class="element transition-metal" style="--col: 4;">
+  <div class="number">72</div>
+  <div class="symbol">Hf</div>
+  <div class="name">Hafnio</div>
+  <div class="mass">178.49</div>
+</div>
+<div class="element transition-metal" style="--col: 5;">
+  <div class="number">73</div>
+  <div class="symbol">Ta</div>
+  <div class="name">Tántalo</div>
+  <div class="mass">180.95</div>
+</div>
+<div class="element transition-metal" style="--col: 6;">
+  <div class="number">74</div>
+  <div class="symbol">W</div>
+  <div class="name">Wolframio</div>
+  <div class="mass">183.84</div>
+</div>
+<div class="element transition-metal" style="--col: 7;">
+  <div class="number">75</div>
+  <div class="symbol">Re</div>
+  <div class="name">Renio</div>
+  <div class="mass">186.21</div>
+</div>
+<div class="element transition-metal" style="--col: 8;">
+  <div class="number">76</div>
+  <div class="symbol">Os</div>
+  <div class="name">Osmio</div>
+  <div class="mass">190.23</div>
+</div>
+<div class="element transition-metal" style="--col: 9;">
+  <div class="number">77</div>
+  <div class="symbol">Ir</div>
+  <div class="name">Iridio</div>
+  <div class="mass">192.22</div>
+</div>
+<div class="element transition-metal" style="--col: 10;">
+  <div class="number">78</div>
+  <div class="symbol">Pt</div>
+  <div class="name">Platino</div>
+  <div class="mass">195.08</div>
+</div>
+<div class="element transition-metal" style="--col: 11;">
+  <div class="number">79</div>
+  <div class="symbol">Au</div>
+  <div class="name">Oro</div>
+  <div class="mass">196.97</div>
+</div>
+<div class="element transition-metal" style="--col: 12;">
+  <div class="number">80</div>
+  <div class="symbol">Hg</div>
+  <div class="name">Mercurio</div>
+  <div class="mass">200.59</div>
+</div>
+<div class="element post-transition" style="--col: 13;">
+  <div class="number">81</div>
+  <div class="symbol">Tl</div>
+  <div class="name">Talio</div>
+  <div class="mass">204.38</div>
+</div>
+<div class="element post-transition" style="--col: 14;">
+  <div class="number">82</div>
+  <div class="symbol">Pb</div>
+  <div class="name">Plomo</div>
+  <div class="mass">207.2</div>
+</div>
+<div class="element post-transition" style="--col: 15;">
+  <div class="number">83</div>
+  <div class="symbol">Bi</div>
+  <div class="name">Bismuto</div>
+  <div class="mass">208.98</div>
+</div>
+<div class="element metalloid" style="--col: 16;">
+  <div class="number">84</div>
+  <div class="symbol">Po</div>
+  <div class="name">Polonio</div>
+  <div class="mass">209</div>
+</div>
+<div class="element halogen" style="--col: 17;">
+  <div class="number">85</div>
+  <div class="symbol">At</div>
+  <div class="name">Astato</div>
+  <div class="mass">210</div>
+</div>
+<div class="element noble-gas" style="--col: 18;">
+  <div class="number">86</div>
+  <div class="symbol">Rn</div>
+  <div class="name">Radón</div>
+  <div class="mass">222</div>
+</div>
+<!-- Periodo 7 -->
+<div class="element alkali-metal" style="--col: 1;">
+  <div class="number">87</div>
+  <div class="symbol">Fr</div>
+  <div class="name">Francio</div>
+  <div class="mass">223</div>
+</div>
+<div class="element alkaline-earth" style="--col: 2;">
+  <div class="number">88</div>
+  <div class="symbol">Ra</div>
+  <div class="name">Radio</div>
+  <div class="mass">226</div>
+</div>
+
+
+
+
+<!-- Espacio para los actínidos (bloque f) -->
+<div class="element actinide" style="--col: 3;">
+  <div class="number">89-103</div>
+  <div class="symbol">Ac-Lr</div>
+  <div class="name">Actinidos</div>
+  <div class="mass">227</div>
+</div>
+<div class="element transition-metal" style="--col: 4;">
+  <div class="number">104</div>
+  <div class="symbol">Rf</div>
+  <div class="name">Rutherfordio</div>
+  <div class="mass">267</div>
+</div>
+<div class="element transition-metal" style="--col: 5;">
+  <div class="number">105</div>
+  <div class="symbol">Db</div>
+  <div class="name">Dubnio</div>
+  <div class="mass">268</div>
+</div>
+<div class="element transition-metal" style="--col: 6;">
+  <div class="number">106</div>
+  <div class="symbol">Sg</div>
+  <div class="name">Seaborgio</div>
+  <div class="mass">269</div>
+</div>
+<div class="element transition-metal" style="--col: 7;">
+  <div class="number">107</div>
+  <div class="symbol">Bh</div>
+  <div class="name">Bohrio</div>
+  <div class="mass">270</div>
+</div>
+<div class="element transition-metal" style="--col: 8;">
+  <div class="number">108</div>
+  <div class="symbol">Hs</div>
+  <div class="name">Hassio</div>
+  <div class="mass">277</div>
+</div>
+<div class="element unknown" style="--col: 9;">
+  <div class="number">109</div>
+  <div class="symbol">Mt</div>
+  <div class="name">Meitnerio</div>
+  <div class="mass">278</div>
+</div>
+<div class="element unknown" style="--col: 10;">
+  <div class="number">110</div>
+  <div class="symbol">Ds</div>
+  <div class="name">Darmstatio</div>
+  <div class="mass">281</div>
+</div>
+<div class="element unknown" style="--col: 11;">
+  <div class="number">111</div>
+  <div class="symbol">Rg</div>
+  <div class="name">Roentgenio</div>
+  <div class="mass">282</div>
+</div>
+<div class="element unknown" style="--col: 12;">
+  <div class="number">112</div>
+  <div class="symbol">Cn</div>
+  <div class="name">Copernicio</div>
+  <div class="mass">285</div>
+</div>
+<div class="element post-transition" style="--col: 13;">
+  <div class="number">113</div>
+  <div class="symbol">Nh</div>
+  <div class="name">Nihonio</div>
+  <div class="mass">286</div>
+</div>
+<div class="element post-transition" style="--col: 14;">
+  <div class="number">114</div>
+  <div class="symbol">Fl</div>
+  <div class="name">Flerovio</div>
+  <div class="mass">289</div>
+</div>
+<div class="element post-transition" style="--col: 15;">
+  <div class="number">115</div>
+  <div class="symbol">Mc</div>
+  <div class="name">Moscovio</div>
+  <div class="mass">290</div>
+</div>
+<div class="element post-transition" style="--col: 16;">
+  <div class="number">116</div>
+  <div class="symbol">Lv</div>
+  <div class="name">Livermorio</div>
+  <div class="mass">293</div>
+</div>
+<div class="element halogen" style="--col: 17;">
+  <div class="number">117</div>
+  <div class="symbol">Ts</div>
+  <div class="name">Tenesino</div>
+  <div class="mass">294</div>
+</div>
+<div class="element noble-gas" style="--col: 18;">
+  <div class="number">118</div>
+  <div class="symbol">Og</div>
+  <div class="name">Oganesón</div>
+  <div class="mass">294</div>
+</div>
+
+
+</div>
+
+<!-- Bloques f separados -->
+<div class="f-block lanthanides">
+  <div class="element lanthanide">
+  <div class="number">57</div>
+  <div class="symbol">La</div>
+  <div class="name">Lantano</div>
+  <div class="mass">138.91</div>
+</div>
+
+  <div class="element lanthanide">
+  <div class="number">58</div>
+  <div class="symbol">Ce</div>
+  <div class="name">Cerio</div>
+  <div class="mass">140.12</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">59</div>
+  <div class="symbol">Pr</div>
+  <div class="name">Praseodimio</div>
+  <div class="mass">140.91</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">60</div>
+  <div class="symbol">Nd</div>
+  <div class="name">Neodimio</div>
+  <div class="mass">144.24</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">61</div>
+  <div class="symbol">Pm</div>
+  <div class="name">Prometio</div>
+  <div class="mass">145</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">62</div>
+  <div class="symbol">Sm</div>
+  <div class="name">Samario</div>
+  <div class="mass">150.36</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">63</div>
+  <div class="symbol">Eu</div>
+  <div class="name">Europio</div>
+  <div class="mass">151.96</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">64</div>
+  <div class="symbol">Gd</div>
+  <div class="name">Gadolinio</div>
+  <div class="mass">157.25</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">65</div>
+  <div class="symbol">Tb</div>
+  <div class="name">Terbio</div>
+  <div class="mass">158.93</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">66</div>
+  <div class="symbol">Dy</div>
+  <div class="name">Disprosio</div>
+  <div class="mass">162.50</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">67</div>
+  <div class="symbol">Ho</div>
+  <div class="name">Holmio</div>
+  <div class="mass">164.93</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">68</div>
+  <div class="symbol">Er</div>
+  <div class="name">Erbio</div>
+  <div class="mass">167.26</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">69</div>
+  <div class="symbol">Tm</div>
+  <div class="name">Tulio</div>
+  <div class="mass">168.93</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">70</div>
+  <div class="symbol">Yb</div>
+  <div class="name">Iterbio</div>
+  <div class="mass">173.05</div>
+</div>
+<div class="element lanthanide">
+  <div class="number">71</div>
+  <div class="symbol">Lu</div>
+  <div class="name">Lutecio</div>
+  <div class="mass">174.97</div>
+</div>
+
+</div>
+
+<div class="f-block actinides">
+  <div class="element actinide">
+    <div class="number">89</div>
+  <div class="symbol">Ac</div>
+  <div class="name">Actinio</div>
+  <div class="mass">227</div>
+</div>
+
+  <div class="element actinide">
+  <div class="number">90</div>
+  <div class="symbol">Th</div>
+  <div class="name">Torio</div>
+  <div class="mass">232.04</div>
+</div>
+<div class="element actinide">
+  <div class="number">91</div>
+  <div class="symbol">Pa</div>
+  <div class="name">Protactinio</div>
+  <div class="mass">231.04</div>
+</div>
+<div class="element actinide">
+  <div class="number">92</div>
+  <div class="symbol">U</div>
+  <div class="name">Uranio</div>
+  <div class="mass">238.03</div>
+</div>
+<div class="element actinide">
+  <div class="number">93</div>
+  <div class="symbol">Np</div>
+  <div class="name">Neptunio</div>
+  <div class="mass">237</div>
+</div>
+<div class="element actinide">
+  <div class="number">94</div>
+  <div class="symbol">Pu</div>
+  <div class="name">Plutonio</div>
+  <div class="mass">244</div>
+</div>
+<div class="element actinide">
+  <div class="number">95</div>
+  <div class="symbol">Am</div>
+  <div class="name">Americio</div>
+  <div class="mass">243</div>
+</div>
+<div class="element actinide">
+  <div class="number">96</div>
+  <div class="symbol">Cm</div>
+  <div class="name">Curio</div>
+  <div class="mass">247</div>
+</div>
+<div class="element actinide">
+  <div class="number">97</div>
+  <div class="symbol">Bk</div>
+  <div class="name">Berkelio</div>
+  <div class="mass">247</div>
+</div>
+<div class="element actinide">
+  <div class="number">98</div>
+  <div class="symbol">Cf</div>
+  <div class="name">Californio</div>
+  <div class="mass">251</div>
+</div>
+<div class="element actinide">
+  <div class="number">99</div>
+  <div class="symbol">Es</div>
+  <div class="name">Einstenio</div>
+  <div class="mass">252</div>
+</div>
+<div class="element actinide">
+  <div class="number">100</div>
+  <div class="symbol">Fm</div>
+  <div class="name">Fermio</div>
+  <div class="mass">257</div>
+</div>
+<div class="element actinide">
+  <div class="number">101</div>
+  <div class="symbol">Md</div>
+  <div class="name">Mendelevio</div>
+  <div class="mass">258</div>
+</div>
+<div class="element actinide">
+  <div class="number">102</div>
+  <div class="symbol">No</div>
+  <div class="name">Nobelio</div>
+  <div class="mass">259</div>
+</div>
+<div class="element actinide">
+  <div class="number">103</div>
+  <div class="symbol">Lr</div>
+  <div class="name">Lawrencio</div>
+  <div class="mass">262</div>
+</div>
+</div>
+</div>
+</body>
+</html>

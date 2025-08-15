@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.outer-container {
+    position: absolute;
+    top: 1cm;
+    left: 1cm;
+    right: 1cm;
+    bottom: 1cm;
+    background-color: #e3f2fd;
+    border-radius: 30px;
+}
+
+.inner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 360px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #323781;
+    margin: 10px 0;
+}
+
+.main-email {
+    font-weight: bold;
+    color: #323781;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.description {
+    font-size: 14px;
+    color: #323781;
+    margin-bottom: 30px;
+}
+
+.recovery-section {
+    background-color: #f3f8fa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.recovery-label {
+    font-size: 18px;
+    color: #323781;
+    font-weight: bold;
+    margin: 0;
+}
+
+.recovery-email {
+    font-size: 12px;
+    color: #323781 ;
+    margin: 15px 0 15px;
+}
+
+.update-btn {
+    background-color: white;
+    color: #323781;
+    border: 1px solid #d6d6d8;
+    padding: 8px 44px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.confirm-btn {
+    background-color: #29155f;
+    color: white;
+    border: none;
+    padding: 8px 44px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

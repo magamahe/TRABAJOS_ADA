@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #ff9999;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #9999ff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+}
+
+main {
+    background: #ffff99;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Horizontal */
+    align-items: center;  
+}
+
+aside {
+    background: #ffcc99;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Horizontal */
+    align-items: center;  
+}

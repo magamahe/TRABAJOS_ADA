@@ -1,0 +1,349 @@
+body {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+.bandera {
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  position: relative;
+  display: inline-block;
+}
+
+/* Argentina */
+.argentina .franja { height: 66.66px; width: 300px; }
+.argentina .celeste { background-color: #74ACDF; }
+.argentina .blanca { background-color: white; position: relative; }
+.sol {
+  width: 60px; height: 60px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sol_de_Mayo-Bandera_de_Argentina.svg/504px-Sol_de_Mayo-Bandera_de_Argentina.svg.png');
+  background-size: contain; background-repeat: no-repeat;
+  background-position: center;
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Bolivia */
+.bolivia .franja { height: 66.66px; width: 300px; }
+.bolivia .roja { background-color: #D52B1E; }
+.bolivia .amarilla { background-color: #FFD100; }
+.bolivia .verde { background-color: #007A33; }
+
+.esc_bolivia {
+  width: 60px; height: 60px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Escudo_de_Bolivia.svg/330px-Escudo_de_Bolivia.svg.png');
+  background-size: contain; background-repeat: no-repeat;
+  background-position: center;
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Brasil */
+.brasil { background-color: #009739; }
+.brasil {
+  background-color: #009739; /* verde de fondo */
+  position: relative;
+  width: 300px; /* igual que las demás banderas */
+  height: 200px;
+}
+
+/* Triángulo hacia arriba */
+.triangulo-arriba {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent; /* la mitad del ancho */
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid #FFCC29; /* altura hasta el centro */
+}
+
+/* Triángulo hacia abajo */
+.triangulo-abajo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 100px solid #FFCC29;
+}
+
+/* Círculo azul */
+.circulo-azul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 130px;
+  height: 130px;
+  background-image: url('https://i.postimg.cc/1XJk4k0G/brazil-logo.png');
+  background-size: contain;      /* Escalar para que entre entera */
+  background-repeat: no-repeat;  /* Evitar que se repita */
+  background-position: center;   /* Centrar la imagen */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Chile */
+.chile .cuadro-azul {
+  position: absolute; top: 0; left: 0;
+  width: 100px; height: 100px; background-color: #0033A0;
+}
+
+/* Estrella blanca */
+.estrella-blanca {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: white;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
+    50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+  );
+  transform: translate(-50%, -50%);
+}
+
+.franja-blanca {
+  position: absolute; top: 0; left: 100px;
+  width: 200px; height: 100px; background-color: white;
+}
+.franja-roja {
+  position: absolute; top: 100px; left: 0;
+  width: 300px; height: 100px; background-color: #D52B1E;
+}
+
+/* Colombia & Ecuador */
+.colombia .franja{
+  height: 66.66px; width: 300px;
+}
+.colombia .amarilla{ background-color: #FFD100; }
+.colombia .azul{ background-color: #0033A0; }
+.colombia .roja{ background-color: #CE1126; }
+
+
+.ecuador .franja {
+  width: 300px;
+  height: 66.66px;
+}
+
+.ecuador .amarilla {
+  background-color: #FFD100;
+}
+
+.ecuador .azul {
+  background-color: #0033A0;
+}
+
+.ecuador .roja {
+  background-color: #CE1126;
+}
+
+/* Escudo posicionado para que cubra el límite amarillo-azul */
+.esc_ecuador {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Escudo_de_Bolivia.svg/330px-Escudo_de_Bolivia.svg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  top: 76.66px;  /* justo al límite amarillo-azul */
+  left: 50%;     /* centrado horizontal */
+  transform: translate(-50%, -50%);
+  z-index: 10;   /* para que quede arriba */
+}
+
+/* Guyana */
+.bandera.guyana {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.guyana .verde {
+  background: #009739; /* verde */
+  width: 100%;
+  height: 100%;
+}
+
+.guyana .amarillo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #f7f6f4; /* amarillo */
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.guyana .blanco {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background:#FFD100; /* borde blanco del amarillo */
+  clip-path: polygon(0 0, 97% 50%, 0 100%);
+}
+
+.guyana .rojo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: black; /* rojo */
+  clip-path: polygon(0 0, 55% 50%, 0 100%);
+}
+
+.guyana .negro {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgb(228, 23, 23); /* borde negro del rojo */
+  clip-path: polygon(0 0, 53% 50%, 0 100%);
+}
+
+/* Paraguay */
+.paraguay .franja { height: 66.66px; width: 300px; }
+.paraguay .roja { background-color: #D52B1E; }
+.paraguay .blanca { background-color: white; position: relative; }
+.paraguay .azul { background-color: #0033A0; }
+.escudo-paraguay {
+  width: 60px;
+  height: 60px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Coat_of_arms_of_Paraguay.svg/800px-Coat_of_arms_of_Paraguay.svg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Perú */
+.peru .franja {
+  float: left;
+  height: 200px;
+  width: 100px;
+}
+.peru .roja-vertical { background-color: #D91023; }
+.peru .blanca-vertical { background-color: white; position: relative; }
+.escudo-peru {
+  width: 60px;
+  height: 60px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Escudo_nacional_del_Perú.svg/480px-Escudo_nacional_del_Perú.svg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Surinam */
+.surinam .franja {
+  width: 100%;
+}
+
+.surinam .verde {
+  background-color: #377e3f;
+  height: 40px;
+}
+
+.surinam .blanca {
+  background-color: #ffffff;
+  height: 15px;
+}
+
+.surinam .roja {
+  background-color: #b40a2d;
+  height: 90px;
+  position: relative;
+}
+
+.surinam .estrella {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%,
+    68% 57%, 79% 91%, 50% 70%,
+    21% 91%, 32% 57%, 2% 35%,
+    39% 35%
+  );
+  background-color: #ffe000;
+  transform: translate(-50%, -50%);
+}
+
+/* Uruguay */.bandera.uruguay {
+  position: relative;
+  width: 300px;
+  height: 180px;
+  border: 1px solid #fdfdfd;
+}
+
+.uruguay .franjas {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.uruguay .franja {  flex: 1; }
+
+.uruguay .blanca {  background-color: white;}
+
+.uruguay .azul {   background-color: #0038A8;}
+
+.uruguay .canton {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  z-index: 2;
+  border-right: 1px solid #f5f3f3;
+  border-bottom: 1px solid #f8f6f6;
+}
+
+.uruguay .sol {
+  width: 80px;
+  height: 80px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Sol_de_Mayo-Bandera_de_Uruguay.svg/800px-Sol_de_Mayo-Bandera_de_Uruguay.svg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px auto;
+}
+
+
+
+/* Venezuela */
+.venezuela .franja {
+  height: 66.66px;
+  width: 300px;
+}
+.venezuela .amarilla { background-color: #FFD100; }
+.venezuela .azul {
+  background-color: #0033A0;
+  position: relative;
+}
+.venezuela .roja { background-color: #EF4135; }
+.estrellas-venezuela {
+  width: 300px;
+  height: 100px;
+  background-image: url('https://i.postimg.cc/wjsVP8P7/venezuela.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}

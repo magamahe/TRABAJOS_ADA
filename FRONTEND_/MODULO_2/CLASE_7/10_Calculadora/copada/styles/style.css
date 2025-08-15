@@ -1,0 +1,103 @@
+:root{
+      --bg:#1b2230;
+      --panel:#0f1624;
+      --key:#2b3447;
+      --key-accent:#46547a;
+      --op:#ff9f0a;
+      --txt:#eaf1ff;
+      --muted:#b8c3da;
+      --shadow: 0 10px 25px rgba(0,0,0,.35);
+      --radius:16px;
+    }
+*{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg,#2b3e73,#162038);
+      font-family: "Montserrat", system-ui, -apple-system, Arial, sans-serif;
+      color:var(--txt);
+    }
+
+    .calc{
+      width:min(92vw,380px);
+      background:var(--bg);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    /* Display */
+    .display{
+      background:var(--panel);
+      border-radius:12px;
+      padding:18px;
+      min-height:84px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:flex-end;
+      gap:6px;
+    }
+    .expr{
+      font-size:0.95rem;
+      color:var(--muted);
+      min-height:1.2em;
+      letter-spacing:.5px;
+      word-break:break-all;
+      text-align:right;
+      width:100%;
+    }
+    .result{
+      font-size:2rem;
+      font-weight:600;
+      letter-spacing:.5px;
+      word-break:break-all;
+      text-align:right;
+      width:100%;
+    }
+
+    /* Teclado: filas con Flexbox */
+    .rows{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .row{
+      display:flex;
+      gap:10px;
+    }
+
+    button{
+      appearance:none;
+      border:0;
+      border-radius:12px;
+      padding:16px 0;
+      flex:1;
+      background:var(--key);
+      color:var(--txt);
+      font-size:1.1rem;
+      font-weight:600;
+      cursor:pointer;
+      transition: transform .06s ease, filter .2s ease, background .2s ease;
+      box-shadow: inset 0 -2px 0 rgba(255,255,255,.03);
+    }
+    button:active{ transform: translateY(1px) scale(0.99); }
+    button:focus-visible{ outline:2px solid #7fb0ff; outline-offset:2px; }
+
+    /* Estilos por tipo */
+    .muted{ background:var(--key-accent); color:var(--txt); font-weight:600; }
+    .op{ background:var(--op); color:#111; }
+    .wide{ flex:2; }     /* “0” ocupa dos columnas */
+    .tall{ padding:16px; }/* para igualar alto si el texto es corto */
+
+    /* Pequeños toques */
+    .brand{
+      display:flex; justify-content:space-between; align-items:center;
+      font-size:.8rem; color:var(--muted); margin-top:-4px; padding:0 4px;
+    }

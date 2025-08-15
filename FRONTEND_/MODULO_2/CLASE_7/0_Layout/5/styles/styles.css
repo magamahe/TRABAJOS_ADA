@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header"
+        "left-panel main"
+        "left-panel footer";
+}
+
+header {
+    grid-area: header;
+    background: #ff9999;
+    padding: 20px;
+    text-align: center;
+}
+
+aside {
+    grid-area: left-panel;
+    background: #ffcc99;
+    padding: 20px;
+    grid-row: span 2; /* 👈 ocupa la altura de main + footer */
+}
+
+main {
+    grid-area: main;
+    background: #ffff99;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background: #9999ff;
+    padding: 20px;
+    text-align: center;
+}

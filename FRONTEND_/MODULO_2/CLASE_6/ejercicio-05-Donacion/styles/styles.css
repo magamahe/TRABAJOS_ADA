@@ -1,0 +1,72 @@
+body {
+  background-color: #dbd7d7;
+  font-family: Arial, sans-serif;
+  display: grid;              
+  place-items: center;        
+  height: 100vh;
+  margin: 0;
+}
+.donation-box {
+  background-color: #fff;
+  border-radius: 0.75rem; /* 12px */
+  padding: 1.875rem; /* 30px */
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); 
+  max-width: 25rem; /* 400px */
+  text-align: center;
+}
+
+
+.donation-box {
+  background-color: #fff;
+  border-radius: 0.75rem; /* 12px */
+  width: 20rem;  /* ancho fijo (560px) */
+  height: 20rem; /* alto igual al ancho → cuadrado */
+  padding: 2rem; /* espacio interno */
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  display: grid; /* para centrar el contenido */
+  align-content: center; /* contenido hacia arriba */
+}
+
+
+.donation-text {
+    font-size: 1.5rem; /* 18px */
+    margin-bottom: 3.25rem; /* 20px */
+    margin-top: 1.25rem; /* 20px */  
+  
+}
+
+.amount-options {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); /* ✅ 4 columnas */
+  gap: 0.625rem; /* 10px */
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.amount-options button {
+    background-color: white;
+    border:0.5px solid rgb(233, 232, 232);
+    padding: 0.625rem 1rem; /* 10px 16px */
+    border-radius: 0.2rem; /* 8px */
+    cursor: pointer;
+    font-size: 1rem; /* 16px */
+    color: #7c4dff;
+}
+
+.amount-options .selected {
+  background-color: #7c4dff;
+  color: white;
+}
+
+.continue-btn {
+  background-color: #7c4dff;
+  color: white;
+  border: none;
+  padding: 0.625rem 1rem; /* Igual a los otros */
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%; /* para que ocupe todo el ancho del grid-container */
+  max-width: 100% /* ancho de un botón */
+
+}

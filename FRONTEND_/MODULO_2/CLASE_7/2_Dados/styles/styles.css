@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    background-color: #cecccc;
+    margin: 0;
+}
+
+.contenedor {
+  display: flex;
+  gap: 20px; /* Espacio entre los dados */
+}
+
+.dado {
+  width: 80px; /* Ancho fijo de 80 píxeles para el dado */
+  height: 80px; /* Alto fijo de 80 píxeles para que sea cuadrado */
+  
+  background-color: white; /* Color de fondo blanco, como un dado real */
+  
+  border-radius: 10px; /* Bordes redondeados de 10px para suavizar las esquinas */
+  
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Sombra sutil: 
+     - 0 → desplazamiento horizontal (no se mueve a los lados)
+     - 2px → desplazamiento vertical (sombra hacia abajo)
+     - 5px → difuminado de la sombra
+     - rgba(0,0,0,0.3) → color negro con 30% de opacidad */
+  
+  display: grid; /* Convierte el dado en un contenedor de cuadrícula (Grid Layout) */
+  
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas iguales dentro del dado (1fr = 1 fracción del espacio disponible) */
+  
+  grid-template-rows: repeat(3, 1fr); /* Crea 3 filas iguales dentro del dado */
+  
+  padding: 10px; /* Espacio interno entre el borde del dado y su contenido (puntitos) */
+  
+  position: relative; /* Permite posicionar elementos hijos de manera relativa a este dado */
+}
+
+
+.numero {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+
+
+#dado1 .numero { grid-column: 2; grid-row: 2; } /* centro */
+
+#dado2 .numero:nth-child(1) { grid-column: 1; grid-row: 1; }
+#dado2 .numero:nth-child(2) { grid-column: 3; grid-row: 3; }
+
+#dado3 .numero:nth-child(1) { grid-column: 1; grid-row: 1; }
+#dado3 .numero:nth-child(2) { grid-column: 2; grid-row: 2; }
+#dado3 .numero:nth-child(3) { grid-column: 3; grid-row: 3; }
+
+#dado4 .numero:nth-child(1) { grid-column: 1; grid-row: 1; }
+#dado4 .numero:nth-child(2) { grid-column: 1; grid-row: 3; }
+#dado4 .numero:nth-child(3) { grid-column: 3; grid-row: 1; }
+#dado4 .numero:nth-child(4) { grid-column: 3; grid-row: 3; }
+
+#dado5 .numero:nth-child(1) { grid-column: 1; grid-row: 1; }
+#dado5 .numero:nth-child(2) { grid-column: 1; grid-row: 3; }
+#dado5 .numero:nth-child(3) { grid-column: 3; grid-row: 1; }
+#dado5 .numero:nth-child(4) { grid-column: 3; grid-row: 3; }
+#dado5 .numero:nth-child(5) { grid-column: 2; grid-row: 2; }
+
+#dado6 .numero:nth-child(1) { grid-column: 1; grid-row: 1; }
+#dado6 .numero:nth-child(2) { grid-column: 1; grid-row: 2; }
+#dado6 .numero:nth-child(3) { grid-column: 1; grid-row: 3; }
+#dado6 .numero:nth-child(4) { grid-column: 3; grid-row: 1; }
+#dado6 .numero:nth-child(5) { grid-column: 3; grid-row: 2; }
+#dado6 .numero:nth-child(6) { grid-column: 3; grid-row: 3; }

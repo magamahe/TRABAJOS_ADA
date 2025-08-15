@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1da1f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tweet {
+  width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-thumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.profile-name {
+  margin-left: 10px;
+}
+
+.username,
+.handle {
+  margin: 0;
+}
+
+.tweet-content {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.divider {
+  margin: 20px 0;
+  border-style: solid;
+  opacity: 0.1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats {
+  font-size: 15px;
+  display: flex;
+}
+
+.stat-number {
+  font-size: 18px;
+}
+
+.likes {
+  margin-left: 10px;
+}
+
+.action {
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+}

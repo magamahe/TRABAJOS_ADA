@@ -1,0 +1,234 @@
+/* RESET BÁSICO */
+/*Inicio del selector universal — apunta a todos los elementos del documento. Se suele usar para resets básicos. Usalo con cuidado porque afecta a todo.
+/* L1 */ * {
+  /* L2 Quita los márgenes por defecto*/ margin:0, 
+  /* L3 Quita padding por defecto.*/ padding : 0;
+  /* L4Hace que el ancho y alto incluyan padding y borde */ box-sizing: border-box;
+}
+
+/* VARIABLES GLOBALES */
+/* L5 Selector para variables CSS globales*/ :root {
+  /* L6 Variable para color de fondo*/ --bg: #f6f5ff;
+  /* L7 Color de fondo de las tarjetas*/ --card: #ffffff;
+  /* L8 Color acento — útil para links, botones, highlights.*/ --accent: #ff7eb9;
+  /* L9 Color para textos secundarios o metadata.*/ --muted: #5e5d5d;
+  /* L10 Espaciado base entre elementos. Usar rem lo vuelve relativo al tamaño raíz*/ --gap: 1rem;
+  /* L11 Radio para bordes redondeados coherentes.*/ --radius: 12px;
+  /* L12 Sombra base para elevar tarjetas de forma sutil.*/ --shadow: 0 8px 24px rgba(16,16,16,0.08);
+  /* L13 Ancho base de las tarjetas (más controlable con variable)*/ --card-width: 220px;
+}
+
+/* FONDO Y TIPOGRAFÍA */
+/* L14 Selector del body — reglas globales de tipografía y fondo.*/ 
+body {
+  /* L15 define la fuente (tipografía) del texto.
+    Aquí hay una lista de fuentes: el navegador usará la primera disponible en tu sistema.
+    Orden de ejemplo:
+        system-ui → usa la fuente del sistema operativo (rápida y coherente con tu SO).
+        -apple-system → San Francisco en macOS/iOS.
+        "Segoe UI" → Windows.
+        Roboto → Android/Google.
+        "Helvetica Neue" y Arial → alternativas universales.
+💡 Esto es una pila tipográfica: mejora compatibilidad y rendimiento porque evita cargar   fuentes externas.  .*/ 
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  /* L16 Define el espacio vertical entre líneas de texto.
+Un valor de 1.45 significa que la altura es 1.45 veces el tamaño de la fuente.
+Mejora legibilidad y evita que el texto se vea “apretado”. */ 
+  line-height: 1.45;
+  /* L17 Color de texto principal (contraste suficiente frente al fondo claro).
+  #222 es un gris oscuro (más suave que el negro puro #000), más agradable a la vista en fondos claros*/ 
+  color: #222;
+  /* L18  Fondo con degradado
+    linear-gradient crea un degradado de colores.
+    135deg → dirección del degradado (en grados).
+    var(--bg) → usa una variable CSS llamada --bg como color inicial.
+    0% → ese color empieza al inicio del degradado.
+    #ffffff → blanco puro al final.
+    100% → el blanco llega al final del fondo.
+💡 Esto da un efecto suave y moderno, en vez de un color plano..*/ 
+  background: linear-gradient(135deg, var(--bg) 0%, #ffffff 100%);
+  /* L19 
+  padding = espacio interno entre el borde del elemento y su contenido.
+    2rem → equivalente a 2 veces el tamaño de la fuente base (1rem suele ser ~16px, así que 2rem ≈ 32px).
+    Esto evita que el contenido “pegue” contra el borde de la ventana (viewport)..*/ 
+  padding: 2rem;
+}
+
+/* CONTENEDOR PRINCIPAL */
+/* L20 */ .container {
+  /* L21 
+    Define el ancho máximo que el contenedor puede tener, aunque la pantalla sea más grande.
+    Esto evita que el texto o el contenido se extienda demasiado en pantallas grandes, manteniendo una línea de lectura cómoda.
+    Si la ventana es más pequeña que 1100px, el contenedor se adapta y se reduce.*/ max-width: 1100px;
+  /* L22 
+    margin define el espacio exterior de un elemento.
+    El formato 0 auto significa:
+    0 → margen superior e inferior (sin espacio extra arriba y abajo).
+    auto → márgenes izquierdo y derecho automáticos.
+    Cuando un elemento tiene un ancho definido o máximo, margin: 0 auto lo centra horizontalmente en la pantalla.
+  */ margin: 0 auto;
+}
+
+/* HEADER SIMPLE */
+/* L23 */ header {
+  /* L24  Activa Flexbox, ideal para distribuir logo y nav
+    Cambia el modelo de caja de ese contenedor a Flexbox.
+    Esto permite distribuir los elementos hijos en fila o columna con control total sobre alineación y espacio.
+    Por defecto, flex organiza los hijos en una fila horizontal.
+  */ display: flex;
+  /* L25 
+    Alinea verticalmente (en el eje transversal del flex, que para fila es vertical) los elementos hijos al centro.
+    Si los hijos tienen diferentes alturas, todos quedarán centrados verticalmente.
+  */ align-items: center;
+  /* L26 
+    Distribuye el espacio horizontalmente (en el eje principal) de forma que:
+        El primer elemento quede pegado al inicio (izquierda).
+        El último elemento quede pegado al final (derecha).
+        El espacio restante se reparte entre los elementos, separándolos.
+    Ideal para header con logo a la izquierda y menú o botones a la derecha.
+  */ justify-content: space-between;
+  /* L27 
+    Define un espacio (gap) entre los elementos hijos, para que no estén pegados.
+    Usa una variable CSS llamada --gap (el valor se define en otro lado del CSS).
+    gap funciona muy bien con Flexbox para separar automáticamente sin usar márgenes manuales.*/ 
+    gap: var(--gap);
+  /* L28 Agrega un margen abajo del header, para separar visualmente la cabecera del contenido que viene después.*/ 
+  margin-bottom: 1.25rem;
+}
+
+/* LOGO */
+/* L29 */ 
+.logo { 
+    display: flex; 
+    align-items: center; 
+    gap: 0.6rem; }
+
+/* L30 */ 
+.logo .brand { 
+    font-weight: 700;  /*pone el texto en negrita fuerte (*/
+    font-size: 1.15rem; }
+
+/* HERO / BANNER con degradado sutil */
+/* L31 */ .hero {
+  /* L32 */ padding: 1rem;
+  /* L33   Bordes redondeados.
+    Usa una variable CSS --radius definida en otro lado (por ejemplo, --radius: 8px;).
+    Esto suaviza los bordes del banner para un look más moderno y agradable. */ border-radius: var(--radius);
+  /* L34 
+  Fondo con un degradado lineal.
+    90deg indica que el degradado va de izquierda a derecha (horizontal).
+    El degradado va de un rosa muy transparente (rgba(255,126,185,0.10)) a un celeste muy transparente (rgba(0,200,255,0.05)).
+    Los valores rgba incluyen transparencia (alfa), por eso es “sutil”.
+  */ background: linear-gradient(90deg, rgba(255,126,185,0.10), rgba(0,200,255,0.05));
+  /* L35 Aplica una sombra al banner.*/ box-shadow: var(--shadow);
+  /* L36 Espacio afuera (externo) debajo del banner para separar esta sección del contenido siguiente.*/ margin-bottom: 1rem;
+}
+
+/* TITULOS DENTRO DEL HERO */
+/* L37 */ .hero h1 { margin: 0 0 0.35rem 0; font-size: 1.4rem; }
+/* L38 */ .hero p { margin: 0; color: var(--muted); }
+
+/* TABLERO DE RECTÁNGULOS (cards) */
+/* L39 */ .cards {
+  /* L40 */ display: flex;
+  /* L41 */ gap: var(--gap);
+  /* L42 */ align-items: flex-start;
+  /* L43 */ flex-wrap: wrap;
+}
+
+/* CADA TARJETA / RECTÁNGULO */
+/* L44 */ .card {
+  /* L45 fondo*/ background: var(--card);
+  /* L46 ancho*/ width: var(--card-width);
+  /* L47 alto*/ height: 150px;
+  /* L48 redondeado*/ border-radius: var(--radius);
+  /* L49 sombra*/ box-shadow: var(--shadow);
+  /* L50 espacio a borde interno*/ padding: 0.9rem;
+  /* L51 */ display: flex;
+  /* L52 */ flex-direction:column;
+  /* L53 */ justify-content: space-between;
+  /* L54 Añade una animación suave (transición) para cuando cambien las propiedades transform (por ejemplo, escalado o movimiento) y box-shadow (cambio de sombra).
+
+Duración de 0.22 segundos con una curva de aceleración “ease” (suave).*/ transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+/* INTERACCIÓN: hover en tarjeta 
+Aplica estos estilos solo cuando el usuario pone el cursor encima de una tarjeta (hover es el evento de pasar el mouse).*/
+/* L55 */ .card:hover {
+  /* L56 
+    Mueve la tarjeta 6 píxeles hacia arriba en el eje vertical (Y).
+    Es un movimiento suave y sutil que da la sensación de que la tarjeta “flota” o se eleva cuando pasas el mouse.
+*/ transform: translateY(-6px);
+  /* L57 */ box-shadow: 0 16px 48px rgba(16,16,16,0.12);
+}
+
+/* IMAGEN DENTRO DE LA TARJETA */
+/* L58 */ .card img {
+  /* L59 */ width: 100%;
+  /* L60 */ height: 80px;
+  /* L61  la imagen se recorte proporcionalmente  sin deformarse.*/ object-fit: cover;
+  /* L62 */ border-radius: 8px;
+  /* L63  la imagen sea un elemento de bloque,*/ display: block;
+}
+
+/* TEXTO DENTRO DE LA TARJETA */
+/* L64 */ .card .title { font-weight: 600; font-size: 1rem; margin-top: 0.45rem; }
+/* L65 */ .card .meta  { font-size: 0.85rem; color: var(--muted); }
+
+/* LISTA ESTILIZADA */
+/* L66 */ ul.lista {
+  /* L67 posición de los marcadores
+    disc es un círculo sólido (el marcador típico de listas con viñetas).
+    outside indica que el marcador se posiciona fuera del contenido de la lista, es decir, en el margen izquierdo (fuera del texto).*/ list-style: disc  outside;
+  /* L68 */ padding-left: 1.2rem;
+  /* L69 */ margin-top: 0.5rem;
+}
+/* L70 separacion entre li*/ ul.lista li { margin-bottom: 0.45rem; }
+
+/* LINKS / REFERENCIAS */
+/* L71 */ .links a {
+  /* L72 color texto*/ color: var(--accent);
+  /* L73 quita subryado*/ text-decoration: none;
+  /* L74 espacio abajo*/ padding-bottom: 2px;
+  /* L75 Crea un borde inferior de 2px, estilo punteado, pero invisible (transparent) por defecto.*/ border-bottom: 2px dashed transparent;
+  /* L76 Hace que todos los cambios de estilo (color, transform, borde) ocurran suavemente en 0.18 segundos.*/ transition: all 0.18s ease;
+}
+/* L77 Cuando el usuario pone el cursor encima (hover) o enfoca el link con teclado (focus):*/ 
+.links a:hover, .links a:focus { 
+    border-bottom-color: var(--accent); /* El borde punteado inferior se vuelve visible y toma el color --accent*/
+    transform: translateY(-1px);  /*El link se mueve ligeramente 1 píxel hacia arriba, para dar un efecto de elevación.*/
+    outline: none; /*Quita el contorno por defecto que el navegador pone cuando el link está enfocado (porque se usa un estilo personalizado).
+
+*/
+}
+
+/* FOCO ACCESIBLE */
+/* L78 Para mejorar la accesibilidad, cuando un link recibe foco y solo si es visible (por ejemplo, cuando navegas con teclado):*/ 
+a:focus-visible { 
+    outline: 3px solid rgba(255,126,185,0.18); /*Muestra un contorno visible y suave alrededor del link para que usuarios que navegan con teclado sepan dónde están.*/
+    outline-offset: 3px;/*El contorno está separado 3px del borde del link, para que no se vea muy pegado.*/ 
+}
+
+/* PIE / FOOTER */
+/* L79 */ .footer { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+
+/* TARJETA CON DEGRADADO FUERTE */
+/* L80 */ .grad { background: linear-gradient(135deg, #ff9a9e 0%, #fbc2eb 100%); color: #222; }
+
+/* MEDIA QUERY: pantallas pequeñas */
+/* L81 */ @media (max-width: 640px) {
+  /* L82 */ .cards { flex-direction: column; gap: 0.9rem; }
+  /* L83 */ .card  { width: 100%; height: auto; }
+}
+
+/* SELECTOR POR ATRIBUTO (ejemplo) */
+/* L84 */ .card[data-type="destacado"] { border: 2px solid rgba(255,126,185,0.24); }
+
+/* SELECTOR CONTAINS (enlaces que contienen "github") */
+/* L85 */ a[href*="github"] { font-weight: 700; }
+
+/* ÚLTIMO ELEMENTO DE LISTA */
+/* L86 */ ul.lista li:last-child { font-style: italic; color: #444; }
+
+/* OCULTAR ELEMENTOS VACÍOS */
+/* L87 */ div:empty { display: none; }

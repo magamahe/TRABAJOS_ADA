@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Poppins', sans-serif;
+  background-color: #f3f3f5;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 1100px;
+}
+
+/* Título principal */
+.main-title {
+  margin-bottom: 30px;
+  max-width: 70%;
+}
+
+/* Fila con las cajas y la columna derecha */
+.content-row {
+  display: flex;
+  gap: 40px;
+}
+
+/* Contenedor de las cajas */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 2;
+}
+
+/* Cada caja */
+.feature {
+  flex: 1 1 calc(50% - 10px);
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: none; /* borde eliminado */
+}
+
+.feature.yellow {
+  background: #ffbf00;
+  color: white;
+}
+
+/* Columna derecha */
+.right {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  align-self: flex-start; /* se alinea arriba de las cajas */
+}
+
+.right h4 {
+  margin-bottom: 15px;
+}
+
+.right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right li {
+  margin-bottom: 12px;
+}
+
+.right a {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.right span {
+  display: block;
+  font-size: 12px;
+  color:  #ffbf00;
+}
+.blog-list li {
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.blog-list li:hover {
+  background-color: #e6f4ff; /* celestito suave */
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: #FFD54F; /* Amarillo por defecto */
+  color: white; /* Color del icono */
+}
+
+/* Primera caja: círculo blanco, icono amarillo */
+.feature:first-child .icon {
+  background-color: white; /* círculo blanco */
+  color: #FFD54F; /* icono amarillo */
+}

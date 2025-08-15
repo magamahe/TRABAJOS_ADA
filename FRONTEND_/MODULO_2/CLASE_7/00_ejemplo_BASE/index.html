@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento: HTML5 -->
+<html lang="es"> <!-- Idioma principal del documento en español -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres para acentos/ñ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive en móviles -->
+  <title>Flexbox paso a paso</title> <!-- Título de la pestaña -->
+  <link rel="stylesheet" href="styles/styles.css"> <!-- Enlace a nuestro CSS externo -->
+</head>
+<body>
+  <!-- Cabecera simple para ubicar el proyecto -->
+  <header class="site-header"> <!-- Contenedor del encabezado -->
+    <h1 class="logo">Mi Demo Flexbox</h1> <!-- Título/logo -->
+  </header>
+
+  <!-- DEMO 1: Fila con 3 cajas para ver flex-grow en acción -->
+  <section class="demo demo-grow"> <!-- Sección de demostración de crecimiento -->
+    <h2 class="demo-title">Demo: flex-grow</h2> <!-- Título de la sección -->
+
+    <div class="row"> <!-- Contenedor flex en fila -->
+      <div class="box a">A</div> <!-- Caja A con grow 1 -->
+      <div class="box b">B</div> <!-- Caja B con grow 2 (crece el doble) -->
+      <div class="box c">C</div> <!-- Caja C con grow 1 -->
+    </div>
+
+    <p class="hint">Probá achicar/agrandar la ventana y mirá cómo B ocupa el doble que A y C.</p> <!-- Ayuda -->
+  </section>
+
+  <!-- DEMO 2: Layout de dos columnas (sidebar + contenido) usando Flexbox -->
+  <section class="demo demo-layout"> <!-- Sección de demostración de layout -->
+    <h2 class="demo-title">Demo: layout 2 columnas</h2> <!-- Título de la sección -->
+
+    <div class="layout"> <!-- Contenedor flex de layout -->
+      <aside class="sidebar"> <!-- Columna izquierda fija -->
+        <h3>Sidebar</h3> <!-- Subtítulo -->
+        <ul class="menu"> <!-- Lista de navegación ficticia -->
+          <li>Inicio</li> <!-- Ítem 1 -->
+          <li>Productos</li> <!-- Ítem 2 -->
+          <li>Contacto</li> <!-- Ítem 3 -->
+        </ul>
+      </aside>
+
+      <main class="main"> <!-- Columna derecha flexible -->
+        <h3>Contenido principal</h3> <!-- Subtítulo -->
+        <div class="cards"> <!-- Contenedor de tarjetas (flex+wrap) -->
+          <article class="card">Tarjeta 1</article> <!-- Tarjeta 1 -->
+          <article class="card">Tarjeta 2</article> <!-- Tarjeta 2 -->
+          <article class="card">Tarjeta 3</article> <!-- Tarjeta 3 -->
+          <article class="card">Tarjeta 4</article> <!-- Tarjeta 4 -->
+          <article class="card">Tarjeta 5</article> <!-- Tarjeta 5 -->
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="site-footer"> <!-- Contenedor del pie -->
+    <small>Hecho con ❤ y Flexbox</small> <!-- Texto pequeño -->
+  </footer>
+</body>
+</html>

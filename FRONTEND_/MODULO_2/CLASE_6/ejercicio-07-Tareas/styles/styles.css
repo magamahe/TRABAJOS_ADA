@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #1f4e94;
+  font-family: Arial, sans-serif;
+}
+
+.board {
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  background;
+}
+
+.task-section {
+  background-color: #e3e6e7;
+  border-radius: 4px;
+  padding: 0px 10px ;
+    border: 1px solid #e3e6e7;
+}
+
+.task-list {
+    background-color: white;
+    list-style-type: disc;
+    list-style-type: none;
+    padding-left: 0; /* opcional: quita indentación */
+}
+
+.task-list li {
+    
+    border-bottom: 0.3rem solid  #e3e6e7;
+    color: #0d2f63;
+    padding: 0.5rem 1rem;
+}
+.task-list li:last-child {
+  border-bottom: none; /* Sin línea en el último ítem */
+}
+.add-card {
+    background-color: #e3e6e7;
+    color: #888787;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    
+}
+
+h2{
+    color: wheat;
+}

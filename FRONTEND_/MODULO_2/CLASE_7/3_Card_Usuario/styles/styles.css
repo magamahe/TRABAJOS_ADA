@@ -1,0 +1,139 @@
+/* ---------- Reset y base ---------- */
+/*evita que padding cambie el ancho visual.*/
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root{
+  --bg: #F6F8FF;
+  --card-bg: #FFFFFF;
+  --accent: #7C6CF6;
+  --muted: #6b6b7a;
+  --card-width: 400px;
+}
+
+body{
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px;
+  color: #222;
+}
+
+.page{ width:100%; display:flex; align-items:center; justify-content:center; }
+
+.card{
+  width: var(--card-width);
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 20px 18px 80px; /* espacio inferior para el botón superpuesto */
+  position: relative;      /* importante para posicionar absoluto los hijos (.more, .cta) */
+  box-shadow: 0 10px 30px rgba(30,30,60,0.06);
+  overflow: visible;
+}
+
+.more, .card__more{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--muted);
+  padding: 6px;
+  line-height: 1;
+  border-radius: 8px;
+}
+.more:hover, .card__more:hover{
+  background: rgba(0,0,0,0.04);
+}
+.more i{ display:inline-block; vertical-align:middle; }
+
+/* si la imagen está dentro de la card */
+.card img, .card__avatar{
+  display: block;
+  width: 104px;
+  height: 104px;
+  border-radius: 999px;      /* círculo */
+  object-fit: cover;
+  border: 8px solid var(--bg); /* anillo grueso (usa el color de fondo para efecto) */
+  margin: 24px auto 0;      /* centrado horizontal y separación superior */
+  box-shadow: 0 8px 20px rgba(30,30,60,0.08);
+}
+
+.card h2, .card__name{
+  text-align: center;
+  margin-top: 14px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.card .role, .card__role{
+  text-align: center;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+.techs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 8px;
+}
+
+.techs span {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  color: var(--accent);
+  border: 1px solid var(--accent); /* borde visible */
+}
+
+.card__bio, .card p.bio, .card p{
+  margin: 12px 12px 0;
+  text-align: center;
+  color: #4a4a58;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.card__cta, .cta, .card a.cta{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;                       /* sobre la base */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 100%;
+  /*width: calc(100% - 36px);*/
+  
+  margin-right: 18px;
+  text-decoration: none;
+  color: #fff;
+  background: var(--accent);
+   /* solo las esquinas inferiores redondeadas */
+    border-radius: 0 0 18px 18px; /* top-left top-right bottom-right bottom-left */
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(124,108,246,0.12);
+}
+.card__cta:hover{ transform: translateY(-2px); transition: transform .18s ease; }
+
+
+
+/* ///////////////////////////////////
+PARA CELULAR
+///////////////////////////////////// */
+
+@media (max-width: 360px){
+  :root{ --card-width: 92vw; }
+  .card img{ width: 92px; height: 92px; border-width: 6px; }
+  .card{ padding-bottom: 92px; } /* deja espacio para el botón en móvil */
+}

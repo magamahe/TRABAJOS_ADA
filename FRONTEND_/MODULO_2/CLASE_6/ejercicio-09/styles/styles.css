@@ -1,0 +1,70 @@
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.events {
+  background-color: #fff;
+  width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+.header {
+  padding: 10px 30px;
+}
+
+.header-title {
+  font-weight: 900;
+  color: #343434;
+  font-size: 40px;
+}
+
+.filters {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.filter {
+  margin-right: 10px;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.filter-selected {
+  background-color: #343434;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.event {
+  padding: 40px 30px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.event-last {
+  border-bottom: 0;
+}
+
+.event-time {
+  color: #a3a3a3;
+}
+
+.event-title {
+  color: #343434;
+}
+
+.event-description {
+  color: #8c8c8c;
+}
+
+.event-status {
+  color: #ec6189;
+  margin-right: 10px;
+}
+
+.see-more-link {
+  text-decoration: none;
+  font-size: 14px;
+}

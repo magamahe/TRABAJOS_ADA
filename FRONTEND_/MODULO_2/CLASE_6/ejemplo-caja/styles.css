@@ -1,0 +1,20 @@
+.box {
+  width: 200px;
+  height: 100px;
+  margin: 40px;
+  border: 6px solid black;
+  padding: 20px;
+  background-color: red;  /* color del padding */
+  outline: 3px dashed blue;
+  box-sizing: content-box;
+}
+
+.content {
+  width: 100%;          /* ocupa todo el ancho disponible dentro del padding */
+  height: 100%;         /* ocupa toda la altura disponible */
+  background-color: white;  /* color del contenido */
+  text-align: center;
+  line-height: 100px;       /* para centrar vertical el texto */
+  font-weight: bold;
+  box-sizing: border-box;  /* para que el padding o border (si tuviera) no agreguen tamaño */
+}

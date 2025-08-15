@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora Flexbox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div class="calc">
+    <div class="brand">
+      <span>FlexCalc</span>
+      <span>HTML + CSS</span>
+    </div>
+
+    <div class="display" aria-live="polite">
+      <div class="expr">12 × 3 + 4</div>
+      <div class="result">40</div>
+    </div>
+
+    <div class="rows" role="group" aria-label="Teclado de calculadora">
+      <div class="row">
+        <button class="muted">AC</button>
+        <button class="muted">±</button>
+        <button class="muted">%</button>
+        <button class="op">÷</button>
+      </div>
+      <div class="row">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="op">×</button>
+      </div>
+      <div class="row">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="op">−</button>
+      </div>
+      <div class="row">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="op">+</button>
+      </div>
+      <div class="row">
+        <button class="wide">0</button>
+        <button class="tall">.</button>
+        <button class="op">=</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 1px;
+  margin-bottom: 10px;
+}
+
+.f-block {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 4px;
+  margin-top: 20px;
+}
+.f-block.lanthanides .element:first-child , .f-block.actinides .element:first-child {
+  grid-column-start: 4; /* Empieza en la columna que quieras */
+}
+
+ .element {
+  border: 1px solid #ccc;
+  padding: 4px;
+  text-align: center;
+  font-family: sans-serif;
+  border-radius: 4px;
+  color: #333;
+  grid-column: var(--col);
+} 
+
+.element:hover {
+  transform: scale(1.1);
+}
+
+/* Contenido interno */
+.element .number { font-size: clamp(0.4rem, 1vw, 0.8rem); }
+.element .symbol { font-size: clamp(0.7rem, 1.5vw, 1.4rem); font-weight: bold; }
+.element .name   { font-size: clamp(0.4rem, 1vw, 0.9rem); margin-top: 2px; }
+.element .mass   { font-size: clamp(0.4rem, 1vw, 0.8rem); }
+
+/* Colores por categoría */
+.alkali-metal       { background-color: #ff6666; }
+.alkaline-earth     { background-color: #ffdead; }
+.transition-metal   { background-color: #ffbfff; }
+.post-transition    { background-color: #cccccc; }
+.metalloid          { background-color: #cccc99; }
+.non-metal          { background-color: #99cc99; }
+.halogen            { background-color: #c0ffff; }
+.noble-gas          { background-color: #b3e3f5; }
+.lanthanide         { background-color: #ffbfff; }
+.actinide           { background-color: #ff99cc; }
+.unknown            { background-color: #e0e0e0; }

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:800");
+
+body {
+  background-color: #eeeeee;
+  text-align: center;
+  color: #fff;
+}
+
+.product-card {
+  background: #cb2140;
+  overflow: hidden;
+  margin: 50px auto;
+  border-radius: 18px;
+  width: 600px;
+  padding: 40px 0 0;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.7);
+}
+
+.product-image {
+  display: block;
+  width: 200px;
+  margin: 20px auto 55px;
+}
+
+.product-info {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  background: #0c1f2c;
+  padding: 40px;
+}
+
+.product-name {
+  font-weight: 800;
+  line-height: 46px;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  font-weight: 300;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-weight: bold;
+  line-height: normal;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 100px;
+  border: 1px solid #cb2140;
+  margin: 0 5px;
+}
+
+.add-to-cart-btn {
+  width: 200px;
+  height: 48px;
+  background: #cb2140;
+  border-radius: 90px;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 0 24px;
+  color: #fff;
+  border: 0;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.add-to-cart-btn-text {
+  line-height: 48px;
+}

@@ -1,0 +1,49 @@
+body {
+    font-family: "Muli", sans-serif;
+    background-color: #a5d6a7;
+    color: #242e4c;
+}
+
+.Contenedor {
+    width: 250px;
+    padding: 30px;
+    background-color: #f7f7fc;
+    text-align: center;
+    border-radius: 10px;
+    margin: 150px auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.fruta {
+    width: 160px;
+    background-color: #ffffff;
+    border: 1px solid #ebebf2;
+    border-radius: 100px;
+    padding: 5px;
+    margin: 0 auto 10px;
+}
