@@ -1,0 +1,65 @@
+/* =======================
+   RESET + VARIABLES GLOBALES
+   ======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colores */
+  --header: pink;
+  --footer: plum;
+  --nav: purple;
+  --side: violet;
+  --main: white;
+
+  /* Texto */
+  --text-color: #000;
+  --font: Arial, sans-serif;
+
+  /* Espaciados */
+  --gap: 10px;
+  --padding: 10px;
+}
+
+/* =======================
+   ESTILOS GENERALES
+   ======================= */
+body {
+  font-family: var(--font);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header, footer, nav, .left, .right, main {
+  padding: var(--padding);
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Colores por secciones */
+header { background: var(--header); }
+footer { background: var(--footer); }
+nav    { background: var(--nav); color: white; }
+.left  { background: var(--side); }
+.right { background: var(--side); }
+main   { background: var(--main); flex: 1; }
+
+/* =======================
+   CONTENEDOR FLEX GENERAL
+   ======================= */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Filas internas con flex */
+.row {
+  display: flex;
+  flex: 1;
+  gap: var(--gap);
+}

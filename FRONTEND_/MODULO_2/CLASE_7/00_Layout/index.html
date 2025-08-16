@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Páginas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+   body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  overflow-y: auto; /* ← permite scroll vertical */
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px; /* ← más espacio entre tarjetas */
+  padding: 24px;
+}
+
+.card {
+  height: 220px; /* ← más estirado verticalmente */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none;
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>Layout</h1>
+
+  <div class="grid">
+    <div class="card" onclick="window.location='index1.html'"><iframe src="index1.html"></iframe></div>
+    <div class="card" onclick="window.location='index2.html'"><iframe src="index2.html"></iframe></div>
+    <div class="card" onclick="window.location='index3.html'"><iframe src="index3.html"></iframe></div>
+    <div class="card" onclick="window.location='index4.html'"><iframe src="index4.html"></iframe></div>
+    <div class="card" onclick="window.location='index5.html'"><iframe src="index6.html"></iframe></div>
+    <div class="card" onclick="window.location='index6.html'"><iframe src="index6.html"></iframe></div>
+    <div class="card" onclick="window.location='index7.html'"><iframe src="index7.html"></iframe></div>
+    <div class="card" onclick="window.location='index8.html'"><iframe src="index8.html"></iframe></div>
+    <div class="card" onclick="window.location='index9.html'"><iframe src="index9.html"></iframe></div>
+    <div class="card" onclick="window.location='index10.html'"><iframe src="index10.html"></iframe></div>
+    <div class="card" onclick="window.location='index11.html'"><iframe src="index11.html"></iframe></div>
+    <div class="card" onclick="window.location='index12.html'"><iframe src="index12.html"></iframe></div>
+  </div>
+
+</body>
+</html>

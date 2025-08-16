@@ -1,0 +1,306 @@
+/* ==========================
+   LAYOUT 1 → Header - Main - Footer
+   ========================== */
+.layout1 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.layout1 main {
+  flex: 1;
+  align-content: center;
+  justify-content: center;
+}
+
+/* ==========================
+   LAYOUT 2 → Header - Nav - Main - Footer
+   ========================== */
+.layout2 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout2 nav {
+  flex: 0 0 auto;
+}
+
+.layout2 main {
+  flex: 1;
+    align-content: center;
+  justify-content: center;
+}
+
+/* ==========================
+   LAYOUT 3 → Header - Left + Main - Footer
+   ========================== */
+.layout3 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout3 .content {
+  display: flex;
+  flex: 1;
+  
+}
+
+.layout3 main {
+  flex: 1;
+  align-content: center;
+  justify-content: center;
+  
+}
+.layout3 .left{
+  align-content: center;
+  justify-content: center;
+}
+
+/* ==========================
+   LAYOUT 4 → Header - Main + Right - Footer
+   ========================== */
+.layout4 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout4 .content {
+  display: flex;
+  flex: 1;
+}
+
+.layout4 main {
+  flex: 1;
+     align-content: center;
+  justify-content: center;
+}
+.layout4 .right{
+     align-content: center;
+  justify-content: center;
+}
+
+/* ==========================
+   LAYOUT 5 → Header - Left - Main - Footer
+   ========================== */
+.layout5 {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.layout5 .content {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  
+}
+
+.layout5 main {
+  flex: 1;
+  align-content: center;
+  justify-content: center;
+  
+}
+.layout5 .left{
+
+  align-content: center;
+  justify-content: center;
+}
+
+/* ==========================
+   LAYOUT 6 → Header - Main - Footer -Right
+   ========================== */
+.layout6 {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.layout6 .content {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  
+}
+
+.layout6 main {
+  flex: 1;
+  align-content: center;
+  justify-content: center;
+  
+}
+.layout6 .right{
+
+  align-content: center;
+  justify-content: center;
+}
+
+/* ==========================
+   LAYOUT 7 → Header - Navigation Bar - Left + Main - Footer
+   ========================== */
+.layout7 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout7 .content {
+  display: flex;
+  flex: 1;
+}
+
+.layout7 main {
+  flex: 1;
+     align-content: center;
+  justify-content: center;
+}
+.layout7 .left{
+     align-content: center;
+  justify-content: center;
+}
+
+/* ==========================
+   LAYOUT 8 → Header - Navigation Bar - Main + Right - Footer
+   ========================== */
+.layout8 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout8 .content {
+  display: flex;
+  flex: 1;
+}
+
+.layout8 main {
+  flex: 1;
+     align-content: center;
+  justify-content: center;
+}
+.layout8 .right{
+     align-content: center;
+  justify-content: center;
+}
+
+/* ==========================
+   LAYOUT 9 → Left -Header - Navigation Bar - Main - Footer
+   ========================== */
+.layout9 {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.layout9 .content {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  
+}
+
+.layout9 main {
+  flex: 1;
+  align-content: center;
+  justify-content: center;
+  
+}
+.layout9 .left{
+
+  align-content: center;
+  justify-content: center;
+}
+
+/* ==========================
+   LAYOUT 10 → Header -Navigation Bar - Main - Footer -Right
+   ========================== */
+.layout10 {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.layout10 .content {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  
+}
+
+.layout10 main {
+  flex: 1;
+  align-content: center;
+  justify-content: center;
+  
+}
+.layout10 .right{
+
+  align-content: center;
+  justify-content: center;
+}
+
+/* ==========================
+   LAYOUT 11 → Header - Left - Main + Right - Footer
+   ========================== */
+.layout11 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout11 .content {
+  display: flex;
+  flex: 1;
+}
+
+.layout11 main {
+  flex: 1;
+     align-content: center;
+  justify-content: center;
+}
+.layout11 .right{
+     align-content: center;
+  justify-content: center;
+}
+
+.layout11 .left{
+     align-content: center;
+    justify-content: center;
+}
+
+/* ==========================
+   LAYOUT 12 → Header - Navigation Bar - Left - Main + Right - Footer
+   ========================== */
+.layout12 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout12 .content {
+  display: flex;
+  flex: 1;
+}
+
+.layout12 main {
+  flex: 1;
+     align-content: center;
+  justify-content: center;
+}
+.layout12 .right{
+     align-content: center;
+  justify-content: center;
+}
+
+.layout12 .left{
+     align-content: center;
+    justify-content: center;
+}

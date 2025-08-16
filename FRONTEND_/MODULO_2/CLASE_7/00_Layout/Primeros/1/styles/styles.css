@@ -25,7 +25,7 @@ footer {
     text-align: center;
 }
 
-.container {
+.content {
     flex: 1;
     display: flex;
 }
