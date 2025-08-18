@@ -1,0 +1,146 @@
+:root {
+  --color-fondo-deg1: #c2c1f0;
+  --color-fondo-deg2: #a18ae6;
+  --color-modal: #181634;
+  --color-box-claro: #221f43;
+  --color-texto: #ffffff;
+  --color-texto-suave: #8d8d8d;
+  --color-estrella-llena: #f4c542;
+  --color-boton-grad1: #7a4cf0;
+  --color-boton-grad2: #a15dfc;
+  --color-link: #888;
+}
+
+body {
+  background: linear-gradient(135deg, var(--color-fondo-deg1), var(--color-fondo-deg2));
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: var(--color-modal);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  color: var(--color-texto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-texto-suave);
+  cursor: pointer;
+}
+
+.close::after {
+  content: "✕";
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.question {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-texto);
+}
+
+.container1 {
+  background-color: var(--color-box-claro);
+  border-radius: 12px;
+  padding: 1.2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.stars {
+  display: flex;
+  justify-content: center; /* centradas */
+  gap: 1.2rem; /* separación uniforme */
+  font-size: 2.2rem;
+}
+
+.star {
+  cursor: pointer;
+  color: transparent; /* vacías */
+  -webkit-text-stroke: 1px var(--color-estrella-llena); /* borde dorado */
+  transition: transform 0.2s;
+}
+
+.star.filled {
+  color: var(--color-estrella-llena);
+  background: linear-gradient(180deg, #ffd966, #f4b400); /* dorado degradado */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  width: 60%; /* un poco menos del ancho total */
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-texto-suave);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.primary {
+  background: linear-gradient(135deg, var(--color-boton-grad1), var(--color-boton-grad2));
+  color: rgb(212, 209, 209);
+  border: none;
+  border-radius: 2px;
+  padding: 0.8rem;
+  font-weight: 400;
+  width: 40%;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  box-shadow: inset 0 0 20px rgba(255,255,255,0.1);
+}
+
+.primary:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.link {
+  font-size: 0.85rem;
+  color: var(--color-link);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--color-estrella-llena);
+}
