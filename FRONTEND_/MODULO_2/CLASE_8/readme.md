@@ -15,7 +15,7 @@
   - Cuando la pantalla tiene menos de 900px y más de 600px, el `h1` debería tener 32px de tamaño de fuente.
   - Cuando la pantalla tiene menos de 600px, el `h1` debería tener 24px de tamaño de fuente.
 - En cada breakpoint, cambiar el color de fondo del `body`.
-
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_8/ejercicio_01/index.html) 
 ---
 
 ### 02 - Header
@@ -30,7 +30,7 @@
 - Poner un breakpoint para que cuando el ancho de la pantalla esté por cubrir los links, los links se oculten y en un su lugar aparezca un ícono.
 - Usar [este](https://fontawesome.com/icons/bars?style=solid) ícono de Font Awesome.
 - El ícono tiene que estar alineado a la derecha en el `header`.
-
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_8/ejercicio_02/index.html) 
 ---
 
 ### 03 - Servicios I
@@ -38,7 +38,7 @@
 - Repetir el ejercicio de [Servicios I](https://1exqr.csb.app/) de la clase 07 - Flexbox.
 - Agregarle un breakpoint para mobile, de modo tal que los servicios queden uno debajo del otro.
 - En dicho breakpoint, tanto los textos como los íconos tienen que quedar centrados horizontalmente.
-
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_8/ejercicio_03/index.html) 
 ---
 
 ### 04 - Servicios II
@@ -46,9 +46,15 @@
 - Repetir el ejercicio de [Servicios II](https://m403i.csb.app/) de la clase 07 - Flexbox.
 - Agregarle un breakpoint para mobile, de modo tal que los servicios queden uno debajo del otro.
 - En dicho breakpoint, el ícono tiene que quedar arriba del texto, y tanto los textos como los íconos tienen que quedar alineados a la izquierda.
-
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_8/ejercicio_04/index.html) 
 ---
 
 ### 05 - Card de Producto
 
 - Replicar la siguiente [card de producto](https://mnyo0.csb.app/), responsive incluido
+  - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_8/ejercicio_05/index.html) 
+  - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_8/ejercicio_051/index.html) 
+
+
+### EXTRA - Completar codigo en clases
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_8/TRABAJO_EXTRA/index.html)
