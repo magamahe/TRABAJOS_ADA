@@ -1,0 +1,38 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  height: 100vh;          /* ocupa todo el alto de la pantalla */
+  width: 100vw;           /* ocupa todo el ancho */
+  display: flex;          /* para centrar con flexbox */
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  background-color: #87ceeb; /* color de fondo inicial */
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease; /* animación suave si cambiamos propiedades */
+}
+
+/* Breakpoint: entre 600px y 900px */
+@media (max-width: 900px) and (min-width: 601px) {
+  body {
+    background-color: #ffb347; /* nuevo color de fondo */
+  }
+  h1 {
+    font-size: 32px;
+  }
+}
+
+/* Breakpoint: menos de 600px */
+@media (max-width: 600px) {
+  body {
+    background-color: #ff6961; /* nuevo color de fondo */
+  }
+  h1 {
+    font-size: 24px;
+  }
+}

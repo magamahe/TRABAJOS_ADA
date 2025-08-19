@@ -1,0 +1,105 @@
+:root {
+  --color-destaque: #0060df;
+  --color-fondo: white;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+.container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+body {
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+}
+
+.container {
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.card {
+  width: 40%;
+  display: flex;
+  flex-direction: row; /* por defecto en desktop: ícono a la izquierda */
+  gap: 1rem;
+  align-items: center;
+}
+
+i {
+  padding: 0.5rem;
+  background-color: var(--color-destaque);
+  color: var(--color-fondo);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* --- BREAKPOINT MOBILE --- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card {
+    width: 100%;
+    flex-direction: column; /* ícono arriba del texto */
+    align-items: flex-start;
+  }
+
+  i {
+    margin-bottom: 0.5rem; /* separa ícono del texto */
+  }
+}
+
+
+
+/* 📱 Breakpoint para mobile */
+@media (max-width: 640px) {
+  .services {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .service-icon {
+    margin-bottom: 10px;
+  }
+
+  .service-content {
+    align-items: flex-start;
+  }
+
+  .section-title,
+  .section-description {
+    text-align: left;
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+}

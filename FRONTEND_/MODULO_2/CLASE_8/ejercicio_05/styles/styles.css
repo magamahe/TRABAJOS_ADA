@@ -1,0 +1,160 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  font-family: "Open Sans", sans-serif;
+}
+
+.pen-title {
+  color: #ffffff;
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.pen-description {
+  color: #ffffff;
+  margin-bottom: 3rem;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000;
+}
+.pen-description a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.wrap {
+  max-width: 85.375rem;
+  margin: 0 auto;
+}
+
+.wrap {
+  padding: 1.25rem;
+}
+
+.pricing-section {
+  color: #ffffff;
+}
+
+.pricing {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 1.875rem;
+  width: 100%;
+}
+
+.pricing-item {
+  align-items: stretch;
+  display: -webkit-box;
+  display: flex;
+  flex: 0 1 20.625rem;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.pricing-feature-list {
+  text-align: left;
+}
+
+.pricing-action {
+  background: none;
+  border: none;
+  color: inherit;
+}
+.pricing-action:focus {
+  outline: none;
+}
+
+.pricing-theme .pricing-item {
+  background: rgba(255, 255, 255, 0.08);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.4);
+  border-radius: 0.625rem;
+  color: #ffffff;
+  cursor: default;
+  margin-bottom: 1.25rem;
+}
+.pricing-theme .pricing-item {
+  margin: 1.25rem;
+}
+.pricing-theme .pricing-item:hover {
+  border: 0.0625rem solid white;
+  background: rgba(255, 255, 255, 0.18);
+}
+.pricing-theme .pricing-title {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.pricing-theme .pricing-price {
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 1.125rem 0 0 0;
+  position: relative;
+  z-index: 100;
+}
+.pricing-theme .pricing-currency {
+  font-size: 1.625rem;
+  vertical-align: super;
+}
+.pricing-theme .pricing-sentence {
+  margin: 0 auto;
+  padding: 0.875rem 1.25rem;
+  font-size: 1rem;
+}
+.pricing-theme .pricing-feature-list {
+  font-size: 1.25rem;
+  list-style: none;
+  margin: 0 1.875rem;
+  padding: 1.875rem 0;
+}
+.pricing-theme .pricing-feature {
+  line-height: 1.4;
+}
+.pricing-theme .pricing-feature:before {
+  content: "\2713";
+  display: inline-block;
+  padding: 0 0.875rem 0 0;
+  vertical-align: middle;
+}
+.pricing-theme .pricing-action {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 0.3125rem;
+  color: #21759b;
+  flex: none;
+  font-weight: 700;
+  margin: auto 1.25rem 1.25rem;
+  padding: 1rem 1.25rem;
+}
+
+/* Breakpoint para mobile */
+@media (max-width: 768px) {
+  .pricing {
+    flex-direction: column;  /* las tarjetas apiladas */
+    align-items: center;     /* centra horizontalmente */
+  }
+
+  .pricing-item {
+    flex: 0 1 90%;           /* ancho ajustable en mobile */
+    margin: 0.625rem 0;      /* separación vertical entre tarjetas */
+  }
+}

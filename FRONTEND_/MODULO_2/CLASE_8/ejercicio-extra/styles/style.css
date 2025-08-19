@@ -1,0 +1,260 @@
+/* =======================================================
+   Responsive Flex Lab – ENTREGABLE PARA ALUMNAS
+   Objetivo: completar SOLO lo esencial de FLEXBOX y MQ.
+   Pistas: buscá los bloques "👉 COMPLETAR AQUÍ".
+======================================================= */
+
+/* Reset y tokens */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #fffaf5;
+}
+img { max-width: 100%; display: block; }
+
+:root{
+  --maxw: 1100px;
+  --wrap-px: 92%;
+  --ink: #222;
+  --muted: #555;
+  --brand: #5c3d2e;
+  --primary: #7b4b2a;
+  --card: #fff;
+  --edge: #eee;
+}
+
+.wrap{
+  width: var(--wrap-px);
+  margin-inline: auto;
+  
+}
+
+/* =======================
+   HEADER
+======================= */
+.header{
+  background: var(--card);
+  border-bottom: 1px solid var(--edge);
+}
+.header .wrap{
+  padding: .75rem 0;
+  gap: .75rem;
+
+  /* 👉 COMPLETAR AQUÍ (FLEXBOX – mobile):
+     - convertir en contenedor flex
+     - apilar en columna
+  */
+
+  /* display: ? */
+  /* flex-direction: ? */
+  display: flex;
+  flex-direction: column;
+}
+
+.brand{
+  /* logo + título en fila */
+  gap: .5rem;
+  align-items: center;
+  color: var(--brand);
+  /* 👉 COMPLETAR AQUÍ (FLEXBOX inline brand) */
+  /* display: ? */
+  display: flex;
+
+}
+.brand__logo{ width: 48px; height: 48px; border-radius: 50%; }
+.brand__title{ margin: 0; font-size: 1.25rem; }
+
+.nav__list{
+  list-style: none;
+  margin: 0; padding: 0;
+  gap: .25rem;
+
+  /* 👉 COMPLETAR AQUÍ (FLEXBOX – nav mobile):
+     - contenedor flex en columna
+  */
+  /* display: ? */
+  /* flex-direction: ? */
+  display: flex;
+  flex-direction: column;
+}
+.nav__list a{
+  display: inline-block;
+  padding: .5rem .6rem;
+  text-decoration: none;
+  color: var(--ink);
+  border-radius: .5rem;
+}
+.nav__list a:hover{ background: #f5eee7; }
+
+/* =======================
+   HERO
+======================= */
+.hero{ background: #fff; }
+.hero__content{
+  padding: 1rem 0 1.5rem;
+  gap: 1rem;
+  align-items: stretch;
+
+  /* 👉 COMPLETAR AQUÍ (FLEXBOX – hero mobile):
+     - contenedor flex en columna
+  */
+  /* display: ? */
+  /* flex-direction: ? */
+  display: flex;
+  flex-direction: column;
+
+}
+.hero__img{
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: .75rem;
+}
+.hero__text h2{ margin: .25rem 0; }
+.hero__text p { margin: 0 0 .75rem 0; color: var(--muted); }
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .6rem .9rem;
+  border: 1px solid var(--primary);
+  color: #fff;
+  background: var(--primary);
+  border-radius: .6rem;
+  text-decoration: none;
+}
+
+/* =======================
+   CARDS (PRODUCTOS)
+======================= */
+.cards{
+  padding: 1.5rem 0;
+  gap: 1rem;
+
+  /* 👉 COMPLETAR AQUÍ (FLEXBOX – cards mobile):
+     - contenedor flex
+     - UNA tarjeta por fila (columna)
+  */
+  /* display: ? */
+  /* flex-direction: ? */
+  display: flex;
+  flex-direction: column;
+
+}
+.card{
+  background: var(--card);
+  border: 1px solid var(--edge);
+  border-radius: .75rem;
+  overflow: hidden;
+  padding-bottom: .75rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,.05);
+}
+.card img{ aspect-ratio: 3/2; object-fit: cover; }
+.card h3{ margin: .75rem .75rem .25rem; }
+.card p { margin: 0 .75rem; color: var(--muted); }
+
+/* =======================
+   FOOTER
+======================= */
+.footer{
+  background: #1b1b1b;
+  color: #e9e9e9;
+  margin-top: 1rem;
+}
+.footer .wrap{ padding: 1.25rem 0; }
+.footer__cols{
+  gap: 1rem;
+  /* 👉 COMPLETAR AQUÍ (FLEXBOX – footer mobile):
+     - apilar columnas
+  */
+  /* display: ? */
+  /* flex-direction: ? */
+  display: flex;
+  flex-direction: column;
+
+}
+.footer a{ color: #d9c2b3; text-decoration: none; }
+.footer a:hover{ text-decoration: underline; }
+
+/* =========================================
+   MEDIA QUERIES
+   Usar SOLO estos 2 cortes: 600px y 900px
+========================================= */
+
+/* 👉 COMPLETAR AQUÍ: ≥600px (tablets chicas)
+   OBJETIVOS:
+   - Header en FILA, espacio entre brand y nav.
+   - Nav en FILA con gap.
+   - Cards: 2 por fila usando flex-wrap y basis ~50%.
+   - Footer: 2 columnas.
+*/
+@media (min-width: 600px){
+
+  /* .header .wrap { ... } */
+  .header .wrap{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* .nav__list { ... } */
+    .nav__list{
+    flex-direction: row;
+    gap: .75rem;
+  }
+
+  /* .cards { ... } */
+  .cards{
+    flex-wrap: wrap;
+  }
+  /* .card  { ... } */
+.card{
+    flex: 1 1 calc(50% - 1rem);
+  }
+  /* .footer__cols { ... } */
+   .footer__cols{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  /* .footer__cols > * { ... } */
+    .footer__cols > *{
+    flex: 1 1 50%;
+  }
+}
+
+/* 👉 COMPLETAR AQUÍ: ≥900px (desktop)
+   OBJETIVOS:
+   - Limitar ancho y centrar (ya dado con .wrap; podés ajustarlo).
+   - Hero en FILA: imagen 55% / texto 45%.
+   - Cards: 4 por fila (~25%).
+   - Footer: 3 columnas.
+*/
+@media (min-width: 900px){
+
+  /* .wrap { width: min(100% - 3rem, var(--maxw)); } */
+  .wrap{
+    width: min(100% - 3rem, var(--maxw));
+  }
+  /* .hero__content { ... } */
+   .hero__content{
+    flex-direction: row;
+    align-items: center;
+  }
+  /* .hero__img { ... } */
+    .hero__img{
+    flex: 0 0 55%;
+  }
+  /* .hero__text { ... } */
+  .hero__text{
+    flex: 0 0 45%;
+  }
+  /* .card { ... } */
+.card{
+    flex: 1 1 calc(25% - 1rem);
+  }
+  /* .footer__cols > * { ... } */
+    .footer__cols > *{
+    flex: 1 1 33.33%;
+  }
+}

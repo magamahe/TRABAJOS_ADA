@@ -1,0 +1,29 @@
+/* Base: mobile (menos de 600px) */
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6961; /* color para mobile */
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 24px;   /* tamaño móvil */
+  text-align: center;
+  color: white;
+}
+
+/* ≥600px: tablets */
+@media (min-width: 600px) {
+  body { background-color: #ffb347; }
+  h1   { font-size: 32px; }
+}
+
+/* ≥900px: desktop */
+@media (min-width: 900px) {
+  body { background-color: #87ceeb; }
+  h1   { font-size: 40px; }
+}
