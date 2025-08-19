@@ -4,7 +4,7 @@
 
 ## 📂 Módulo 2
 
-### Clase 7
+
 - [00_Layout](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_7/00_Layout/index.html)  
 
 ### Layout
@@ -13,7 +13,7 @@ Usando HTML semántico y Flexbox, replicar los siguientes layouts, cada uno en u
 
 ![](https://i.ibb.co/Ph1ppmr/Screen-Shot-2020-06-22-at-12-37-56.png)
 <br>
-
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_7/00_Layout/index.html) 
 ### Varios
 
 Replicar los siguientes ejemplos:
