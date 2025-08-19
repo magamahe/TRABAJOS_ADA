@@ -2,6 +2,11 @@
 
 ## Ejercicios
 
+## 📂 Módulo 2
+
+### Clase 7
+- [00_Layout](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_7/00_Layout/index.html)  
+
 ### Layout
 
 Usando HTML semántico y Flexbox, replicar los siguientes layouts, cada uno en un archivo `.html` aparte (deben ocupar toda la página y las regiones deben distinguirse con colores diferentes, como se muestra en las imágenes): 
