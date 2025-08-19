@@ -53,7 +53,7 @@ Replicar los siguientes ejemplos:
 - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_7/11_Footer/index.html)  
 
 ### [12 - Modal Compartir](https://uidesigndaily.com/posts/sketch-share-modal-pop-up-day-1118)
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_7/12_Modal Compartir/index.html)  
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_7/12_Modal_Compartir/index.html)  
 
 ### [13 - Paleta de Colores](https://uidesigndaily.com/posts/sketch-color-palette-generator-picker--day-1114)
 - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_7/13_Paletas/index.html)  
