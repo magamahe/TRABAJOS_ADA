@@ -44,7 +44,7 @@ Replicar los siguientes ejemplos. **Recuerden que no tienen que verse 100% idén
 - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_6/ejercicio-05-Donacion/index.html)
 
 ### [06 - Tareas](https://i.imgur.com/CTzHqjK.png)
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_6/ejercicio-06-ProteccionCuenta/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_6/ejercicio-06-PoteccionCuenta/index.html)
 
 ### [07 - Protección de cuenta](https://uidesigndaily.com/posts/sketch-protect-account-widget-day-975)
 - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_6/ejercicio-07-Tareas/index.html)
