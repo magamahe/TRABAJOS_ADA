@@ -12,6 +12,8 @@
 
 ---
 
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-01/index.html)
+- 
 ### 02 - Diario personal
 
 `index.html` debe contener:
@@ -21,7 +23,8 @@
 - debajo de cada día de la semana, agregar un párrafo `p` que describa lo que hiciste ese día la semana pasada, por ejemplo: `Miré una nueva serie en Netflix`.
 
 ---
-
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-02/index.html)
+- 
 ### 03 - Enciclopedia
 
 Buscar un artículo de Wikipedia que te interese. `index.html` debe contener:
@@ -33,6 +36,7 @@ Buscar un artículo de Wikipedia que te interese. `index.html` debe contener:
 - debajo de cada título de subsección, al menos 2 párrafos `p`.
 
 ---
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-03/index.html)
 
 ### Ejercicio 04 - Receta
 
@@ -46,6 +50,7 @@ Buscar una receta que te interese. `index.html` debe contener:
 - una lista ordenada que describa los pasos necesarios para realizar la receta.
 
 ---
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-04/index.html)
 
 ### 05 - Playlist
 
@@ -60,6 +65,7 @@ Buscar una receta que te interese. `index.html` debe contener:
   - una lista ordenada con nombres de canciones y bandas / cantantes (por ejemplo: `Africa, Toto`).
 
 ---
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-05/index.html)
 
 ### 06 - Temario
 
@@ -79,6 +85,8 @@ Buscar una receta que te interese. `index.html` debe contener:
   - un enlace que diga `Volver arriba` y que al clickearlo te lleve al título `h1`.
 
 ---
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-06/index.html)
+
 
 ### 07 - Portfolio
 
@@ -110,6 +118,7 @@ Crear las siguientes páginas con los siguientes elementos:
 - un link que diga `Volver atrás` y que te lleve a `index.html`.
 
 ---
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-07/index.html)
 
 ### 08 - Blog con Imágenes
 
@@ -126,6 +135,7 @@ Crear las siguientes páginas con los siguientes elementos:
 Las imágenes tienen que estar relacionadas. Usar imágenes con links externos (absolutos).  
 
 ---
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-08/index.html)
 
 ### 09 - Preview
 
@@ -141,6 +151,7 @@ Usando [IMDb](https://www.imdb.com/) como referencia, `index.html` debe contener
 - un lista desordenada con al menos 3 géneros de la película. Los nombres deben ser links a la página de IMDb correspondiente de la lista de películas de dicho género (por ejemplo, [Thriller](https://www.imdb.com/search/title/?genres=thriller&explore=title_type,genres&ref_=tt_ov_inf))
 
 ---
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-09/index.html)
 
 ### 10 - Comentarios
 
@@ -155,6 +166,7 @@ Usando [IMDb](https://www.imdb.com/) como referencia, `index.html` debe contener
   - un párrafo `p` con `lorem ipsum`.
 
 ---
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-10/index.html)
 
 ### 11 - Productos
 
@@ -170,6 +182,7 @@ Usando [IMDb](https://www.imdb.com/) como referencia, `index.html` debe contener
   - un párrafo con un `lorem impsum`  corto
 
 ---
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-11/index.html)
 
 ### 12 - Películas
 
@@ -209,6 +222,7 @@ Usando [IMDb](https://www.imdb.com/) como referencia, crear los siguientes archi
 - un párrafo `p` con la fecha de estreno.
 
 ---
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-12/index.html)
 
 ### 13 - Canciones
 
@@ -234,6 +248,7 @@ Usando [IMDb](https://www.imdb.com/) como referencia, crear los siguientes archi
 El archivo no tiene que llamarse `cancion.html` sino el nombre de la canción, por ejemplo: `africa.html`
 
 ---
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-13/index.html)
 
 ### 14 - Artículo completo
 
@@ -245,3 +260,5 @@ A partir de lo visto ejercicios anteriores, crear en un `index.html` un artícul
 - Una lista desordenada
 - Una lista ordenada
 - Una sección de comentarios, con al menos 3 comentarios
+
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-14/index.html)
