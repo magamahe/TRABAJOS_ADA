@@ -81,6 +81,20 @@ header p {
   margin: 0.3em 0;
 }
 
+/* Footer */
+footer {
+  
+  color: #686464;             /* Texto claro */
+  padding: 2em 1em;            /* Espaciado interno */
+  font-size: 0.9em;            /* Tamaño de fuente un poco más pequeño */
+  line-height: 1.5em;          /* Mejor lectura */
+  width: 90%;
+  margin: 2em auto 0;          /* Separación superior y centrado */
+  border-top: 3px solid #838080; 
+  text-align: center;          /* Centrado del texto */
+}
+/* ------------------------------------------------------ */
+
 /* Breakpoints */
 @media (max-width: 900px) {
   .card {
