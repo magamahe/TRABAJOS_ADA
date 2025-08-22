@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+
+}
+
+header{
+     border: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: url('https://plotter7.com.ar/wp-content/webpc-passthru.php?src=https://plotter7.com.ar/wp-content/uploads/2019/06/Fondo-sesion-fotos-3-600x450.jpg&nocache=1') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+
+}
+
+h1{
+   
+    font-size: 3rem;
+
+}
+p{
+     color: aliceblue;
+
+}
+.intro{
+    border: yellow solid;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.25rem;
+   
+}
+
+.gallery{
+    border: green solid;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex: 0 0 45%; /*1°:crece, 2°:decrece, 3°:cuanto espacio ocupa*/
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    max-width: 45%;
+}
+
+footer{
+    border: red solid;
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*-----------------------*/
+
+@media (max-width: 768px){
+    h1{
+        font-size: 2rem;
+    }
+    .intro{
+        font-size: 1rem;
+    }
+    .galery{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,61 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+     background: linear-gradient(135deg, #3965ac, #49e463);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+/* Grilla de imágenes */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 imágenes por fila */
+    gap: 15px; /* espacio entre imágenes */
+}
+
+.grid img {
+    width: 100%;
+    aspect-ratio: 4/3; /* ancho:alto */
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+/* --------------------------------------------------------- */
+/* Breakpoints para responsividad */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

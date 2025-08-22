@@ -1,0 +1,65 @@
+/* Base general: mobile-first */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1em;          /* Base relativa (≈16px en la mayoría de navegadores) */
+  line-height: 1.6;
+  color: white;
+  background: linear-gradient(135deg, #229468, #dbc924);
+  margin: 0;
+}
+
+/* Contenedor centrado tipo columna */
+.content {
+  max-width: 60em;         /* ~960px si base=16px */
+  margin: 0 auto;
+  padding: 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Títulos */
+h1, h3 {
+  font-family: "Lora", Georgia, serif;
+  margin: 0 0 0.5em;
+}
+
+h1 { font-size: 2em; margin-top: 1em; }
+h3 { font-size: 1.25em; margin-top: 1.5em; }
+
+/* Párrafos */
+p {
+  font-size: 1em;
+  margin: 0 0 1em;
+}
+
+/* Enlaces */
+a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #101216;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration:none;
+  color: rgb(203, 238, 225);
+}
+
+/* Post preview */
+.post {
+  padding: 1em 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Breakpoints: escalamos el body → todo escala en cascada */
+@media (min-width: 48em) {    /* ≈768px (tablet) */
+  body {
+    font-size: 1.125em;       /* aumenta 12.5% */
+  }
+}
+
+@media (min-width: 75em) {    /* ≈1200px (desktop grande) */
+  body {
+    font-size: 1.25em;        /* aumenta 25% */
+  }
+}

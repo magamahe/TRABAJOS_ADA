@@ -1,0 +1,117 @@
+/* Fuente global */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em; /* Base relativa */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0c0c0c, #ffffff);
+  text-align: center;
+}
+
+/* Títulos y párrafo del header */
+header{
+    color: white;
+}
+header h1 {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+}
+
+header h2 {
+  font-size: 2em;
+  margin: 0.3em 0;
+}
+
+header p {
+  font-size: 1em;
+  max-width: 600px;
+  margin: 0 auto 2em;
+}
+
+/* Grilla de productos */
+.grilla-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1em;
+  align-items: stretch; /* todas las cards se estiran */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.5em;
+  overflow: hidden;
+  text-align: center;
+  height: 100%; /* para que el grid haga que todas tengan la misma altura */
+}
+
+
+.card img {
+  width: 100%;
+  height: 200px;       /* todas las imágenes tienen la misma altura */
+  object-fit: contain;  /* mantiene la imagen completa sin recortar */
+  display: block;
+  background-color: white /* opcional, para ver el espacio vacío */
+}
+
+.card .info {
+  padding: 1em;
+  flex-grow: 1; /* hace que la sección de info ocupe el resto de la card */
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+.card .precio {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0.3em 0;
+}
+
+.card p {
+  font-size: 1em;
+  margin: 0.3em 0;
+}
+
+/* Breakpoints */
+@media (max-width: 900px) {
+  .card {
+    flex: 1 1 calc(50% - 1em); /* 2 productos por fila */
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9em; /* Reduce todo el texto proporcionalmente */
+    text-align: left; /* Alinea títulos y párrafos a la izquierda */
+  }
+
+  .grilla-productos {
+    flex-direction: column;
+    align-items: center; /* Para centrar las cards de 1 por fila */
+  }
+
+  .card {
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    max-width: 90%; /* No ocupa todo el ancho */
+  }
+
+  .card img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    height: auto;
+    margin: 0;
+  }
+
+  .card .info {
+    text-align: left; /* Texto alineado a la izquierda */
+    padding: 0.5em 1em 1em;
+  }
+}

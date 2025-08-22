@@ -1,0 +1,62 @@
+/* Base: usar unidades relativas (em) y tipografías personalizadas */
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1em;            /* Base relativa (≈16px por defecto del navegador) */
+  line-height: 1.7;         /* controla el interlineado (el espacio vertical entre las líneas de texto */
+  color: #222;
+  background: linear-gradient(135deg, #a8c5f5, #fff7a8);
+  margin: 0;
+}
+
+/* Contenedor tipo columna, centrado y con ancho máximo */
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 60em;           /* ~960px si base(font-size del body) ~16px */
+  padding: 2em 1.5em;
+  margin: 0 auto;
+}
+
+/* Títulos con jerarquía en em (relativos al body) */
+h1, h2, h3 {
+  font-family: "Merriweather", Georgia, "Times New Roman", serif;
+  line-height: 1.25;
+  margin: 0 0 0.6em 0;
+  color: #111;
+}
+
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.6em; margin-top: 1.8em; }
+h3 { font-size: 1.25em; margin-top: 1.2em; }
+
+p {
+  font-size: 1em;            /* Texto base relativo a body */
+  margin: 0 0 1em 0;
+  color: #333;
+}
+
+.intro {
+  font-size: 1.0625em;       /* Un poquito más grande que el párrafo estándar */
+}
+
+/* Espaciado visual de subsecciones */
+.subsection {
+  margin-top: 0.8em;
+  padding-left: 0.5em;
+  border-left: 0.25em solid #e5e5e5;
+}
+/* --------------------------------------------------------------------------------- */
+
+/* Breakpoint: cambiamos el font-size del body y todo escala automáticamente */
+@media (min-width: 48em) {   /* ≈768px con base ~16px */
+  body {
+    font-size: 1.125em;      /* Aumenta ~12.5% el tamaño global */
+  }
+}
+
+/* Un segundo ajuste opcional para pantallas grandes */
+@media (min-width: 75em) {   /* ≈1200px */
+  body {
+    font-size: 1.2em;        /* Aumenta ~20% el tamaño global */
+  }
+}
