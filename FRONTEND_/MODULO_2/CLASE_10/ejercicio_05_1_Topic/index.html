@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <div class="forum-ui">
+    <!-- Formulario para nuevo tema -->
+    <section class="card form-card">
+      <h2>Create a new Topic</h2>
+      <form>
+        <input type="text" placeholder="Title" />
+        <select><option>Select Category</option></select>
+        <input type="text" placeholder="Tags" />
+        <textarea placeholder="Description"></textarea>
+        <div class="form-actions">
+          <button class="primary">+ Create Topic</button>
+          <button class="secondary">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Notificación de solución -->
+    <div class="card notification-card">
+      ✅ Solved by <strong>Charlie_reid</strong> in post #2.<br />
+      The answer was identified. All redirects created can be found under the hosting tab of the project settings.
+    </div>
+
+    <!-- Filtros -->
+    <section class="card filter-card">
+      <select><option>All categories</option></select>
+      <select><option>All tags</option></select>
+      <button class="latest">Latest</button>
+    </section>
+
+    <!-- Lista de temas -->
+    <section class="card topics-card">
+      <div class="topic">
+        <h3>Navbar Dropdown on Mobile</h3>
+        <span class="category">Publishing Help</span>
+      </div>
+      <div class="topic">
+        <h3>Persistent Dark Mode</h3>
+        <span class="category">Design Help</span>
+      </div>
+    </section>
+  </div>
+</body>
+
+
+</html>

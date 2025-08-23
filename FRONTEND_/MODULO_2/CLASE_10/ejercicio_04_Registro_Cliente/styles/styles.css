@@ -1,0 +1,165 @@
+/* Fondo negro */
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor blanco externo */
+.outer-container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 25px 20px;
+}
+
+/* Formulario interno */
+.form-wrapper {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 20%;
+}
+
+/* Filas generales */
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 15px 16px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  min-height: 44px;
+}
+
+/* Fila DNI + Email con proporciones 3/10 y 7/10 */
+.form-row.dni-email {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row.dni-email .dni {
+  flex: 0 0 30%; /* 3 de 10 */
+}
+
+.form-row.dni-email .email {
+  flex: 0 0 72%; /* 7 de 10 */
+}
+
+.form-row.dni-email .dni input,
+.form-row.dni-email .email input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Nota */
+.note {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+/* Checkbox */
+.checkbox-label {
+  font-size: 12px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+/* Pie del formulario */
+.form-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botón */
+button {
+  background-color: #00aaff;
+  color: #fff;
+  border: none;
+  padding: 18px 30px;
+  border-radius: 5px;
+  width: 50%;
+
+  cursor: pointer;
+  font-size: 17px;
+  box-shadow: 2px 2px 10px rgba(8, 8, 8, 0.6);
+}
+
+button:hover {
+  background-color: #0088cc;
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-bottom {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .form-row.dni-email {
+    flex-direction: column;
+  }
+
+  .form-row.dni-email .dni,
+  .form-row.dni-email .email {
+    flex: none;
+    width: 100%;
+  }
+}

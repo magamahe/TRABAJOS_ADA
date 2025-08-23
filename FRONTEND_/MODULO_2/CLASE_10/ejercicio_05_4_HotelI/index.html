@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="reservation-layout">
+    <!-- Formulario a la izquierda -->
+    <form class="reservation-form">
+      <!-- Fila 1: input de 6 columnas -->
+      <div class="form-group span-6">
+        <label>Your Destination</label>
+        <input type="text" placeholder="Enter a destination or hotel name" />
+      </div>
+
+      <!-- Fila 2: fechas -->
+      <div class="form-group span-3">
+        <label>Check In</label>
+        <input type="date" />
+      </div>
+      <div class="form-group span-3">
+        <label>Check Out</label>
+        <input type="date" />
+      </div>
+
+      <!-- Fila 3: menús -->
+      <div class="form-group span-2">
+        <label>Rooms</label>
+        <select><option>1</option><option>2</option></select>
+      </div>
+      <div class="form-group span-2">
+        <label>Adults</label>
+        <select><option>1</option><option>2</option></select>
+      </div>
+      <div class="form-group span-2">
+        <label>Children</label>
+        <select><option>0</option><option>1</option></select>
+      </div>
+
+      <!-- Fila 4: botón de 4 columnas -->
+      <div class="form-group span-4">
+        <button type="submit">Check availability</button>
+      </div>
+    </form>
+
+    <!-- Texto a la derecha -->
+    <div class="reservation-text">
+      <h1>MAKE YOUR <br> RESERVATION</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere, soluta magnam consectetur molestias itaque ad sint fugit architecto incidunt iste culpa perspiciatis possimus voluptates aliquid consequuntur cumque quasi.</p>
+    </div>
+  </div>
+</body>
+</html>

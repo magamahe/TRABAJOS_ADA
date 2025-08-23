@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de Productos - Bicicletas</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+<h2>Carga Rápida de Productos</h2>
+
+<form action="#" method="post">
+    <!-- Título de producto -->
+    <label for="titulo">Título de producto:</label>
+    <input type="text" id="titulo" name="titulo" placeholder="Ej: Bicicleta MTB 2025" required>
+    <br><br>
+
+    <!-- Marca -->
+    <label for="marca">Marca:</label>
+    <select id="marca" name="marca" required>
+        <option value="">--Seleccione una marca--</option>
+        <option value="Klatter">Klatter</option>
+        <option value="Top Mega">Top Mega</option>
+        <option value="Fierce">Fierce</option>
+        <option value="Shimano">Shimano</option>
+        <option value="Lamborghini">Lamborghini</option>
+        <option value="Aurora">Aurora</option>
+        <option value="GT">GT</option>
+    </select>
+    <br><br>
+
+    <!-- Rodado -->
+    <label for="rodado">Rodado:</label>
+    <input type="number" id="rodado" name="rodado" placeholder="Ej: 26" required>
+    <br><br>
+
+    <!-- Categoría -->
+    <label for="categoria-title">Categoría de producto:</label>
+<div class="radio-group">
+    <div class="radio-item">
+        <input type="radio" id="mountain" name="categoria" value="Mountain Bike" required>
+        <label for="mountain">Mountain Bike</label>
+    </div>
+    <div class="radio-item">
+        <input type="radio" id="paseo" name="categoria" value="Paseo" required>
+        <label for="paseo">Paseo</label>
+    </div>
+    <div class="radio-item">
+        <input type="radio" id="plegable" name="categoria" value="Plegable" required>
+        <label for="plegable">Plegable</label>
+    </div>
+    <div class="radio-item">
+        <input type="radio" id="carrera" name="categoria" value="Carrera" required>
+        <label for="carrera">Carrera</label>
+    </div>
+
+    <!-- Descripción del producto -->
+    <label for="descripcion" class="descripcion-label">Descripción del producto:</label>
+    <textarea id="descripcion" name="descripcion" rows="4" cols="50" placeholder="Ingrese una descripción del producto" required></textarea>
+
+</div>
+<br><br>
+
+    <!-- Botón -->
+    <button type="submit">Cargar</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  background-color: #fbe4e6; /* rosado pastel */
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.forum-ui {
+  width: 100%;
+  max-width: 960px;
+  display: grid;
+  gap: 2rem;
+}
+
+/* Tarjetas */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Formulario */
+.form-card form {
+  display: grid;
+  gap: 1rem;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+button.primary {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+button.secondary {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  color: #333;
+}
+
+/* Notificación */
+.notification-card {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-left: 4px solid #4caf50;
+  background-color: #e6f7e6;
+}
+
+/* Filtros */
+.filter-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filter-card select,
+.filter-card .latest {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+.latest {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+}
+
+/* Temas */
+.topics-card .topic {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.topic h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.category {
+  font-size: 0.85rem;
+  color: #666;
+}

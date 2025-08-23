@@ -1,0 +1,218 @@
+/* Fuente global */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    background-color: #481fa7;
+    background-image: url('https://st.depositphotos.com/1793519/3160/i/450/depositphotos_31608755-stock-photo-3d-abstract-violet-purple-crystal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 2em 1em;
+    min-height: 100vh; 
+}
+
+/* Panel izquierdo */
+.left-panel {
+    background-color: #0057b8;
+    background-image: url('https://img.freepik.com/vector-gratis/abstracto-gradiente-fondo-lineas-diagonales_23-2150527331.jpg?semt=ais_hybrid&w=740&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    flex: 0 0 30%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;  
+}
+
+.left-panel h1 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+}
+
+.left-panel h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.left-panel p {
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.signup-link {
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+/* Panel derecho */
+.right-panel {
+    flex: 1;
+    background-color: white;
+    padding: 2em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100vh;
+    overflow: hidden; /* evita scroll vertical */
+}
+
+.register {
+    margin-bottom: 1em;
+    text-align: center;       
+    font-size: 1em;
+}
+
+/* Formulario */
+form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5em;
+    padding-inline: 10%; /* menos padding para que entre en pantalla */
+}
+
+input, select {
+    padding: 0.5em 1em;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.95em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Texto inline pequeño */
+.right-panel .form-group p.inline-text {
+    margin-top: 1px;
+    margin-bottom: 0;
+    font-size: 0.6em;
+}
+
+/* Anchos personalizados */
+.form-group.span-2 { grid-column: span 2; }
+.form-group.span-3 { grid-column: span 3; }
+.form-group.span-4 { grid-column: span 4; }
+.form-group.span-6 { grid-column: span 6; }
+
+.form-group.span-6 label {
+    font-size: 0.75em;
+}
+
+.inline-text {
+    font-size: 0.6em;
+}
+
+.form-group.span-6 input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #6493b3;
+    accent-color: #0057b8;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #5dade2;
+    cursor: pointer;
+}
+
+/* Botón */
+button {
+    grid-column: span 6;
+    padding: 0.75em;
+    background: linear-gradient(to right, #8cb7e9, #9f9aeb);
+    width: 40%;
+    max-width: 200px;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Footer del form */
+.form-footer {
+    text-align: center;
+    font-size: 0.75em;
+    margin-top: 1em;
+    white-space: nowrap;
+}
+
+.form-footer a {
+    color: #0057b8;
+    text-decoration: none;
+    margin-right: 0.25em;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #0057b8;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    form {
+        grid-template-columns: 1fr; /* todo a 1 columna */
+        padding-inline: 5%;        /* menos padding en móviles */
+        gap: 0.8em;
+    }
+
+    .form-group.full,
+    .form-group.half,
+    .form-group.checkbox,
+    .form-group.span-2,
+    .form-group.span-3,
+    .form-group.span-4,
+    .form-group.span-6,
+    button,
+    .signin-link {
+        grid-column: span 1; /* todos a 1 columna */
+        width: 100%;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .left-panel, .right-panel {
+        padding: 2em;
+    }
+
+    body {
+        font-size: 0.9em;
+    }
+}

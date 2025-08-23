@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel III</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+<div class="container">   
+<header>
+    <h1>NEW QUICK RESERVATION</h1>
+  <button class="close-btn" onclick="cerrarVentana()">X</button>
+</header>
+<hr>
+
+<main>
+ <form id="reservation-form" action="#" method="post">
+    <!-- Left Panel / Formulario -->
+    <div class="left-panel">
+        <!-- Fila 1 -->
+        <div class="span-1">
+            <label for="ADULTS">ADULTS</label>
+            <select id="num2">
+                <option>2</option>
+            </select>
+        </div>
+        <div class="span-1">
+            <label for="CHILDREN">CHILDREN</label>
+            <select id="num0">
+                <option>0</option>
+            </select>
+        </div>
+        <div class="span-2">
+            <label for="RATE_TYPE">RATE TYPE</label>
+            <select id="Rack_Rate">
+                <option>Rack Rate</option>
+            </select>
+        </div>
+        <div class="span-1">
+            <label for="ROOMS">ROOMS</label>
+            <select id="num1">
+                <option>1</option>
+            </select>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="span-1">
+            <label for="TITLE">TITLE</label>
+            <select id="Mr">
+                <option>Mr</option>
+            </select>
+        </div>
+        <div class="span-2">
+            <label for="FIRST_NAME">FIRST NAME</label>
+            <input type="text" id="FIRST_NAME" placeholder="Garrett" />
+        </div>
+        <div class="span-2">
+            <label for="LAST_NAME">LAST NAME</label>
+            <input type="text" id="LASTNAME" placeholder="Watson"/>
+        </div>
+
+        <!-- Fila 3 -->
+        <div class="span-2">
+            <label for="email">EMAIL ADDRESS</label>
+            <input type="email" id="email" placeholder="Enter Email"/>
+        </div>
+        <div class="span-2">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phone" placeholder="Enter Phone Number"/>
+        </div>
+
+        <!-- Fila 4: Radio buttons -->
+        <div class="radio-group">
+            <label><input type="radio" name="reservationType" value="single"> Single</label>
+            <label><input type="radio" name="reservationType" value="group" checked> Group</label>
+            <label><input type="radio" name="reservationType" value="business"> Business</label>
+        </div>
+
+
+    </div>
+    </form>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+        <div class="card">
+            <h2>ROOM TYPE</h2>
+            <p>Deluxe</p>
+        </div>
+        <div class="card">
+            <h2>DURATION</h2>
+            <p>May 28 - Jun 2</p>
+        </div>
+        <div class="card">
+            <h2>PRICE</h2>
+            <p>$45/night | Total $270</p>
+        </div>
+    </div>
+</main>
+
+<hr>
+<footer>
+<div class="form-actions">
+    <button type="submit" form="reservation-form" class="btn reserve">Reserve</button>
+    <button type="button" form="reservation-form" class="btn temp">Temp Reserve</button>
+    <button type="button" form="reservation-form" class="btn checkin">Check-In</button>
+  </div>
+
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body con fondo degradado */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Título principal */
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #ccc;
+}
+
+/* Formulario */
+form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Inputs y textarea */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #a1c4fd;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+.radio-group {
+     display: flex;
+    flex-direction: column; /* Esto los coloca en columna */
+    gap: 10px; /* Espacio entre cada opción */
+    margin-bottom: 15px;
+}
+
+label[for="categoria-title"] {
+    margin-bottom: 15px; /* ajusta el valor según necesites */
+    display: block;      /* asegura que el margin funcione correctamente */
+}
+
+.radio-item {
+    display: flex;
+    align-items: center; /* Centra el círculo con el texto */
+}
+
+.radio-item label {
+    margin: 0; /* Quita el margin por defecto */
+    font-size: 14px;
+    color: #555;
+}
+
+/* Descripcion del producto */
+.descripcion-label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px; /* espacio entre el label y el textarea */
+    font-weight: bold;
+    color: #555;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: vertical; /* permite al usuario cambiar la altura */
+    box-sizing: border-box;
+    margin-bottom: 15px; /* espacio debajo del textarea */
+}
+
+
+/* Botón */
+button {
+    width: 50%;
+    display: block;
+    margin: 20px auto ;   
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    form {
+        padding: 20px 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

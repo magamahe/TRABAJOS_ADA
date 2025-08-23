@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+<form action="#" method="post">
+    <h2>Pago</h2>
+
+    <!-- Número de tarjeta -->
+    <label for="numero">Número de tarjeta:</label>
+    <input type="text" id="numero" name="numero" placeholder="Ej: 1234 5678 9012 3456" required pattern="\d{13,19}">
+
+    <!-- Nombre completo del titular -->
+    <label for="titular">Nombre completo del titular:</label>
+    <input type="text" id="titular" name="titular" placeholder="Ej: Marcela López" required>
+
+    <!-- Mes -->
+    <label for="mes">Mes (número):</label>
+    <select id="mes" name="mes" required>
+        <option value="">--Seleccione mes--</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+
+    <!-- Año -->
+    <label for="anio">Año:</label>
+    <input type="number" id="anio" name="anio" placeholder="Ej: 2025" 
+           min="2025" max="2035" required>
+
+    <!-- CCV -->
+    <label for="ccv">CCV:</label>
+    <input type="password" id="ccv" name="ccv" placeholder="Ej: 123" maxlength="4" required>
+
+    <button type="submit">Pagar</button>
+</form>
+
+</body>
+</html>
