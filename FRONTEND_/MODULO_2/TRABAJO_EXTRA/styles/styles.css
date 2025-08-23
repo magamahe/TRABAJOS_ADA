@@ -298,11 +298,11 @@ header {
 }
 
 .btn-reset {
-    background-image: url('img/botonResetear.png');
+    background-image: url('../img/botonResetear.png');
 }
 
 .btn-enviar {
-    background-image: url('img/botonEnviar.png');
+    background-image: url('../img/botonEnviar.png');
 }
 /* ---------------------------------------------------------------- */
 .suscripcion {
@@ -375,7 +375,7 @@ header {
 .btn-suscribirme {
     width: 120px;
     height: 40px;
-    background-image: url("img/suscribirse.png");
+    background-image: url("../img/suscribirse.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
