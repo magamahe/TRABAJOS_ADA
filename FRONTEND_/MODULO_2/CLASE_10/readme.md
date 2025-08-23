@@ -132,9 +132,11 @@ Tenemos encargado replicar los siguientes diseño lo más parecido que podamos. 
 ---
 
 7. [Reservación Hotel III](https://uidesigndaily.com/posts/sketch-quick-reservation-hotel-booking-form-day-578)
+   
 - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_10/ejercicio_05_7_HotelIII/index.html) 
 ---
 
 8. [Registro](https://dribbble.com/shots/5499795-Sign-Up/attachments)
+   
 - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_10/ejercicio_05_8_Registro/index.html) 
 ---
