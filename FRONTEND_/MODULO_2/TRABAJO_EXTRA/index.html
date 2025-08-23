@@ -1,74 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Front - Pet Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Cat&Dog</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
+    <!-- Banner superior -->
+    <div class="banner">
+        <p class="banner-msg">Grandes ofertas en comederos</p>
+        <div class="banner-options">
+            <select name="idioma" id="idioma">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+            </select>
+
+            <select name="moneda" id="moneda">
+                 <option value="ars">$ARG</option>
+                 <option value="usd">$USD</option>
+                 <option value="eur">€EUR</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- HEADER -->
     <header>
-        <p class="top-msg">Grandes ofertas en comederos</p>
-        <nav class="nav-top">
-            <ul>
-                <li>Español</li>
-                <li>$ARG</a></li>
-            </ul>
-        </nav>
         <div class="logo-bar">
-            <h1><img src="img/LogoCabecera.png" alt="Logo de la cabecera" class="logo-cabecera"></h1>
+            <img src="img/LogoCabecera.png" alt="Logo" class="logo-bar-cabecera">
             <nav>
-                <ul class="menu">
-                    <li>Categorías</a></li>
-                    <li>Pets</a></li>
-                    <li>Nosotros</a></li>
-                    <li>Contáctanos</a></li>
+                <ul class="logo-bar-menu">
+                    <li><img src="img/huellaChica.png" alt="icono huella"><a href="#">Categorías</a></li>
+                    <li><img src="img/huellaChica.png" alt="icono huella"><a href="#">Pets</a></li>
+                    <li><img src="img/huellaChica.png" alt="icono huella"><a href="#">Nosotros</a></li>
+                    <li><img src="img/huellaChica.png" alt="icono huella"><a href="#">Contáctanos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="banner">
-        <img src="img/fondoPlato.png" alt="Comedero con comida y huesitos">
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="img/fondoPlato.png" alt="Plato con croquetas" class="hero-img">
+        <div class="hero-contenedor">
+             <div class="hero-frase">¡Es un placer tenerte aquí!</div>
+            <p class="hero-subtitulo">¡Comederos en descuento!</p>
+            <a href="#" class="boton-comederos">COMEDEROS</a>
+        </div>
     </section>
 
-    <section class="bienvenida">
-        <h2>¡Es un placer tenerte aquí!</h2>
-        <p><strong>¡Comederos en descuento!</strong></p>
-        <p><strong>COMEDEROS</strong></p>
-    </section>
-
+    <!-- Productos Destacados -->
     <section class="productos">
-        <h3>Productos Destacados</h3>
-        <p>Comederos - Accesorios - Comida</p>
-
-        <div class="grid-productos">
+        <img src="img/huellaGrande.png" alt="Huella decorativa" class="huella-icono">
+        <h2>Productos Destacados</h2>
+        <div class="filtros">
+            <button>Comedero</button>
+            <button>Accesorios</button>
+            <button>Comida</button>
+        </div>
+        <div class="productos-grid">
             <div class="producto">
                 <img src="img/churrasquito.png" alt="Juguete Churrasquito">
                 <p>Juguete Churrasquito</p>
-                <p>$150</p>
+                <span>$150</span>
             </div>
-
             <div class="producto">
                 <img src="img/comedero.png" alt="Comedero para perro">
                 <p>Comedero para perro</p>
-                <p>$250</p>
+                <span>$250</span>
             </div>
-
             <div class="producto">
                 <img src="img/Huesito.png" alt="Juguete Huesito">
                 <p>Juguete Huesito</p>
-                <p>$650</p>
+                <span>$650</span>
             </div>
         </div>
     </section>
 
+    <!-- Formulario de Contacto -->
+  <section class="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+        <div class="input-contacto">
+            <img src="img/bloqueDatos.png" alt="Fondo input">
+            <input type="text" placeholder="Nombre y Apellido">
+        </div>
+
+        <div class="input-contacto">
+            <img src="img/bloqueDatos.png" alt="Fondo input">
+            <input type="email" placeholder="Ingresá tu correo electrónico">
+        </div>
+
+        <div class="input-contacto">
+            <img src="img/bloqueDatos.png" alt="Fondo input">
+            <input type="tel" placeholder="Teléfono">
+        </div>
+
+        <div class="botones">
+            <button type="reset" class="btn-reset">Resetear</button>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </div>
+    </form>
+</section>
+
+
+    <!-- Suscripción -->
+<section class="suscripcion">
+    <div class="suscripcion-contenido">
+        <!-- Izquierda: Icono y texto -->
+        <div class="suscripcion-texto">
+            <img src="img/enviar-correo.png" alt="Icono correo">
+            <p>Suscribite para más novedades</p>
+        </div>
+
+        <!-- Derecha: Input y botón -->
+        <div class="suscripcion-formulario">
+            <div class="input-suscripcion">
+                <input type="email" placeholder="Ingresá tu correo electrónico">
+                <img src="img/Rectangulo-tenerte.png" alt="Fondo input">
+            </div>
+            <button class="btn-suscribirme">Suscribirme</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
     <footer>
-        <p>Todos los derechos reservados Front End</p>
-    </footer>
+  <div class="footer-contenedor">
+    <div class="footer-izquierda">
+      <div class="item-footer">
+        <div class="icono-footer">
+          <img src="img/logoUbicacion.png" alt="Ubicación">
+        </div>
+        <div class="texto-footer">
+          <strong>Localidad</strong><br>
+          Calle - Provincia
+        </div>
+      </div>
+
+      <div class="item-footer">
+        <div class="icono-footer">
+          <img src="img\logoTelefono.png" alt="Teléfono">
+        </div>
+        <div class="texto-footer">
+          <strong>Teléfono</strong><br>
+          Número de teléfono
+        </div>
+      </div>
+
+      <div class="item-footer">
+        <div class="icono-footer">
+          <img src="img/logoCorreo.png" alt="Correo">
+        </div>
+        <div class="texto-footer">
+          <strong>Correo Electrónico</strong><br>
+          Dirección de correo
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-derecha">
+      <img src="img\LogoFooter.png" alt="Logo">
+    </div>
+  </div>
+
+  <p class="copyright">Todos los derechos reservados Front End</p>
+</footer>
 
 </body>
 </html>

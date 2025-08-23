@@ -1,36 +1,465 @@
-
-/* body{
-    font-family: "Roboto", sans-serif;
+body {
     margin: 0;
-    padding: 0;
-    background-color: white;
-} */
-
-/* Para que el footer quede centrado */
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #f5f5f5; /* opcional, para que resalte un poco */
-    color: #333;
-    font-size: 0.9rem;
+    font-family: Arial, sans-serif;
 }
-
-/* Para que la lista del nav-top quede sin puntos y sin subrayado azul en los enlaces */
-.nav-top ul {
-    list-style: none;           /* Quita los puntos */
-    padding: 0;
-    margin: 0;
+/* ------------------------------------ */
+.banner{
+    background-color: black;
+    color: white;
     display: flex;
-    flex-direction: column;     /* Coloca los <li> uno debajo del otro */
-    gap: 12px;                  /* Espacio vertical entre ellos */
+    justify-content: space-between;
+    padding: 5px 20px;
+    font-size: 14px;
 }
 
-.nav-top li {
-    color: black;
-    font-weight: 600;
+.banner-options {
+    display: flex;
+    gap: 10px;
 }
 
-/* Opcional: efecto hover para que se note que es clickeable */
-.nav-top ul li a:hover {
-    color: #555; /* gris oscuro al pasar el mouse */
+.banner-options select {
+    background-color: black; /* en lugar de transparent */
+    color: white;
+    padding: 4px 8px;
+    font-size: 10px;
+    border: 1px solid #0c0c0b;
+    border-radius: 2px;
+    cursor: pointer;
+
+  /* Flecha blanca */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="12" viewBox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 12px;
+  padding-right: 20px;
+}
+.banner-options select option {
+    background-color: black; /* fondo del dropdown */
+    color: white;
+}
+
+/* --------------------------------- */
+/* HEADER más alto */
+header {
+  background-color: #f3a13b;
+  padding: 16px 20px; /* Aumentar padding para mayor altura */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* FLEX container */
+.logo-bar {
+  display: flex;
+  justify-content: space-between;  /* Logo a la izquierda, menú a la derecha */
+  align-items: center;             /* Centrar verticalmente dentro del header */
+}
+
+/* LOGO más chico */
+.logo-bar-cabecera {
+  height: 22px;      /* más chica aún */
+  width: auto;
+  display: block;
+}
+
+/* MENÚ */
+.logo-bar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-bar-menu li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo-bar-menu img {
+  height: 14px;
+  width: 14px;
+}
+
+/* LINKS del menú */
+.logo-bar-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.logo-bar-menu a:hover {
+  color: #3b200f;
+  text-decoration: underline;
+}
+/* ---------------------------------------------------- */
+.Hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.hero-contenedor {
+    position: absolute;
+    top: 65%;
+    right: 10%; /* ajustá según tu gusto */
+    transform: translateY(-50%);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    text-align: center;  /* ✅ centra el texto de cada uno */
+}
+
+.hero-frase {
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hero-subtitulo {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.boton-comederos {
+    display: inline-block;
+    background-color: #f4a940;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-comederos:hover {
+    background-color: #d88c20;
+}
+
+/* ------------------------------------------------------------------ */
+.productos {
+    text-align: center;
+    padding: 40px;
+}
+
+.huella-icono {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 50px; /* ajustá según tamaño real */
+    height: auto;
+}
+.productos h2{
+    font-size: 2em;
+
+}
+.filtros button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid #bdb7b7;
+    background-color: #fff;
+    color: grey;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px; /* opcional, mejora el look */
+}
+
+.filtros button:hover {
+    background-color: #f3a13b;
+    color: white;
+    border-color: #f3a13b;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.productos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.producto {
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.35); /* sombra fuerte abajo y derecha */
+    text-align: center;
+    width: 200px; /* opcional para uniformidad */
+}
+
+.producto img {
+    margin-bottom: 5px; /* acerca el texto a la imagen */
+    max-width: 100%;
+    height: auto;
+}
+
+.producto p {
+    margin: 5px 0 0;
+    font-weight: 500;
+}
+
+.producto span {
+    display: block;
+    text-align: left;
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+}
+/* -------------------------------------------------------------------- */
+.contacto {
+    text-align: center; /* Centrar título y form */
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.contacto h2 {
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.input-contacto {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-contacto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.input-contacto input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* espacio entre botones */
+    margin-top: 20px;
+    max-width: 100%; /* para que no crezca más que el contenedor */
+}
+
+.botones button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.2s ease;
+}
+
+.botones button:hover {
+    transform: scale(1.05);
+}
+
+.btn-reset {
+    background-image: url('img/botonResetear.png');
+}
+
+.btn-enviar {
+    background-image: url('img/botonEnviar.png');
+}
+/* ---------------------------------------------------------------- */
+.suscripcion {
+    background-color: #f3a13b;
+    padding: 20px 40px;
+}
+
+.suscripcion-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.suscripcion-texto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.suscripcion-texto img {
+    width: 30px;
+    height: auto;
+}
+
+.suscripcion-formulario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.input-suscripcion {
+  position: relative;
+  width: 300px;      /* define el ancho */
+  height: 50px;      /* define la altura */
+}
+
+.input-suscripcion input {
+  padding: 12px 20px;
+  border: none;
+  width: 100%;       /* ocupa todo el ancho del contenedor */
+  height: 100%;      /* ocupa toda la altura del contenedor */
+  background: transparent;
+  position: relative;
+  z-index: 2;
+  color: black;
+  font-size: 12px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.input-suscripcion img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+
+/* Botón con imagen de fondo */
+.btn-suscribirme {
+    width: 120px;
+    height: 40px;
+    background-image: url("img/suscribirse.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; /* Aquí redondeas las esquinas */
+    overflow: hidden; /* Para evitar que algo sobresalga */
+}
+
+
+/* ------------------------------------ */
+footer {
+  background-color: #3b200f;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 30px 20px 0; /* quitamos padding abajo */
+  position: relative;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+    align-items: center; /* centra verticalmente */
+}
+
+.footer-izquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+
+.item-footer {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 15px;
+}
+
+.icono-footer img {
+  width: 60px;
+  height: 60px;
+}
+
+.texto-footer strong {
+  font-size: 16px; /* más grande para el título */
+}
+
+.texto-footer {
+  font-size: 10px; /* más chico para el resto */
+  line-height: 1.2;
+}
+
+
+.footer-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  padding-top: 20px;
+}
+
+.footer-derecha img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+footer .copyright {
+  background-color: #1a1a1a; /* color más oscuro para diferenciar */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  margin-top: 40px;
+  width: 100vw; /* ancho total */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
