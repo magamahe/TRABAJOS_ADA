@@ -70,7 +70,7 @@ Debe mostrar en consola la respuesta del servidor.
 - Luego, ejecuta el cliente usando node client.js.
 - Prueba enviando mensajes desde el cliente y verifica que el servidor los reciba y responda adecuadamente.
 
-###3. PARTE 2 – Ejercicio 1: Variaciones y Extensiones:
+### 3. PARTE 2 – Ejercicio 1: Variaciones y Extensiones:
 - Variación: Cambia el puerto en el que el servidor escucha y el puerto al que el cliente se conecta.
 - Extensión: Implementa funcionalidades adicionales, como permitir que el servidor envíe mensajes a todos los clientes conectados, o maneja múltiples clientes en el servidor.
 - Realizar estas modificaciones en una copia del ejercicio
