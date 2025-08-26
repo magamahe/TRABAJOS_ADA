@@ -29,4 +29,4 @@
 - EJERCICIO 15: Seleccionar todos los productos que tengan descuento y ponerles un color rojo
 - EJERCICIO 16: Seleccionar todos los productos que no pertenezcan a la categoría "electronica" y ponerles un color rojo
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_11/index.html) 
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/Clase_11/index.html) 
