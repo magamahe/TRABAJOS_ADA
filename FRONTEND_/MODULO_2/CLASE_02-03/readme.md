@@ -23,7 +23,7 @@ Crear la estructura HTML de un artículo (sin estilos) usando etiquetas semánti
 - Se puede usar `lorem ipsum` para todos los texto que se necesiten.
 <br>
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_2-3/ejercicio-01/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_02-03/ejercicio-01/index.html)
   
 ## Ejercicio 2 - Artículo con comentarios
 
@@ -54,7 +54,7 @@ Crear la estructura HTML de un artículo (sin estilos) usando etiquetas semánti
 - Se puede usar `lorem ipsum` para todos los texto que se necesiten.
 <br>
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_2-3/ejercicio-02/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_02-03/ejercicio-02/index.html)
 - 
 ## Ejercicio 3 - Landing
 
@@ -92,5 +92,5 @@ Crear la estructura HTML de una página personal (sin estilos) usando etiquetas 
 
 <br>
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_2-3/ejercicio-03/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_02-03/ejercicio-03/index.html)
 

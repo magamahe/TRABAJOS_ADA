@@ -10,7 +10,7 @@
 - un párrafo `p` que diga: `Por Ada Lovelace. Publicado hace 3 días`, con tu nombre en vez de `Ada Lovelace`.
 - 4 párrafos con `lorem ipsum`.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-01/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_01/ejercicio-01/index.html)
  
 ---
 
@@ -22,7 +22,7 @@
 - por cada día de la semana crear un título `h2` con el nombre del día.
 - debajo de cada día de la semana, agregar un párrafo `p` que describa lo que hiciste ese día la semana pasada, por ejemplo: `Miré una nueva serie en Netflix`.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-02/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-02/index.html)
 
 ---
  
@@ -36,7 +36,7 @@ Buscar un artículo de Wikipedia que te interese. `index.html` debe contener:
 - debajo de cada título de sección, al menos 2 subsecciones con título `h3` (por ejemplo, debajo de **Biografía**, incluir **Infancia** y **Adultez**)
 - debajo de cada título de subsección, al menos 2 párrafos `p`.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-03/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-03/index.html)
 
 ---
 
@@ -51,7 +51,7 @@ Buscar una receta que te interese. `index.html` debe contener:
 - un título `h2` que diga `Instrucciones`.
 - una lista ordenada que describa los pasos necesarios para realizar la receta.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-04/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-04/index.html)
 
 ---
 
@@ -67,7 +67,7 @@ Buscar una receta que te interese. `index.html` debe contener:
   - un título h3 que diga: `Canciones`.
   - una lista ordenada con nombres de canciones y bandas / cantantes (por ejemplo: `Africa, Toto`).
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-05/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-05/index.html)
 
 ---
 
@@ -88,7 +88,7 @@ Buscar una receta que te interese. `index.html` debe contener:
   - 10 párrafos `p` con `lorem ipsum`.
   - un enlace que diga `Volver arriba` y que al clickearlo te lleve al título `h1`.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-06/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-06/index.html)
 
 ---
 
@@ -121,7 +121,7 @@ Crear las siguientes páginas con los siguientes elementos:
 - un link que lleve a la página de Linkedin (si tenés una cuenta creada, podés hacer que el link sea a tu perfil).
 - un link que diga `Volver atrás` y que te lleve a `index.html`.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-07/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-07/index.html)
 
 ---
 
@@ -139,7 +139,7 @@ Crear las siguientes páginas con los siguientes elementos:
   
 Las imágenes tienen que estar relacionadas. Usar imágenes con links externos (absolutos).  
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-08/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-08/index.html)
 
 ---
 
@@ -156,7 +156,7 @@ Usando [IMDb](https://www.imdb.com/) como referencia, `index.html` debe contener
 - un `h3` que diga: `Géneros`
 - un lista desordenada con al menos 3 géneros de la película. Los nombres deben ser links a la página de IMDb correspondiente de la lista de películas de dicho género (por ejemplo, [Thriller](https://www.imdb.com/search/title/?genres=thriller&explore=title_type,genres&ref_=tt_ov_inf))
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-09/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-09/index.html)
 
 ---
 
@@ -172,7 +172,7 @@ Usando [IMDb](https://www.imdb.com/) como referencia, `index.html` debe contener
   - un `span` que diga: `Publicado hace 14 minutos` (cambiar el tiempo).
   - un párrafo `p` con `lorem ipsum`.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-10/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-10/index.html)
 
 ---
 
@@ -189,7 +189,7 @@ Usando [IMDb](https://www.imdb.com/) como referencia, `index.html` debe contener
   - un párrafo `p` con el precio del producto.
   - un párrafo con un `lorem impsum`  corto
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-11/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-11/index.html)
 
 ---
 
@@ -230,7 +230,7 @@ Usando [IMDb](https://www.imdb.com/) como referencia, crear los siguientes archi
 - un título `h3` con el nombre de la película.
 - un párrafo `p` con la fecha de estreno.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-12/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-12/index.html)
 
 ---
 
@@ -257,7 +257,7 @@ Usando [IMDb](https://www.imdb.com/) como referencia, crear los siguientes archi
 
 El archivo no tiene que llamarse `cancion.html` sino el nombre de la canción, por ejemplo: `africa.html`
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-13/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-13/index.html)
 
 ---
 ### 14 - Artículo completo
@@ -271,4 +271,4 @@ A partir de lo visto ejercicios anteriores, crear en un `index.html` un artícul
 - Una lista ordenada
 - Una sección de comentarios, con al menos 3 comentarios
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_1/ejercicio-14/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/0/ejercicio-14/index.html)

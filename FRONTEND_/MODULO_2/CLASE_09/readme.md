@@ -18,7 +18,7 @@
 - Para el tamaño de letra, usar unidades relativas y no absolutas (`em`).
 - Poner un breakpoint que modifique el `font-size` del body, de modo tal que, al ser el tamaño del texto relativo a esta medida, cambien todos los tamaños en simultáneo.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_9/ejercicio_01_Blog/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_09/ejercicio_01_Blog/index.html)
 ---
 
 ### 02 - Posts de blogs
@@ -39,7 +39,7 @@
 - Para el tamaño de letra, usar unidades relativas y no absolutas (`em`).
 - Poner dos breakpoints que modifiquen el `font-size` del body, de modo tal que, al ser el tamaño del texto relativo a esta medida, cambien todos los tamaños en cada breakpoint.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_9/ejercicio_02_PostBlogs/index.html) 
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_09/ejercicio_02_PostBlogs/index.html) 
 
 ---
 
@@ -47,21 +47,21 @@
 
 Replicar el [siguiente ejemplo](https://ce7du.csb.app/) con breakpoints incluidos.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_9/ejercicio_03_LayoutI/index.html) 
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_09/ejercicio_03_LayoutI/index.html) 
 ---
 
 ### 04 - Layout II
 
 Replicar el [siguiente ejemplo](https://4ntmp.csb.app/) con breakpoints incluidos.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_9/ejercicio_04_LayoutII/index.html) 
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_09/ejercicio_04_LayoutII/index.html) 
 ---
 
 ### 05 - Layout III
 
 Replicar el [siguiente ejemplo](https://9eoom.csb.app/) con breakpoints incluidos.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_9/ejercicio_05_LayoutIII/index.html) 
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_09/ejercicio_05_LayoutIII/index.html) 
 ---
 
 ### 06 - Grilla de imágenes
@@ -78,7 +78,7 @@ Replicar el [siguiente ejemplo](https://9eoom.csb.app/) con breakpoints incluido
 - Las imágenes de la grilla inicialmente deben tener una disposición de 4 imágenes por fila.
 - Agregar breakpoints para que, a medida que la resolución se vaya achicando, la grilla cambie a 3 imágenes por fila, luego 2 imágenes por fila y finalmente 1 imagen por fila.
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_9/ejercicio_06_GrillaImagenes/index.html) 
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_09/ejercicio_06_GrillaImagenes/index.html) 
 ---
 
 ### 07 - Grilla de productos
@@ -107,4 +107,4 @@ Replicar el [siguiente ejemplo](https://9eoom.csb.app/) con breakpoints incluido
 - Cuando se muestra 1 producto por fila, el título principal, el secundario y el párrafo, deben alinearse horizontalmente a la izquierda.
 - Poner un breakpoint que modifique el `font-size` del body, de modo tal que, al ser el tamaño del texto relativo a esta medida, cambien todos los demás tamaños en simultáneo.
   
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_9/ejercicio_07_GrillaProductos/index.html) 
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_09/ejercicio_07_GrillaProductos/index.html) 

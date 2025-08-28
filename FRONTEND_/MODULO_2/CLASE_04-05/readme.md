@@ -9,12 +9,12 @@
 - un título `h1` con un tamaño de letra de `120px` y una tipografía de Google Fonts (por ejemplo: `Montserrat`) y un grosor de letra de 800 o 900. El título debe decir: `¡Hola, soy Ada!` (con tu nombre).
 - un párrafo con un tamaño de letra de `48px` y una tipografía de Google Fonts (por ejemplo: `Montserrat`) y un grosor de letra de 600 o 700. El párrafo debe tener una breve descripción tuya, por ejemplo: `Primera programadora, matemática en mi tiempo libre y guitarrista`.
 - Tanto tu nombre como las palabras claves de tu descripción (por ejemplo: `programadora`, `matemática` y `guitarrista`) deben estar en distintos colores (cada palabra debe tener un color distinto).
-  - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_4-5/ejercicio-01/index.html)
+  - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_04-05/ejercicio-01/index.html)
 
 ### 02 - Presentación Modo Oscuro
 
 - Repetir el ejercicio anterior, pero poniéndole al `html` un color de fondo oscuro (por ejemplo: `#212121`) y un color de texto claro (por ejemplo: `#FAFAFA`).
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_4-5/ejercicio-02/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_04-05/ejercicio-02/index.html)
 - 
 ### 03 - Artículo
 
@@ -27,7 +27,7 @@
   - El segundo párrafo debe tener una oración en negrita. 
   - El tercer párrafo debe estar completamente en itálica y tener una tipografía distinta a la de los párrafos.
   - El cuarto párrafo debe tener 2 palabras en negrita y 2 palabras en itálica.
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_4-5/ejercicio-03/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_04-05/ejercicio-03/index.html)
 - 
 ### 04 - Paisaje
 
@@ -38,7 +38,7 @@
 🌲🌳🌳🏠🏢🏦🏠🏠🌲🌳
 ```
 - cada emoji debe tener un tamaño de letra distinto para que haya variedad entre ellos. 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_4-5/ejercicio-04/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_04-05/ejercicio-04/index.html)
 
 ### 05 - Alineación
 
@@ -59,7 +59,7 @@
 ¡Derecha!
 ¡Derecha!
 ```
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_4-5/ejercicio-05/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_04-05/ejercicio-05/index.html)
 - 
 ### 06 - Frutas
 
@@ -67,7 +67,7 @@
 
 - una lista desordenada con al menos 10 frutas.
 - cada fruta debe tener un color que la represente (por ejemplo, manzana de color rojo, banana de color amarillo, kiwi de color verde).
-  - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_4-5/ejercicio-06/index.html)
+  - [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_04-05/ejercicio-06/index.html)
 
 ### 07 - Paleta de Colores
 
@@ -84,7 +84,7 @@
 - Cada ítem debe de tener de color de fondo el color que representa (por ejemplo, si representa el color negro, tener de color de fondo dicho color).
 - Tener en cuenta el contraste, si el color de fondo es muy oscuro, poner un color de letra claro, y viceversa.
 - Los colores de la primera paleta deben estar en sistema hexadecimal, los de la segunda en sistema rgb y los de la tercera en sistema hsl.
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_4-5/ejercicio-07/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_04-05/ejercicio-07/index.html)
 
 ### 08 - Termómetro
 
@@ -94,7 +94,7 @@
 - la lista debe ir de `Temperatura: 0°C` a `Temperatura: 50°C` aumentando de a 5°C.
 - poner las temperaturas extremas (0°C y 50°C) en negrita.
 - dar a cada temperatura un color distinto, cambiando gradualmente, siendo el 0°C el color azul y 50°C el color rojo. [Ver ejemplo](https://cdn.shopify.com/s/files/1/2303/2711/files/colour_temperature_kelvin_chart_make_up.jpg?v=1513856014).
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_4-5/ejercicio-08/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_04-05/ejercicio-08/index.html)
 
 ### 09 - Cuenta Bancaria
 
@@ -127,7 +127,7 @@ Cobro de sueldo
 - Dar a los títulos un tamaño de fuente distinto al default.
 - Dar a la fecha un tamaño de letra más pequeña y un color gris claro.
 - Si el monto es un ingreso, debe tener un color verde, si es una salida, debe tener un color verde.
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_4-5/ejercicio-09/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_04-05/ejercicio-09/index.html)
 
 ### 10 - Tareas
 
@@ -164,7 +164,7 @@ Hecha
   - Haciendo: Naranja
   - Hecha: Verde
   - Cancelada: Rojo
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_4-5/ejercicio-10/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_04-05/ejercicio-10/index.html)
 
 ### 11 - Reacciones
 
@@ -182,4 +182,4 @@ Hecha
 - Dar al nombre de usuaria un color que se distinga (azul/celeste, etc) y sacar el subrayado por default.
 - Dar a la fecha un tamaño de letra más pequeña y un color gris claro.
 - Separar los `span` con espacios y ponerle un color de fondo gris claro.
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_4-5/ejercicio-11/index.html)
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_04-05/ejercicio-11/index.html)
