@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "nombre": "tomate",
+    "cantidad": 2
+  },
+  {
+    "id": 2,
+    "nombre": "lechuga",
+    "cantidad": 2
+  }
+]

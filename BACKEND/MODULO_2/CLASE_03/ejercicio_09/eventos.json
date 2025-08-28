@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "almuerzo",
+    "Fecha": "12/03/2025",
+    "lugar": "San Rafael"
+  },
+  {
+    "id": 2,
+    "nombre": "almuerzo",
+    "fecha": "12/10/2025",
+    "lugar": "San Rafael"
+  },
+  {
+    "id": 3,
+    "nombre": "cena",
+    "fecha": "25/08/2025",
+    "lugar": "Rama Caida"
+  }
+]
