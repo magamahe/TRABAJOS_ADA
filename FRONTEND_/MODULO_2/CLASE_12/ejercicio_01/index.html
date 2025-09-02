@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica: Selectores Avanzados de Jerarquía</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+  <h1>Ejemplo de Jerarquías</h1>
+
+  <!-- A + B -->
+  <h2>Sección 1</h2>
+  <p>Este párrafo está justo después de un h2.</p>
+  <p>Este párrafo NO está justo después de un h2.</p>
+
+  <!-- A ~ B -->
+  <h2>Sección 2</h2>
+  <p>Párrafo hermano del h2 (1).</p>
+  <p>Párrafo hermano del h2 (2).</p>
+  <span>Otro elemento</span>
+
+  <!-- A B (descendientes) -->
+  <div>
+    <p>Este párrafo está dentro de un div (descendiente).</p>
+    <section>
+      <p>Este párrafo también es descendiente, aunque más profundo.</p>
+    </section>
+  </div>
+
+  <!-- A > B (hijo directo) -->
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <ol>
+      <li>Sub-elemento A (NO es hijo directo del primer ul)</li>
+    </ol>
+  </ul>
+
+  <!-- * selector universal -->
+  <footer>
+    <p>Pie de página</p>
+  </footer>
+</body>
+</html>

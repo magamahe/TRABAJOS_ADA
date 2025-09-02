@@ -1,0 +1,149 @@
+/* Consigna (para tus alumnas)
+1. Agregar iconos decorativos con ::before y ::after al título.
+2. Estilar el primer y segundo elementos de una lista usando :nth-child() y :nth-of-type().
+3. Hacer que los botones cambien con :hover y se “hundan” con :active.
+4. Resaltar inputs al :focus y validar con :valid/:invalid.
+   Mostrar estilo distinto cuando el placeholder está visible (:placeholder-shown).
+5. Usar :checked para alternar un “modo compacto” (checkbox) que cambie el padding de las cards.
+6. Usar :not(.primary) para estilar todos los botones excepto los primarios.
+7.Implementar un menú con anclas y resaltar la sección activa con :target. */
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #fff;
+    --ink: #262525;
+    --muted: #777;
+    --brand: #c73c74;
+    --ok: #1f9d55;
+    --warn: #e67e22;
+    --err: #d63031;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+}
+
+/* 1️ Iconos decorativos en el título con ::before y ::after */
+.title {
+    text-align: center;
+    margin: 1.25rem 0.5rem;
+    font-size: clamp(2rem, 4vw, 4rem);
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.title::before,
+.title::after {
+    content: '⭐';
+    color: var(--brand);
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    position: relative;
+}
+
+.title::before {
+    left: -0.50rem;
+}
+
+.title::after {
+    right: -0.50rem;
+}
+
+
+/* 2️ Estilar primer y segundo elemento de la lista */
+
+ul.todos li:nth-child(1) {
+  background-color: var(--warn);
+}
+
+ul.todos li:nth-child(2) {
+  background-color:var(--muted);
+}
+
+/* 3️ Botones :hover y :active */
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* 4️ Inputs con :focus, :valid, :invalid, :placeholder-shown */
+input {
+  border: 5px solid #040207;
+  padding: 0.5rem;
+  transition: border 0.3s;
+}
+
+input:focus {
+background-color: rgb(198, 241, 220); 
+}
+
+input:valid {
+  border: 1px solid var(--ok);
+  background-color: var(--ok);
+}
+
+input:invalid {
+  border: 1px solid var(--err); 
+  background-color: var(--err);
+}
+
+input:placeholder-shown {
+  border: 1px solid var(--ink); 
+  background-color: var(--bg);
+}
+
+
+/* 5️ Modo compacto con :checked */
+.card {
+  padding: 3rem; /* padding normal */
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+/*   transition: padding 0.3s; */
+}
+
+#compacto:checked ~ .grid .card {
+  padding: 0.5rem; /* padding compacto */
+}
+
+/* 6️ Estilo para botones que no sean primarios */
+.btn:not(.primary) {
+  background-color: var(--muted);
+  color: var(--ink);
+}
+
+/* 7️ Resaltar sección activa con :target */
+.section {
+  transition: all 0.3s ease;
+}
+
+.section:target {
+  border: 3px solid var(--warn);
+  border-radius: 8px;
+  padding: 1rem; /* opcional para que no se vea “pegado” */
+  background-color: #fff7e6; /* un leve fondo para resaltar */
+}
+
+.section:target h2 {
+  background-color: var(--warn);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: #000; /* asegura contraste */
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Práctica: Pseudo-clases (+Flexbox)</title>
+  <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+
+  <header>
+    <h1 class="title">Selectores y Pseudo-clases</h1>
+    <nav class="nav">
+      <a href="#lista">Lista</a>
+      <a href="#cards">Cards</a>
+      <a href="#form">Formulario</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección 1: Lista -->
+    <section id="lista" class="section">
+      <h2>1) Lista</h2>
+      <ul class="lista">
+        <li>Preparar HTML</li>
+        <p>hola</p>
+        <li>Escribir CSS</li>
+        <li>Probar :hover / :active</li>
+        <li>Validar formulario</li>
+        <li>Usar :target en el menú</li>
+      </ul>
+      <p>Indicación: aplicá <code>:nth-child()</code> y <code>:nth-of-type()</code>.</p>
+    </section>
+
+    <!-- Sección 2: Cards + Flexbox -->
+    <section id="cards" class="section">
+      <h2>2) Cards (Flexbox)</h2>
+
+      <label class="opcional">
+        <input type="checkbox" class="control-compacto" />
+        <span>Modo compacto (opcional, usa <code>:checked</code>)</span>
+      </label>
+
+      <!-- Importante: este contenedor va con display:flex -->
+      <div class="cards">
+        <article class="card">
+          <h3>Card A</h3>
+          <p>Estila los botones no primarios con <code>:not(.primary)</code>.</p>
+          <div class="actions">
+            <button class="btn primary">Primario</button>
+            <button class="btn">Secundario</button>
+            <button class="btn">Terciario</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Card B</h3>
+          <p>Probá estados de <code>:hover</code> y <code>:active</code>.</p>
+          <div class="actions">
+            <button class="btn primary">Comprar</button>
+            <button class="btn">Info</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Card C</h3>
+          <p>El checkbox opcional reduce el padding de todas las cards.</p>
+          <div class="actions">
+            <button class="btn">Normal</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección 3: Formulario -->
+    <section id="form" class="section">
+      <h2>3) Formulario</h2>
+      <form class="form" novalidate>
+        <label>
+          Nombre
+          <input type="text" placeholder="Tu nombre" required minlength="3" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" placeholder="tucorreo@dominio.com" required />
+        </label>
+
+        <label>
+          Contraseña
+          <input type="password" placeholder="Mín. 6 caracteres" required minlength="6" />
+        </label>
+
+        <div class="actions">
+          <button class="btn primary" type="submit">Enviar</button>
+          <button class="btn" type="button">Cancelar</button>
+        </div>
+      </form>
+      <p>Probá <code>:focus</code>, <code>:valid</code>, <code>:invalid</code> y <code>:placeholder-shown</code>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="back" href="#lista">Ir a Lista</a>
+    <a class="back" href="#cards">Ir a Cards</a>
+    <a class="back" href="#form">Ir a Formulario</a>
+  </footer>
+
+</body>
+</html>

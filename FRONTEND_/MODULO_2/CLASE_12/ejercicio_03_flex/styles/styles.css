@@ -1,0 +1,158 @@
+/* 1) Reset mínimo */
+* { box-sizing: border-box; }
+body { margin:0; font-family: Arial, Helvetica, sans-serif; color:#222; }
+
+/* 2) Título con ::before y ::after (sin position) */
+/* TODO: Agregar una estrella antes y después del .title con ::before y ::after */
+.title {
+    text-align:center; 
+    margin: 1.25rem  0.5rem; 
+}
+.title::before { 
+    content: "★ "; 
+    color: #c73c74;}
+.title::after  { 
+    content: " ★"; 
+    color: #c73c74;}
+
+/* 3) Nav simple */
+.nav { 
+    display:flex; 
+    gap: 1.075rem; 
+    justify-content:center; 
+    margin-bottom: 1rem}
+.nav a { 
+    text-decoration:none; 
+    color:#222; 
+    border:1px solid #eee; 
+    padding:0.38rem 0.63rem; 
+    border-radius:0.5rem; }
+
+/* 4) Secciones */
+.section { 
+    padding: 1.75rem 1rem; 
+    max-width: 60rem; 
+    margin: auto; }
+.section h2 { 
+    margin:0 0 0.88rem; }
+
+/* 5) :target → cuando hago click en el menú y la sección queda activa */
+/* TODO: resaltar el h2 de la sección activa con borde o fondo */
+.section:target h2 { 
+    outline: 3px solid #c73c74; 
+    border-radius:8px}
+
+/* ------------------ LISTA ------------------ */
+.lista { 
+    padding-left: 1.13rem; 
+    line-height:1.8; }
+/* TODO: el 1er li en negrita */
+.lista li:nth-child(1){ 
+    font-weight:bold}
+/* TODO: el 2do li en color destacado */
+.lista li:nth-child(2){
+    color: #02f2ff;  }
+/* TODO: el 4to li subrayado usando :nth-of-type */
+.lista li:nth-of-type(4){ 
+    text-decoration: none; 
+    color: tomato;
+    border: 1px solid black;
+    width: 15rem;
+    border-radius: 0.5rem;
+}
+/* ------------------ CARDS (Flexbox) ------------------ */
+/* Contenedor de cards con flexbox y wrap */
+.cards{
+  display:flex; 
+  flex-wrap:wrap; 
+  gap:1rem;
+}
+/* Cada card debe ocupar ~min 260px y crecer */
+.card{
+  border:1px solid #eee; 
+  border-radius:1rem; 
+  padding:2rem;
+  background:#fff;
+  flex: 1 1 13rem; /* grow, shrink, basis */
+  transition: all 0.3s ease
+}
+.card h3, p{
+    margin-top: 0.5rem;
+    color: #c73c74;
+    font-weight: bold;
+}
+.actions{ 
+    display:flex; 
+    gap:0.5rem; 
+    flex-wrap:wrap; }
+
+/* Botones base */
+.btn{
+  border:1px solid #ddd; 
+  background:#fafafa;
+  padding:0.5rem 0.75rem; 
+  border-radius:0.63rem;
+  cursor:pointer; 
+  margin: 0.25rem 0;
+}
+/* TODO: :hover → aclarar fondo */
+.btn:hover{ 
+    background:#f0f0f0; }
+/* TODO: :active → empequeñecer un poco (sin position) */
+.btn:active{ 
+    transform: scale(0.97);}
+/* Botón primario */
+.btn.primary{
+    background:#c73c74; 
+    color:white; 
+    border-color:transparent; }
+/* TODO: :not(.primary) → poner borde punteado */
+.btn:not(.primary){
+    border-style: dashed;}
+
+.opcional{ 
+    margin-top:1.5rem; 
+    display:flex; 
+    align-items:center; 
+    gap:0.5rem;
+}
+
+/* (Opcional) :checked → si el checkbox está activo, reducir padding de las cards
+   Pista: input.control-compacto (checkbox) está justo ANTES de .cards */
+
+.opcional:has(.control-compacto:checked) ~ .cards .card {
+  padding: 0.63rem;        /* cambia el padding */
+  font-weight: bold;       /* texto en negrita */
+  background-color: #f3aa35df;          /* cambia el color */
+}
+
+
+/* ------------------ FORMULARIO ------------------ */
+.form{ display:flex; flex-direction:column; gap:14px; max-width:520px; }
+.form label{ display:flex; flex-direction:column; gap:6px; }
+
+.form input{
+  padding:10px 12px; border:2px solid #e0e0e0; border-radius:10px; outline:none;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+
+/* TODO: placeholder visible */
+.form input:placeholder-shown{
+  background:#fcfcfc; 
+  color: #777;
+}
+
+/* TODO: focus → borde azul + leve sombra */
+.form input:focus{
+  border-color:#5aa9ff; 
+  box-shadow: 0 0 0 3px rgba(90,169,255,.25);
+}
+
+/* TODO: valid / invalid */
+.form input:valid{ border-color: #1f9d55; }
+.form input:invalid{border-color: #d63031;}
+
+/* Footer */
+.footer{ display:flex; gap:10px; justify-content:center; padding:24px; border-top:1px solid #eee; }
+.back{ text-decoration:none; border:1px solid #eee; padding:8px 12px; border-radius:10px; color:#222; }
+.back:hover{ background:#f7f7f7; }
