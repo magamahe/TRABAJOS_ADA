@@ -1,0 +1,5 @@
+[
+    {"id": 1, "marca": "Toyota", "modelo": "Corolla", "año": 2020},
+    {"id": 2, "marca": "Ford", "modelo": "Focus", "año": 2018},
+    {"id": 3, "marca": "Chevrolet", "modelo": "Cruze", "año": 2019}
+]

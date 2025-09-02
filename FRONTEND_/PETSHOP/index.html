@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Front Cat&Dog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Banner superior -->
+  <div class="banner">
+    <p class="banner-msg">🐾 Grandes ofertas en comederos 🐾</p>
+    <div class="banner-options">
+      <select name="idioma" id="idioma">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+        <option value="pt">Português</option>
+      </select>
+      <select name="moneda" id="moneda">
+        <option value="ars">$ARG</option>
+        <option value="usd">$USD</option>
+        <option value="eur">€EUR</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-bar">
+      <img src="img/presentacion_logo.png" alt="Logo" class="logo-bar-cabecera" />
+      <nav>
+        <ul class="logo-bar-menu">
+          <li><a href="#productos">Categorías</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <img src="img/fondoPlato.png" alt="Plato con croquetas" class="hero-img" />
+    <div class="hero-contenedor">
+      <h1>¡Es un placer tenerte aquí!</h1>
+      <p class="hero-subtitulo">Todo lo que tu perro y gato necesitan</p>
+      <a href="#productos" class="btn">Ver productos</a>
+    </div>
+  </section>
+
+  <!-- Productos Destacados -->
+  <section id="productos" class="productos section">
+    <h2>Productos Destacados</h2>
+
+    <div class="productos-destacados">
+      <!-- Radios ocultos -->
+      <input type="radio" name="categoria" id="comederos" checked>
+      <input type="radio" name="categoria" id="accesorios">
+      <input type="radio" name="categoria" id="comida">
+
+      <!-- Filtros -->
+      <div class="filtros">
+        <label for="comederos">Comederos</label>
+        <label for="accesorios">Accesorios</label>
+        <label for="comida">Comida</label>
+      </div>
+
+      <!-- Galería -->
+      <div class="galeria">
+        <!-- Comederos -->
+        <div class="producto comederos"><img src="https://placekitten.com/200/150"><p>$1500</p></div>
+        <div class="producto comederos"><img src="https://placekitten.com/201/150"><p>$1800</p></div>
+        <div class="producto comederos"><img src="https://placekitten.com/202/150"><p>$2000</p></div>
+
+        <!-- Accesorios -->
+        <div class="producto accesorios"><img src="https://placebear.com/200/150"><p>$1200</p></div>
+        <div class="producto accesorios"><img src="https://placebear.com/201/150"><p>$1700</p></div>
+        <div class="producto accesorios"><img src="https://placebear.com/202/150"><p>$2200</p></div>
+
+        <!-- Comida -->
+        <div class="producto comida"><img src="https://place-puppy.com/200x150"><p>$800</p></div>
+        <div class="producto comida"><img src="https://place-puppy.com/201x150"><p>$950</p></div>
+        <div class="producto comida"><img src="https://place-puppy.com/202x150"><p>$1100</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section bg-light">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Baño y peluquería</li>
+      <li>Delivery de compras</li>
+      <li>Asesoramiento nutricional</li>
+    </ul>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="section">
+    <h2>Nosotros</h2>
+    <p>
+      En <strong>Front Cat&Dog</strong> amamos a las mascotas tanto como vos.
+      Trabajamos para brindar productos de calidad y un servicio cercano y confiable.
+    </p>
+  </section>
+
+  <!-- Opiniones -->
+  <section id="opiniones" class="section bg-light">
+    <h2>Opiniones</h2>
+    <blockquote>"El mejor lugar para consentir a mi perro 🐶" - Cliente feliz</blockquote>
+    <blockquote>"Gran variedad de juguetes y atención excelente 🐱" - Clienta</blockquote>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto section">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Nombre y Apellido" required />
+      <input type="email" placeholder="Ingresá tu correo electrónico" required />
+      <input type="tel" placeholder="Teléfono" />
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Suscripción -->
+  <section class="suscripcion section bg-light">
+    <h2>Suscribite</h2>
+    <div class="suscripcion-contenido">
+      <input type="email" placeholder="Ingresá tu correo electrónico" />
+      <button class="btn">Suscribirme</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-contenedor">
+    <!-- Izquierda: datos -->
+    <div class="footer-izquierda">
+      <p><strong>Dirección:</strong> Calle - Provincia</p>
+      <p><strong>Teléfono:</strong> Número de teléfono</p>
+      <p><strong>Correo:</strong> Dirección de correo</p>
+    </div>
+
+    <!-- Derecha: cinta de perros con logo de marca de agua -->
+    <div class="footer-derecha">
+      <div class="logo-watermark">
+        <img src="img/LogoFooter.png" alt="Logo marca de agua">
+      </div>
+      <div class="cinta-perros">
+        <div class="cinta-track">
+          <img src="https://placekitten.com/80/80" alt="Perro 1">
+          <img src="https://placebear.com/80/80" alt="Perro 2">
+          <img src="https://place-puppy.com/80x80" alt="Perro 3">
+          <img src="https://placekitten.com/81/80" alt="Perro 4">
+          <img src="https://placebear.com/81/80" alt="Perro 5">
+          <img src="https://place-puppy.com/81x80" alt="Perro 6">
+          <!-- Repetir para loop -->
+          <img src="https://placekitten.com/80/80" alt="Perro 1">
+          <img src="https://placebear.com/80/80" alt="Perro 2">
+          <img src="https://place-puppy.com/80x80" alt="Perro 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="copyright">© 2025 Front Cat&Dog - Todos los derechos reservados</p>
+</footer>
+
+
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/5491112345678" target="_blank" class="whatsapp">💬</a>
+
+</body>
+</html>

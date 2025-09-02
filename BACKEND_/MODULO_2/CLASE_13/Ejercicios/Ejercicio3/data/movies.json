@@ -1,0 +1,5 @@
+[
+    { "titulo": "Inception", "director": "Christopher Nolan", "año": 2010, "género": "Ciencia ficción" },
+    { "titulo": "Titanic", "director": "James Cameron", "año": 1997, "género": "Romance" },
+    { "titulo": "The Godfather", "director": "Francis Ford Coppola", "año": 1972, "género": "Crimen" }
+]

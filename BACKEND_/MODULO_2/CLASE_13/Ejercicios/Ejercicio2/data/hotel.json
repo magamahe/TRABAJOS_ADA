@@ -1,0 +1,5 @@
+[
+    { "id": "1", "nombre": "Hotel Paraíso", "ubicación": "Cancún, México", "habitaciones_disponibles": 5 },
+    { "id": "2", "nombre": "Grand Palace", "ubicación": "Madrid, España", "habitaciones_disponibles": 2 },
+    { "id": "3", "nombre": "Sunset Resort", "ubicación": "Miami, EE.UU.", "habitaciones_disponibles": 8 }
+]
