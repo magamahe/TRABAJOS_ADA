@@ -24,7 +24,7 @@ Usar las siguientes medidas:
 - **Cuadrado rojo:** 60px x 60px
 - **Cuadrado verde:** 30px x 30px
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_13/ejercicio_01-Superponer_elementosII/index.html) 
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_13/ejercicio_02-Superponer_elementosII/index.html) 
 
 ### 03 - Usuarios en línea
 
