@@ -8,8 +8,8 @@ body {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
-    font-size: 14px;
+    padding: 2px 2px;
+    font-size: 12px;
 }
 
 .banner-options {
@@ -42,7 +42,7 @@ body {
 /* HEADER más alto */
 header {
   background-color: #f3a13b;
-  padding: 16px 20px; /* Aumentar padding para mayor altura */
+  padding: 8px 2px; /* Aumentar padding para mayor altura */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -55,9 +55,10 @@ header {
 
 /* LOGO más chico */
 .logo-bar-cabecera {
-  height: 22px;      /* más chica aún */
+  height: 80px;      /* más chica aún */
   width: auto;
   display: block;
+  
 }
 
 /* MENÚ */
