@@ -56,7 +56,7 @@ Maquetar una card de producto que contenga imagen, nombre y precio de producto. 
 
 ![](https://i.ibb.co/g971CFM/Screen-Shot-2020-09-11-at-13-47-34.png)
 
-- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_13/ejercicio_06-Card de producto/index.html) 
+- [VER RESUELTO](https://magamahe.github.io/TRABAJOS_ADA/FRONTEND_/MODULO_2/CLASE_13/ejercicio_06-Card_producto/index.html) 
 
 ### 07 - Menú de navegación
 
