@@ -1,0 +1,56 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-registro {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #111;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.campo {
+  display: flex;                  /* ícono + input en línea */
+  align-items: center;           /* alineación vertical centrada */
+  background: #222;              /* fondo del campo */
+  border-radius: 4px;            /* bordes redondeados */
+  padding: 0.5rem 1rem;          /* espacio interno */
+}
+
+.campo i {
+  color: #00aaff;                /* color azul del ícono */
+  margin-right: 0.5rem;          /* espacio entre ícono e input */
+  font-size: 1rem;               /* tamaño del ícono */
+}
+
+.campo input {
+  flex: 1;                       /* ocupa todo el espacio restante */
+  background: transparent;       /* sin fondo para que se vea el del contenedor */
+  border: none;                  /* sin borde */
+  color: #fff;                   /* texto blanco */
+  font-size: 1rem;
+  outline: none;                 /* sin borde al enfocar */
+}
+
+
+button {
+  background: #00aaff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0088cc;
+}

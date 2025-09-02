@@ -1,0 +1,109 @@
+/* === Reset básico === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Estilo base === */
+/* Body centrado */
+body {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  min-height: 100vh;       /* ocupa toda la altura de la pantalla */
+  margin: 0;
+  background-color: #f5f2f2;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Card de producto */
+.card-producto {
+  width: 250px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  min-height: 300px;
+}
+
+/* Contenedor de la imagen */
+.imagen-container {
+  position: relative;
+  width: 100%;
+  /* height: 200px; */
+  overflow: hidden;
+  margin: 5px 5px 5px 5px;
+}
+
+/* Imagen */
+.producto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Badges esquina superior izquierda */
+.badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.badge {
+  display: inline-block; /* ajusta el ancho al contenido */
+  background-color: #ff5959;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  white-space: nowrap; /* evita que el texto haga salto de línea */
+}
+
+.badge.descuento {
+  background-color: #ff5959;
+  align-self: flex-start;  /* alinea a la izquierda dentro de la columna */
+  padding: 3px 6px;        /* un poco más chico que el verde */
+}
+
+.badge.envio {
+  background-color: #3fcf7f;
+  padding: 4px 8px;
+}
+
+/* Corazón esquina superior derecha */
+.favorito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff3e3e;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Info producto (nombre y precio) */
+.info-producto {
+  padding: 15px;
+  text-align: center;
+}
+
+.nombre {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.precio {
+  font-size: 16px;
+  font-weight: bold;
+  color: #230aaf;
+  margin: 0;
+}

@@ -1,0 +1,114 @@
+/* Reset y body */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #222;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Base hover item */
+figure.hover-item {
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 200px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+figure.hover-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.6s ease;
+  display: block;
+}
+
+figure.hover-item figcaption {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+/* Efectos */
+.effect-lily:hover img { transform: scale(1.1); }
+.effect-lily:hover figcaption { opacity: 1; }
+
+.effect-layla figcaption { transform: translateY(100%); }
+.effect-layla:hover figcaption { transform: translateY(0); opacity: 1; }
+
+.effect-zoe figcaption { clip-path: circle(0% at 50% 50%); }
+.effect-zoe:hover figcaption { clip-path: circle(150% at 50% 50%); opacity: 1; }
+
+.effect-julia figcaption { backdrop-filter: blur(5px); }
+.effect-julia:hover figcaption { opacity: 1; }
+.effect-julia:hover img { transform: scale(1.2); }
+
+.effect-goliath:hover img { transform: scale(1.4); }
+.effect-goliath:hover figcaption { opacity: 1; }
+
+.effect-hera figcaption { transform: translate(-100%, 100%); }
+.effect-hera:hover figcaption { transform: translate(0,0); opacity: 1; }
+
+.effect-winston:hover img { transform: scale(1.2); filter: brightness(0.7); }
+.effect-winston:hover figcaption { opacity: 1; }
+
+.effect-selena:hover img { filter: blur(4px); }
+.effect-selena:hover figcaption { opacity: 1; }
+
+.effect-terry:hover img { transform: rotate(5deg) scale(1.1); }
+.effect-terry:hover figcaption { opacity: 1; }
+
+.effect-phoebe figcaption { transform: scale(0); }
+.effect-phoebe:hover figcaption { transform: scale(1); opacity: 1; }
+
+.effect-apollo:hover img { filter: grayscale(100%); transform: scale(1.1); }
+.effect-apollo:hover figcaption { opacity: 1; }
+
+.effect-kira figcaption { border: 2px solid transparent; }
+.effect-kira:hover figcaption { border: 2px solid white; opacity: 1; }
+
+.effect-steve figcaption { transform: translateX(-100%); }
+.effect-steve:hover figcaption { transform: translateX(0); opacity: 1; }
+
+.effect-moses:hover img { filter: grayscale(100%) brightness(0.7); transform: scale(1.2); }
+.effect-moses:hover figcaption { opacity: 1; }
+
+.effect-jazz figcaption { transform: translateY(-20px); }
+.effect-jazz:hover figcaption { transform: translateY(0); opacity: 1; }
+
+.effect-ming figcaption { background: radial-gradient(circle, rgba(0,0,0,0.7), transparent); }
+.effect-ming:hover figcaption { opacity: 1; }
+
+.effect-lexi figcaption { filter: blur(5px); }
+.effect-lexi:hover figcaption { filter: blur(0); opacity: 1; }
+
+.effect-duke:hover img { transform: rotate(-5deg) scale(1.1); }
+.effect-duke:hover figcaption { opacity: 1; }
+
+
+/* DUKE2: zoom + desenfoque con título y texto */
+.effect-duke2 figcaption {  display: flex;  flex-direction: column;  justify-content: center;  gap: 0.5rem;  /* opacity: 0;  */ transition: all 0.6s ease;}
+.effect-duke2 h2 {  font-size: 1.5rem;  margin-bottom: 0.5rem; transition: transform 0.3s ease;}
+.effect-duke2 p {  font-size: 1rem;   opacity: 0;  transition: opacity 0.3s ease;}
+.effect-duke2:hover img {  transform: scale(1.2);  filter: blur(4px);}
+.effect-duke2:hover figcaption {  opacity: 1;}
+.effect-duke2:hover h2 {  transform: scale(1.3); /* se agranda un 30% */}
+.effect-duke2:hover p {  opacity: 1;}

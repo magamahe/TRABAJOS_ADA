@@ -1,0 +1,70 @@
+/* === Reset básico === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Estilo base === */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.cuadrado_gris {
+   width: 100px;
+   height: 100px;
+   background-color: #ccc; /* gris */
+   position: relative;
+   z-index: 1;
+ }
+
+.rojo {
+   width: 60px;
+   height: 60px;
+   background-color: red;
+   position: absolute;
+   z-index: 2;
+ }
+
+ .verde {
+   width: 30px;
+   height: 30px;
+   background-color: green;
+   position: absolute;
+   z-index: 2;
+ }
+
+ /* Posiciones según la imagen (fila 1) */
+ .c1 .rojo { top: 0; left: 0; }
+ .c1 .verde { bottom: 0; right: 0; }
+ .c2 .rojo { bottom: 0px; left: 0; } /* ajusta para centrar si quieres */
+ .c2 .verde { top: 0; right: 0; }
+ .c3 .rojo { bottom: 0; right: 0; }
+ .c3 .verde { top: 0; right: 0; }
+
+ /* fila 2 */
+ .c4 .rojo { bottom: 0; left: 0; }
+ .c4 .verde { bottom: 0; left: 30px; } /* se superpone parcialmente */
+ .c5 .rojo { top: 0; right: 0; }
+ .c5 .verde { top: 30px; right: 30px; }
+ .c6 .rojo { bottom: 0; right: 0; }
+ .c6 .verde { top: 40px; right: 0; }
+
+ /* fila 3 */
+ .c7 .rojo { top: 0; left: 20px; }
+ .c7 .verde { bottom: 0; left: 0; }
+ .c8 .rojo { bottom: 0; left: 20px; }
+ .c8 .verde { bottom: 0; left: 35px; }
+ .c9 .rojo { top: 20px; left: 20px; }
+ .c9 .verde { top: 35px; left: 35px; }

@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  /* Ocupa toda la pantalla */
+  margin: 0;
+  background-color: #f5f2f2; /* color de fondo */
+  font-family: Arial, sans-serif;
+}
+
+/* Card de usuario */
+.card-usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0ebeb;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px 2px rgba(73, 71, 71, 0.6);
+  gap: 20px; /* separación entre imagen y datos */
+  max-width: 600px; /* tamaño máximo horizontal */
+    min-height: 400px;
+}
+
+/* Contenedor de la foto */
+.foto-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+/* Imagen de perfil */
+.perfil {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* circular */
+  object-fit: cover;
+  display: block;
+}
+
+/* Logo encima de la foto */
+.logo {
+  position: absolute;
+  top: 0;                  /* pegado arriba */
+  left: 50%;               /* centrado horizontal */
+  transform: translateX(-50%); /* corrige el centrado exacto */
+  width: 35px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: rgb(255, 253, 255);
+  border: none;
+  box-shadow: 0 0 6px 2px rgba(73, 71, 71, 0.4),
+              0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+
+/* Bandera ABAJO DERECHA de la foto */
+.bandera {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+  width: 35px;
+  height: 25px;
+  border-radius: 5px;
+ /*  border: 1px solid #fff; */
+  box-shadow: 0 0 8px 2px rgba(73, 71, 71, 0.6);
+}
+
+/* Datos del usuario */
+.datos {
+  flex-grow: 1; /* ocupa todo el espacio disponible debajo de la foto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* datos pegados abajo */
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+
+.datos li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.datos li strong {
+  font-weight: 600;
+}

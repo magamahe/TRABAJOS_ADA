@@ -1,0 +1,72 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales del header/nav */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  position: relative; /* importante para posicionar el submenú */
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Hover en ítems del menú principal */
+nav li:hover {
+  color: #00aaff; /* azul brillante */
+}
+
+/* Submenú oculto */
+.sub-menu-oculto {
+  position: absolute;
+  top: 100%;          /* debajo del li padre */
+  left: 0;
+  background-color: #000;
+  list-style: none;
+  padding: 0.5rem 0;
+  display: none;      /* oculto por defecto */
+  min-width: 150px;   /* ancho mínimo */
+}
+
+.sub-menu-oculto li {
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+
+/* Hover en ítems del submenú */
+.sub-menu-oculto li:hover {
+  background-color: #00aaff; /* fondo azul */
+  color: #fff;               /* texto blanco para contraste */
+}
+
+
+/* Mostrar submenú al hacer hover */
+.sub-menu:hover .sub-menu-oculto {
+  display: block;
+ 
+}

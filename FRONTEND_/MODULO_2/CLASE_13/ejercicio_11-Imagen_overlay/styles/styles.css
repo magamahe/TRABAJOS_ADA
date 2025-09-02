@@ -1,0 +1,36 @@
+body {
+      margin: 0;
+      min-height: 100vh;
+
+      /* imagen + overlay */
+      background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+        url("https://wallpapers.com/images/featured/fondo-de-pantalla-hd-de-playa-b8sncabhuqz0gxrc.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+.recuadro {
+  padding: 10rem 20rem ;
+  margin: 2rem;           /* distancia de 2rem desde los bordes de la imagen */
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: center;
+  border: 2px solid white;  /* línea blanca */
+  background-color: transparent; /* o blanco si querés relleno */
+}
+
+    .recuadro h1 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: white;
+    }
+
+    .recuadro p {
+      font-size: 1.1rem;
+      color: white;
+    }

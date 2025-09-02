@@ -1,0 +1,51 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    /* Imagen de fondo */
+    background-image: url('https://i.pinimg.com/736x/6e/5e/10/6e5e103a85f76f2a36db364791270604.jpg');
+
+    /* Ajustes de la imagen */
+    background-size: cover;        /* La imagen cubre todo el viewport */
+     background-repeat: no-repeat; /* Evita que se repita */
+
+    
+    /* Opcional: efecto de fijar la imagen al hacer scroll */
+  /*   background-attachment: fixed;
+ */
+    /* Color de fondo como respaldo */
+    background-color: #f0f0f0;
+    
+    /* Fuente y márgenes para todo el body */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contador fijo en pantalla */
+.contador-online {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #333;
+  z-index: 999;
+}
+
+/* Botoncito verde */
+.punto-verde {
+  width: 10px;
+  height: 10px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+}

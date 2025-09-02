@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* Barra superior */
+.descuento {
+  background: #00bfa5;
+  color: #fff;
+  text-align: left;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+/* Header */
+header {
+  background: #0d47a1;
+  padding: 15px;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+/* Tarjeta */
+.card {
+  background: #fff;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+  height: 30rem;
+   display: flex;              /* convierte la card en flex */
+  flex-direction: column;     /* organiza en columna */
+}
+
+/* Imagen de cabecera */
+.card-header {
+  position: relative;
+}
+
+.card-header img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+   position: relative; /* necesario si luego comparás con z-index */
+  z-index: 1;
+}
+
+.card-header .icono {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: red;
+   z-index: 3; /* más alto que el avatar */
+}
+
+/* Avatar circular */
+.card-avatar {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+   z-index: 2; /* ahora se superpone al header */
+}
+
+.card-avatar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover; /* recorta bien sin estirar */
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;                    /* ocupa todo el alto disponible */
+  padding: 60px 20px 20px;
+  text-align: center;
+}
+
+.card-body h2 {
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  flex-grow: 1;               /* ocupa espacio extra y empuja al botón */
+}
+
+.card-body button {
+  background: #0d47a1;
+  color: #fff;
+  border: none;
+  width: 100px;        /* ancho fijo */
+  padding: 10px;        /* altura */
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto auto 0; /* lo centra y lo baja */
+}
+
+.card-body button:hover {
+  background: #1565c0;
+}
+
+/* Footer */
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
