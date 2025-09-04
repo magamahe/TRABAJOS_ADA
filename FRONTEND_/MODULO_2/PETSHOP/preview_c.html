@@ -1,0 +1,86 @@
+<!-- preview.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vista Responsiva Local</title>
+  <style>
+    body { 
+      font-family: system-ui, sans-serif; 
+      margin: 0; 
+      padding: 1rem; 
+      display: grid; 
+      gap: 1rem; 
+      justify-items: center; 
+    }
+    .toolbar { 
+      display: flex; 
+      gap: .5rem; 
+      flex-wrap: wrap; 
+    }
+    button, input { 
+      padding: .5rem .75rem; 
+      border-radius: 8px; 
+      border: 1px solid #ccc; 
+    }
+    button { cursor: pointer; }
+    iframe { 
+      border: 2px solid #ddd; 
+      height: 90vh; 
+      transition: width .25s; 
+      background: #fff; 
+    }
+    .row { 
+      display: flex; 
+      gap: .5rem; 
+      align-items: center; 
+      flex-wrap: wrap; 
+    }
+    label { font-size: .9rem; opacity: .8; }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <label>Archivo a previsualizar:</label>
+    <input id="file" value="index.html" />
+    <button onclick="load()">Cargar</button>
+  </div>
+
+  <div class="toolbar">
+    <!-- Móviles -->
+    <button onclick="setSize(320)">📱 320 (móvil pequeño)</button>
+    <button onclick="setSize(375)">📱 375 (móvil)</button>
+    <button onclick="setSize(414)">📱 414 (móvil ancho)</button>
+    <button onclick="setSize(480)">📱 480 (móvil grande)</button>
+
+    <!-- Tablets -->
+    <button onclick="setSize(768)">📊 768 (tablet vertical)</button>
+    <button onclick="setSize(834)">📊 834 (tablet horizontal / iPad)</button>
+    <button onclick="setSize(1024)">💻 1024 (desktop pequeño)</button>
+
+    <!-- Desktops -->
+    <button onclick="setSize(1280)">🖥 1280 (desktop grande)</button>
+    <button onclick="setSize(1366)">🖥 1366 (laptop ancho)</button>
+    <button onclick="setSize(1440)">🖥 1440 (desktop extra)</button>
+
+    <!-- Ancho completo -->
+    <button onclick="setSize('full')">↔️ Ancho completo</button>
+  </div>
+
+  <iframe id="preview" src="index.html" width="1024"></iframe>
+
+  <script>
+    const iframe = document.getElementById('preview');
+    const input = document.getElementById('file');
+
+    function setSize(w) {
+      if (w === 'full') iframe.style.width = '100%';
+      else iframe.style.width = w + 'px';
+    }
+
+    function load() {
+      iframe.src = input.value.trim();
+    }
+  </script>
+</body>
+</html>

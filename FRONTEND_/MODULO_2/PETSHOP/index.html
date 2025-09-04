@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Cat&Dog | Accesorios y comida para mascotas</title>
+    <meta name="description" content="Encuentra los mejores comederos, accesorios y alimentos para perros y gatos. Productos de alta calidad para la salud y felicidad de tu mascota. ¡Grandes descuentos!">
+    <meta name="keywords" content="comida para perros, comederos para perros, accesorios para gatos, tienda de mascotas, alimento para gatos, juguetes para mascotas, Argentina, descuento">
+    <link rel="stylesheet" href="./styles.css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="contenedor-general">
+
+    <!-- HEADER -->
+    <header>
+      <!-- Banner -->
+      <div class="banner">
+        <p class="banner-msg">Grandes ofertas en comederos</p>
+        <div class="banner-options">
+          <select name="idioma" id="idioma">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="pt">Português</option>
+          </select>
+          <select name="moneda" id="moneda">
+            <option value="ars">$ARG</option>
+            <option value="usd">$USD</option>
+            <option value="eur">€EUR</option>
+          </select>
+        </div>
+      </div>
+
+    <div class="logo-bar">
+    <a href="index.html" class="logo-link">
+        <img src="img/presentacion_logo.png" alt="Logo de la empresa" class="logo-bar-cabecera">
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="menu-toggle-label">
+        <span class="hamburguesa-icon">&#9776;</span>
+    </label>
+
+    <ul class="logo-bar-menu">
+        <li>
+            <img src="img/huellaChica.png" alt="icono huella">
+            <a href="#productos">Categorías</a>
+        </li>
+        <li>
+            <img src="img/huellaChica.png" alt="icono huella">
+            <a href="#clientes-pets">Pets</a>
+        </li>
+        <li>
+            <img src="img/huellaChica.png" alt="icono huella">
+            <a href="#nosotros">Nosotros</a>
+        </li>
+        <li>
+            <img src="img/huellaChica.png" alt="icono huella">
+            <a href="#contacto">Contáctanos</a>
+        </li>
+    </ul>
+</div>
+    <!-- MAIN -->
+    <main>
+      <!-- HERO -->
+      <section class="hero-container" id="inicio">
+                <div class="hero-texto">
+                    <h1 class="hero-frase">¡Es un placer tenerte aquí!</h1>
+                    <p class="hero-subtitulo">¡Comederos en descuento!</p>
+                    <a href="#productos" class="boton-comederos">COMEDEROS</a>
+                </div>
+            </section>
+
+      <!-- PRODUCTOS DESTACADOS -->
+      <section id="productos" class="productos section">
+        <h2>Productos Destacados</h2>
+
+        <!-- Radios de categorías -->
+        <input type="radio" name="categoria" id="comederos" checked>
+        <input type="radio" name="categoria" id="accesorios">
+        <input type="radio" name="categoria" id="comida">
+
+        <!-- Filtros -->
+        <div class="filtros">
+          <label for="comederos">Comederos</label>
+          <label for="accesorios">Accesorios</label>
+          <label for="comida">Comida</label>
+        </div>
+
+        <!-- Galería -->
+        <div class="galeria-container">
+          <div class="arrow left" onclick="this.nextElementSibling.scrollBy({left:-340, behavior:'smooth'})">&#10094;</div>
+          <div class="galeria">
+            <!-- Comederos -->
+                <div class="producto comederos">
+                    <div class="card"><div class="face front"><img src="./img/nueva/comedero9.jpeg"><p>Comedero 1 - $1500</p><p>$3050</p></div><div class="face back"><p>Resistente</p></div></div>
+                </div>
+                <div class="producto comederos">
+                    <div class="card"><div class="face front"><img src="./img/nueva/comedero8.jpeg"><p>Comedero 2</p><p>$3050</p></div><div class="face back"><p>Acero inoxidable</p></div></div>
+                </div>
+                <div class="producto comederos">
+                    <div class="card"><div class="face front"><img src="./img/nueva/comedero7.jpeg"><p>Comedero 3</p><p>$2050</p></div><div class="face back"><p>Anti-deslizante</p></div></div>
+                </div>
+                <div class="producto comederos">
+                    <div class="card"><div class="face front"><img src="./img/nueva/comedero6.jpeg"><p>Comedero 4</p><p>$2250</p></div><div class="face back"><p>Grande</p></div></div>
+                </div>
+                <div class="producto comederos">
+                    <div class="card"><div class="face front"><img src="./img/nueva/comedero5.jpeg"><p>Comedero 5</p><p>$3150</p></div><div class="face back"><p>Con compartimentos</p></div></div>
+                </div>
+                <div class="producto comederos">
+                    <div class="card"><div class="face front"><img src="./img/nueva/comedero4.jpeg"><p>Comedero 6</p><p>$3220</p></div><div class="face back"><p>Ligero</p></div></div>
+                </div>
+                <div class="producto comederos">
+                    <div class="card"><div class="face front"><img src="./img/nueva/comedero3.jpeg"><p>Comedero 7</p><p>$3330</p></div><div class="face back"><p>Resistente al agua</p></div></div>
+                </div>
+                <div class="producto comederos">
+                    <div class="card"><div class="face front"><img src="./img/nueva/comedero2.jpeg"><p>Comedero 8</p><p>$3430</p></div><div class="face back"><p>Fácil limpieza</p></div></div>
+                </div>
+                <div class="producto comederos">
+                    <div class="card"><div class="face front"><img src="./img/nueva/comedero1.jpeg"><p>Comedero 9</p><p>$3220</p></div><div class="face back"><p>Premium</p></div></div>
+                </div>
+
+                <!-- Accesorios -->
+                <div class="producto accesorios">
+                    <div class="card"><div class="face front"><img src="./img/nueva/accesorio9.jpeg"><p>Collar 1 - $1200</p><p>$3220</p></div><div class="face back"><p>Ajustable</p></div></div>
+                </div>
+                <div class="producto accesorios">
+                    <div class="card"><div class="face front"><img src="./img/nueva/accesorio8.jpeg"><p>Collar 2 - $1700</p><p>$3220</p></div><div class="face back"><p>Elegante</p></div></div>
+                </div>
+                <div class="producto accesorios">
+                    <div class="card"><div class="face front"><img src="./img/nueva/accesorio7.jpeg"><p>Collar 3</p><p>$3220</p></div><div class="face back"><p>Resistente</p></div></div>
+                </div>
+                <div class="producto accesorios">
+                    <div class="card"><div class="face front"><img src="./img/nueva/accesorio6.jpeg"><p>Collar 4</p><p>$3320</p></div><div class="face back"><p>Colorido</p></div></div>
+                </div>
+                <div class="producto accesorios">
+                    <div class="card"><div class="face front"><img src="./img/nueva/accesorio5.jpeg"><p>Collar 5</p><p>$2500</p></div><div class="face back"><p>Material premium</p></div></div>
+                </div>
+                <div class="producto accesorios">
+                    <div class="card"><div class="face front"><img src="./img/nueva/accesorio4.jpeg"><p>Collar 6</p><p>$2600</p></div><div class="face back"><p>Resistente</p></div></div>
+                </div>
+                <div class="producto accesorios">
+                    <div class="card"><div class="face front"><img src="./img/nueva/accesorio3.jpeg"><p>Collar 7</p><p>$2950</p></div><div class="face back"><p>Diseño moderno</p></div></div>
+                </div>
+                <div class="producto accesorios">
+                    <div class="card"><div class="face front"><img src="./img/nueva/accesorio2.jpeg"><p>Collar 8</p><p>$2750</p></div><div class="face back"><p>Ajustable</p></div></div>
+                </div>
+                <div class="producto accesorios">
+                    <div class="card"><div class="face front"><img src="./img/nueva/accesorio1.jpeg"><p>Collar 9</p><p>$3050</p></div><div class="face back"><p>Premium</p></div></div>
+                </div>
+
+                <!-- Comida -->
+                <div class="producto comida">
+                    <div class="card"><div class="face front"><img src="./img/nueva/alimento1.jpeg"><p>Comida 1</p><p>$2950</p></div><div class="face back"><p>Balanceada</p></div></div>
+                </div>
+                <div class="producto comida">
+                    <div class="card"><div class="face front"><img src="./img/nueva/alimento2.jpeg"><p>Comida 2</p><p>$1950</p></div><div class="face back"><p>Ingredientes naturales</p></div></div>
+                </div>
+                <div class="producto comida">
+                    <div class="card"><div class="face front"><img src="./img/nueva/alimento3.jpeg"><p>Comida 3</p><p>$950</p></div><div class="face back"><p>Para todas las edades</p></div></div>
+                </div>
+                <div class="producto comida">
+                    <div class="card"><div class="face front"><img src="./img/nueva/alimento4.jpeg"><p>Comida 4</p><p>$1150</p></div><div class="face back"><p>Alta proteína</p></div></div>
+                </div>
+                <div class="producto comida">
+                    <div class="card"><div class="face front"><img src="./img/nueva/alimento5.jpeg"><p>Comida 5</p><p>$1200</p></div><div class="face back"><p>Natural</p></div></div>
+                </div>
+                <div class="producto comida">
+                    <div class="card"><div class="face front"><img src="./img/nueva/alimento6.jpeg"><p>Comida 6</p><p>$1300</p></div><div class="face back"><p>Premium</p></div></div>
+                </div>
+                <div class="producto comida">
+                    <div class="card"><div class="face front"><img src="./img/nueva/alimento7.jpeg"><p>Comida 7</p><p>$1350</p></div><div class="face back"><p>Balanceada</p></div></div>
+                </div>
+                <div class="producto comida">
+                    <div class="card"><div class="face front"><img src="./img/nueva/alimento8.jpeg"><p>Comida 8</p><p>$1400</p></div><div class="face back"><p>Ingredientes naturales</p></div></div>
+                </div>
+                <div class="producto comida">
+                    <div class="card"><div class="face front"><img src="./img/nueva/alimento9.jpeg"><p>Comida 9</p><p>$1500</p></div><div class="face back"><p>Premium</p></div></div>
+                </div>
+            </div>
+            <div class="arrow right" onclick="this.previousElementSibling.scrollBy({left:340, behavior:'smooth'})">&#10095;</div>
+        </div>
+          </div>
+          
+      </section>
+
+      <!-- CONTACTO + CLIENTES PETS -->
+      <div class="contacto-pets">
+        <!-- Formulario -->
+        <section class="contacto" id="contacto">
+          <h2>Contáctanos</h2>
+          <form>
+            <div class="input-contacto">
+              <label for="nombre">Nombre y Apellido</label>
+              <input type="text" id="nombre" placeholder="Ej: Juan Perez" required pattern=".{3,}">
+              <span class="valid-icon"></span>
+            </div>
+            <div class="input-contacto">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Ej: xxxxxx@gmail.com" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$">
+              <span class="valid-icon"></span>
+            </div>
+            <div class="input-contacto">
+              <label for="tel">Teléfono</label>
+              <input type="tel" id="tel" placeholder="123456789" required pattern="[0-9]{6,15}">
+              <span class="valid-icon"></span>
+            </div>
+            <div class="botones">
+              <button type="reset" class="btn-reset">Resetear</button>
+              <button type="submit" class="btn-enviar">Enviar</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Fotos clientes perrunos -->
+        <section class="clientes-pets" id="clientes-pets">
+          <h2>Nuestros Clientes Peludos</h2>
+          <div class="grid-pets">
+            <div class="pet-card">
+              <img src="img/nueva/cliente1.jpeg" alt="Nombre de la Mascota">
+              <div class="pet-name">Mannie</div>
+            </div>
+          <div class="pet-card">
+              <img src="img/nueva/cliente2.jpg"  alt="Nombre de la Mascota">
+              <div class="pet-name">Satoshi</div>
+          </div>
+          <div class="pet-card">
+              <img src="img/nueva/cliente3.jpeg"  alt="Nombre de la Mascota">
+              <div class="pet-name">Tommy</div>
+          </div>
+          <div class="pet-card">
+              <img src="img/nueva/cliente4.jpg" alt="Nombre de la Mascota">
+              <div class="pet-name">Tuil</div>
+          </div>
+          <div class="pet-card">
+              <img src="img/nueva/cliente5.jpeg" alt="Nombre de la Mascota">
+              <div class="pet-name">Katty</div>
+          </div>
+          <div class="pet-card">
+              <img src="img/nueva/cliente6.jpg" alt="Nombre de la Mascota">
+              <div class="pet-name">Nemo</div>
+          </div>
+          <div class="pet-card">
+              <img src="img/nueva/cliente7.jpeg" alt="Nombre de la Mascota">
+              <div class="pet-name">Michu</div>
+          </div>
+          <div class="pet-card">
+              <img src="img/nueva/cliente8.jpg" alt="Nombre de la Mascota">
+              <div class="pet-name">Cumba</div>
+          </div>
+           
+          </div>
+        </section>
+      </div>
+
+      <!-- SUSCRIPCIÓN -->
+      <section class="suscripcion" id="suscripcion">
+        <div class="suscripcion-contenido">
+          <div class="suscripcion-texto">
+            <img src="img/enviar-correo.png" alt="Icono correo">
+            <p>Suscribite para más novedades</p>
+          </div>
+          <form class="suscripcion-formulario" action="#modal-gracias">
+            <div class="input-suscripcion">
+              <input type="email" placeholder="Ingresá tu correo electrónico" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$">
+            </div>
+            <button type="submit" class="btn-suscribirme">Suscribirme</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div id="modal-gracias" class="modal">
+        <div class="modal-contenido">
+          <p>¡Gracias por querer recibir nuestras promociones!</p>
+          <a href="#suscripcion" class="btn-cerrar">Cerrar</a>
+        </div>
+      </div>
+
+    </main>
+
+   
+    <!-- FOOTER -->
+        <footer id="nosotros">
+            <div class="footer-contenedor1">
+                <div class="footer-izquierda">
+                    <div class="item-footer">
+                        <div class="icono-footer"><img src="img/location.png" alt="Ubicación"></div>
+                        <div class="texto-footer">
+                            <strong>Localidad</strong><br>
+                            San Martín 1 - Capital Federal <br> Buenos Aires <br> ARGENTINA
+                        </div>
+                    </div>
+                    <div class="item-footer">
+                        <div class="icono-footer"><img src="img/telefono.png" alt="Teléfono"></div>
+                        <div class="texto-footer">
+                            <strong>Teléfono</strong><br> +54 11 1234 5678
+                        </div>
+                    </div>
+                    <div class="item-footer">
+                        <div class="icono-footer"><img src="img/correo1.png" alt="Correo"></div>
+                        <div class="texto-footer">
+                            <strong>Correo Electrónico</strong><br> contactos@front_cat_and_dog.com
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-derecha">
+                    <p class="payment-text">medios de pago:</p>
+                    <div class="payment-icons">
+                    
+                        <img src="https://tiendamia.com/skin/frontend/traigo/traigo/images/svg/american_express.svg" alt="Mastercard">
+                        <img src="https://tiendamia.com/skin/frontend/traigo/traigo/images/svg/visa.svg" alt="American Express">
+                        <img src=" https://tiendamia.com/skin/frontend/traigo/traigo/images/svg/mastercard.svg" alt="PayPal"> 
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="footer-contenedor2">
+                <p class="copyright">&copy Todos los derechos reservados Front End</p>
+            </div>
+        </footer>
+
+  </div>
+</body>
+</html>

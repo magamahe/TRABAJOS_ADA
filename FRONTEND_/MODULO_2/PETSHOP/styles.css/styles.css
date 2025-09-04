@@ -1,0 +1,1083 @@
+/* RESET - Reseteo de estilos para consistencia entre navegadores */
+/* VARIABLES GLOBALES */
+:root {
+    /* Paleta de colores */
+    --color-principal: #FF6B00;
+    --color-secundario: #1F1F1F;
+    --color-texto-claro: #fff;
+    --color-texto-oscuro: #0c0c0b;
+    --color-fondo-oscuro: #1a1818;
+    --color-fondo-intermedio: #333;
+
+    /* Tamaños de fuente */
+    --font-size-base: 1rem;       /* 16px */
+    --font-size-sm: 0.875rem;     /* 14px */
+    --font-size-xs: 0.75rem;      /* 12px */
+    --font-size-lg: 1.5rem;       /* 24px */
+    --font-size-xl: 2.5rem;       /* 40px */
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-texto-oscuro);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* CONTENEDOR GENERAL */
+.contenedor-general {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--color-fondo-oscuro);
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.5); /* 20px */
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+/* BANNER */
+.banner {
+    background: var(--color-fondo-intermedio);
+    color: var(--color-texto-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    font-size: var(--font-size-xs);
+}
+
+.banner-options select {
+    background: var(--color-fondo-intermedio);
+    color: var(--color-texto-claro);
+    border: 1px solid var(--color-texto-oscuro);
+    padding: 0.25rem 0.5rem; /* 4px 8px */
+    font-size: 0.65rem;
+    cursor: pointer;
+}
+
+.banner-options select option {
+    background: var(--color-fondo-intermedio);
+    color: var(--color-texto-claro);
+}
+
+/* LOGO-BAR */
+.logo-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: var(--color-secundario);
+}
+
+.logo-bar-cabecera {
+    height: 3.75rem; /* 60px */
+    width: auto;
+    filter: brightness(0) saturate(100%) invert(46%) sepia(100%) saturate(4000%) hue-rotate(10deg) brightness(100%) contrast(100%);
+}
+
+.logo-bar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem; /* 20px */
+}
+
+.logo-bar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem; /* 20px */
+}
+
+.logo-bar-menu li {
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem; /* 5px */
+}
+
+.logo-bar-menu a {
+    color: var(--color-texto-claro);
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.logo-bar-menu a:hover {
+    color: var(--color-principal);
+}
+
+/* Checkbox y label para el menú desplegable (SOLO CSS) */
+.menu-toggle-checkbox {
+    display: none;
+}
+
+.menu-toggle-label {
+    display: none;
+    color: var(--color-texto-claro);
+    font-size: var(--font-size-lg);
+    cursor: pointer;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HERO */
+/* .hero-container {
+    position: relative;
+    width: 100%;
+    height: 25rem; /* 
+    background: url('../img/fondo_dogo.jpg') no-repeat right center;
+    background-color: var(--color-texto-claro);
+    background-size: contain;
+    background-position: right;
+} */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 25rem; /* 400px */
+  background-image: url('../img/dogoiz.jpg'), url('../img/dogod.jpg');
+  background-position: left center, right center; /* primera imagen a la izquierda, segunda a la derecha */
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain; /* tamaño de cada imagen */
+  background-color: var(--color-texto-claro);
+}
+
+.hero-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.7);
+    color: var(--color-texto-oscuro);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2); /* 4px 10px */
+}
+
+.hero-frase {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+    color: var(--color-principal);
+    text-shadow: 
+        0 0 0.625rem rgba(255, 107, 0, 0.8), /* 10px */
+        0 0 1.25rem rgba(255, 107, 0, 0.6), /* 20px */
+        0 0 1.875rem rgba(255, 107, 0, 0.4), /* 30px */
+        0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5); /* 2px */
+}
+
+.hero-subtitulo {
+    margin: 0.5rem 0;
+    font-size: var(--font-size-lg);
+}
+
+.boton-comederos {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: var(--color-principal);
+    color: var(--color-texto-claro);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.5rem; /* 8px */
+    transition: background 0.3s, transform 0.2s;
+}
+
+.boton-comederos:hover {
+    background: darkorange;
+    transform: scale(1.05);
+}
+
+/* PRODUCTOS - Sección de productos con filtros y carrusel */
+.productos {
+    text-align: center;
+    padding: 40px;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(26, 24, 24, 0.8), rgba(26, 24, 24, 0.8)), url("../img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.productos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-principal);
+   text-shadow: 
+    0 0 0.3rem rgba(255, 200, 150, 0.5),   /* naranja más suave */
+    0 0 0.6rem rgba(255, 255, 255, 0.2),   /* halo blanco muy tenue */
+    0 0 0.9rem rgba(255, 200, 150, 0.3),   /* naranja suave más difuso */
+    0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5); /* sombra negra */
+
+    font-size: var(--font-size-xl);
+}
+
+/* Radios - Oculta los inputs de tipo radio */
+input[name="categoria"] {
+    display: none;
+}
+
+/* Filtros - Etiquetas de filtro para los productos */
+.filtros {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filtros label {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #FF6B00;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.filtros label:hover {
+    background-color: #E05A00;
+}
+
+/* Estilo para el radio seleccionado */
+#comederos:checked~.filtros label[for="comederos"],
+#accesorios:checked~.filtros label[for="accesorios"],
+#comida:checked~.filtros label[for="comida"] {
+    background-color: #333;
+    color: white;
+    border: 2px solid #FF6B00;
+}
+
+/* Contenedor carrusel */
+.galeria-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Galería scrollable con el "efecto carrusel" */
+.galeria {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0;
+    scrollbar-width: none;
+}
+
+.galeria::-webkit-scrollbar {
+    display: none;
+}
+
+.galeria .producto {
+    flex: 0 0 33.00%;
+    scroll-snap-align: start;
+    display: none;
+}
+
+/* Muestra el producto solo si su categoría está seleccionada */
+#comederos:checked~.galeria-container .galeria .comederos,
+#accesorios:checked~.galeria-container .galeria .accesorios,
+#comida:checked~.galeria-container .galeria .comida {
+    display: block;
+}
+
+/* Card flip - Efecto de volteo en las tarjetas de producto */
+.card {
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+}
+
+.face {
+    width: 100%;
+    height: 350px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.face img {
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
+    width: 80%;
+    object-fit: contain;
+}
+
+.front {
+    background-color: #1b1919;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+.back {
+    background-color: #1b1919;
+    position: absolute;
+    top: 0;
+    transform: rotateY(180deg);
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(0deg);
+}
+
+/* Flechas - Controles de navegación del carrusel */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(255, 107, 0, 0.7);
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+}
+
+.arrow.left {
+    left: -20px;
+}
+
+.arrow.right {
+    right: -20px;
+}
+
+.arrow:hover {
+    background: rgba(255, 107, 0, 1);
+}
+
+/* CONTACTO + CLIENTES PETS - Sección de contacto y testimonios */
+.contacto-pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    background-color: #0c0c0b;
+}
+
+.contacto {
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    background: #1a1818;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contacto h2, .clientes-pets h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #FF6B00;
+    text-shadow: 
+    0 0 0.3rem rgba(255, 200, 150, 0.5),   /* naranja más suave */
+    0 0 0.6rem rgba(255, 255, 255, 0.2),   /* halo blanco muy tenue */
+    0 0 0.9rem rgba(255, 200, 150, 0.3),   /* naranja suave más difuso */
+    0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5); /* sombra negra */
+
+    font-size: 2rem;
+}
+
+.contacto-pets .input-contacto label {
+    color: #FF6B00;
+    font-weight: 600;
+}
+
+.input-contacto {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.input-contacto input {
+    width: 100%;
+    padding: 0.8rem 2.8rem 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.input-contacto input:focus {
+    border-color: #FF6B00;
+    box-shadow: 0 0 6px rgba(255, 107, 0, 0.2);
+}
+
+.valid-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.input-contacto input:not(:placeholder-shown):valid+.valid-icon::after {
+    content: "✔";
+    color: #2ecc71;
+    font-weight: 700;
+}
+
+.input-contacto input:not(:placeholder-shown):invalid+.valid-icon::after {
+    content: "✘";
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+.botones {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.botones button {
+    flex: 1;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-reset {
+    background: #f5f5f5;
+    color: #333;
+}
+
+.btn-reset:hover {
+    background: #e0e0e0;
+    transform: scale(1.02);
+}
+
+.btn-enviar {
+    background: #FF6B00;
+    color: #fff;
+}
+
+.btn-enviar:hover {
+    background: #E05A00;
+    transform: scale(1.02);
+}
+
+.clientes-pets {
+    flex: 1;
+    min-width: 280px;
+     max-width: 600px;
+    background: #1a1818;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.grid-pets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    perspective: 800px; /* Habilita el efecto 3D en el contenedor */
+}
+
+/* Nuevo contenedor para cada imagen y su nombre */
+.pet-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden; /* Oculta cualquier cosa que se desborde del contenedor */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.pet-card:hover {
+    transform: rotateY(10deg) scale(1.1);
+    box-shadow: 0 0 20px 5px rgba(255, 107, 0, 0.7);
+}
+
+.pet-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Estilos para el nombre de la mascota */
+.pet-card .pet-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.pet-card:hover .pet-name {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* SUSCRIPCIÓN - Sección para suscribirse a un newsletter */
+.suscripcion {
+    background-color: #FF6B00;
+    padding: 2rem 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.suscripcion-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.suscripcion-texto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.suscripcion-formulario {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input-suscripcion input {
+    height: 45px;
+    border-radius: 25px;
+    padding: 0 1rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-suscribirme {
+    background: #333;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-suscribirme:hover {
+    background: #222;
+    transform: scale(1.05);
+}
+
+/* MODAL - Ventana emergente para mensajes */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal-contenido {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+.modal-contenido p {
+    margin-bottom: 1.5rem;
+}
+
+.btn-cerrar {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-cerrar:hover {
+    background: #555;
+}
+
+/* FOOTER - Pie de página con enlaces e iconos */
+footer {
+    background: #1F1F1F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.footer-contenedor1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* IZQUIERDA -> íconos con tooltip */
+.footer-izquierda {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-footer img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    /* filtro para convertir a naranja (#ff7b00) */
+    filter: invert(48%) sepia(94%) saturate(2000%) hue-rotate(-15deg) brightness(95%) contrast(90%);
+}
+
+.texto-footer {
+    visibility: hidden;
+    opacity: 0;
+    background: #333;
+    color: whitesmoke;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.texto-footer::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.item-footer:hover .texto-footer {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* DERECHA -> medios de pago en línea */
+.footer-derecha {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.payment-text {
+    font-weight: bold;
+    margin: 0;
+    color:  #FF6B00;
+}
+
+.payment-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.payment-icons img,
+.payment-icons span {
+    width: 60px;          /* todas igual ancho */
+    height: 40px;         /* todas igual alto */
+    object-fit: contain;  /* mantiene proporción sin deformar */
+    background: white;    /* fondo blanco como tarjeta */
+    border-radius: 8px;   /* puntas redondeadas */
+    padding: 4px;         /* pequeño margen interno */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* efecto tarjeta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ABAJO copyright */
+.footer-contenedor2 {
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 0.8rem;
+    border-top: 1px solid #444;
+    color: #bbb;
+}
+
+
+.footer-contenedor2 {
+    background: #333;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* ==============================
+    MEDIA QUERIES (ADAPTABILIDAD)
+============================== */
+
+/* Pantallas medianas y grandes (ej: tablets en horizontal y laptops pequeñas) */
+@media (max-width: 900px) {
+    /* Ajustes generales */
+    .contenedor-general {
+        box-shadow: none; /* Elimina la sombra para un aspecto más limpio en dispositivos más pequeños */
+    }
+
+    /* Carrusel de Productos */
+    .galeria-container {
+        max-width: 100%; /* El contenedor ocupa todo el ancho disponible */
+        padding: 0 1rem;
+    }
+    
+    .galeria .producto {
+        flex: 0 0 48%; /* Muestra 2 productos por vista */
+        min-width: 48%;
+    }
+    
+    /* Achica las tarjetas */
+    .face {
+        height: 18.75rem; /* 300px - Altura reducida para hacer las tarjetas más pequeñas */
+    }
+
+    .arrow {
+        font-size: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        opacity: 0.8;
+    }
+    
+    .arrow.left {
+        left: 0.5rem;
+    }
+    
+    .arrow.right {
+        right: 0.5rem;
+    }
+
+   /* Formulario y Clientes Perrunos */
+    .contacto-pets {
+        flex-direction: column; 
+        padding: 1.5rem;
+        gap: 2rem;
+        align-items: center; /* CENTRA los elementos hijos horizontalmente */
+    }
+    
+   
+}
+/* ///////////////////////////////////////////////////////////////// */
+/* Pantallas pequeñas (ej: tablets en vertical y móviles grandes) */
+@media (max-width: 600px) {
+    /* Ajustes de tipografía */
+    :root {
+        --font-size-xl: 2rem;
+        --font-size-lg: 1.25rem;
+    }
+
+    /* Menú móvil */
+    .menu-toggle-label {
+        display: block; /* Muestra el ícono del menú (hamburguesa) */
+    }
+
+    .logo-bar-menu {
+        /*
+        * Alinear los elementos a la izquierda y reducir la separación.
+        * Cambiar de 'flex' a 'grid' puede darte más control.
+        */
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-secundario);
+        z-index: 100;
+        border-top: 1px solid #444;
+        
+        /* Centrar el contenido de la lista */
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .logo-bar-menu li {
+        width: auto; /* Permite que los elementos se ajusten a su contenido */
+        padding: 0.5rem 1rem; /* Reduce el padding para juntarlos */
+        text-align: left; /* Alinea el texto a la izquierda en lugar de centrarlo */
+    }
+
+    .logo-bar-menu a {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Solución para cerrar el menú al hacer clic en un enlace */
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .logo-bar-menu {
+        display: flex; /* Muestra el menú cuando el checkbox está marcado */
+        flex-direction: column;
+    }
+    
+    .logo-bar-menu a, .logo-bar-menu li {
+        transition: transform 0.2s; /* Añade una transición para un efecto más suave */
+    }
+    
+    .logo-bar-menu a:active, .logo-bar-menu li:active {
+        transform: scale(0.95);
+    }
+    
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .logo-bar-menu {
+        display: flex; /* Muestra el menú cuando el checkbox está marcado */
+    }
+
+.hero-container {
+    height: 18rem; 
+    background-image: url('../img/dogod.jpg'); /* solo la imagen de la derecha */
+    background-position: right center; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--color-texto-claro);
+  }
+
+  .hero-texto {
+    position: absolute;
+    top: 50%;
+    left: 1rem; /* pegado a la izquierda */
+    transform: translateY(-50%); /* solo centrado vertical */
+    width: 60%; /* ocupa la mitad izquierda */
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+  }
+
+  .hero-frase {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-subtitulo {
+    font-size: 1rem;
+  }
+
+  .boton-comederos {
+    display: none; /* ocultamos el botón en mobile */
+  }
+/* ------------------------------------------------ */
+.productos {
+    padding: 20px;
+    min-height: auto; /* se adapta al contenido */
+  }
+
+   .productos h2, .contacto h2, .clientes-pets h2 {
+    font-size: 1.5rem; /* más chico */
+    
+  }
+  .filtros label {
+    cursor: pointer;
+    padding: 0.25rem 0.6rem; /* Achica el relleno del botón (aproximadamente 4px 12px) */
+    margin: 0 0.1rem; /* Reduce el margen entre botones */
+    background-color: #FF6B00;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 0.6rem; /* Achica el tamaño de la letra a 14px */
+}
+  
+    /* Carrusel de Productos */
+    .galeria {
+        /*
+        * Aumentamos el gap para separar las tarjetas.
+        * Esto asegura que el "scroll-snap-align" tenga un punto claro de parada.
+        */
+        gap: 20px;
+    }
+
+    .galeria .producto {
+        /*
+        * Calculamos el ancho exacto para mostrar una sola tarjeta por vez.
+        * El 100% del ancho del contenedor, menos el espacio del gap.
+        */
+        flex: 0 0 calc(100% - 20px);
+        min-width: calc(100% - 20px);
+    }
+    
+    /* Agregamos padding al contenedor para que el espacio del gap no se coma el borde */
+    .galeria-container {
+        padding: 0 10px;
+    }
+ .face {
+        height: 15.625rem; /* 250px - Altura de la tarjeta */
+        width: 70%; /* NUEVO - Anchura reducida para que la tarjeta sea más angosta */
+        margin: 0 auto; /* Centra la tarjeta */
+        padding: 0.5rem; 
+        justify-content: space-between;
+    }
+
+    .face img {
+        width: 90%; /* Dale más ancho a la imagen para que ocupe más espacio horizontal */
+        height: 80%; /* Limita la altura de la imagen al 80% del contenedor face */
+        object-fit: contain; /* Mantén 'contain' si quieres ver la imagen completa, pero con el 'height: 80%' ayudará. Si sigue saliéndose, cambia a 'cover' */
+        margin-bottom: 0.5rem; /* Reduce el margen inferior para dar más espacio */
+    }
+
+    /* Asegúrate de que el texto del producto también se ajuste */
+    .face p {
+        font-size: var(--font-size-sm); /* Ajusta el tamaño de la fuente si es necesario */
+        line-height: 1.2; /* Reduce el interlineado del texto */
+        margin-bottom: 0; /* Elimina el margen inferior del texto para que no empuje */
+    }
+   /*  .arrow {
+        display: none; /* Oculta las flechas en pantallas muy pequeñas, ya que el scroll es intuitivo */
+     */
+    /* Ajustes en secciones */
+    .contacto-pets {
+        flex-direction: column; /* Apila los elementos de contacto y clientes */
+        gap: 1.5rem;
+    }
+
+    .contacto, .clientes-pets {
+        padding: 1.5rem;
+    }
+    
+    .suscripcion-contenido {
+        flex-direction: column;
+    }
+
+    .suscripcion-formulario {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .input-suscripcion input {
+        width: 100%;
+    }
+    
+    /* Footer */
+    .footer-contenedor1 {
+        flex-direction: column;
+        align-items:center;
+        text-align: left;
+    }
+
+    .footer-izquierda, .footer-derecha {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-footer {
+        flex-direction: row;
+    }
+
+    .texto-footer {
+        position: static;
+        transform: none;
+        visibility: visible;
+        opacity: 1;
+        background: transparent;
+        color: white;
+        text-align: left;
+        font-size: var(--font-size-xs);
+    }
+    
+    .texto-footer::after {
+        display: none;
+    }
+}
+/* /////////////////////////////////////////////// */
+/* Teléfonos móviles muy pequeños */
+@media (max-width: 380px) {
+    /* Ajustes de tipografía */
+    :root {
+        --font-size-base: 0.9rem;
+    }
+    
+    .hero-frase {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitulo {
+        font-size: 1rem;
+    }
+    .banner{display: none;}
+}
