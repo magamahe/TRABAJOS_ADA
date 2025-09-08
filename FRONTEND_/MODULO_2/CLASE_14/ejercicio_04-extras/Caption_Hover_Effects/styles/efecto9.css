@@ -1,0 +1,89 @@
+.efecto9 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.efecto9 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.4s ease-in-out 0.5s;
+}
+
+.efecto9 .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(146, 96, 91, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease-in 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.efecto9 h2 {
+  font-size: 1rem;
+  margin: 20px 40px 0px 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  opacity: 0;
+  transform: scale(10);
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.efecto9 p {
+  font-size: 0.8rem;
+  margin: 1rem 40px;
+  color: #333;
+  opacity: 0;
+  transform: scale(10);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.efecto9 a.info {
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  background: #6b2470;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
+.efecto9:hover .mask {
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.efecto9:hover img {
+  transition-delay: 0s;
+}
+
+.efecto9:hover h2 {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.1s;
+}
+
+.efecto9:hover p {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.2s;
+}
+
+.efecto9:hover a.info {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}

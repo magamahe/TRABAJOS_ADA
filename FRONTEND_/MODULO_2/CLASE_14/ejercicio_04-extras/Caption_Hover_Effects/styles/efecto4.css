@@ -1,0 +1,48 @@
+.efecto4 {
+  position: relative;
+  display: inline-block;
+  overflow: visible; /* deja que el figcaption sobresalga */
+}
+
+.efecto4 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.efecto4 figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(43, 63, 83, 0.95);
+  color: #fff;
+  opacity: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Estado inicial */
+  transform: translate(0, 0);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.efecto4 figcaption a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background: rgb(107, 36, 107);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.efecto4:hover figcaption {
+  opacity: 1;
+  transform: translate(20px, 20px); /* se desplaza sin agrandarse */
+  z-index: 5;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.4); /* efecto de estar por encima */
+}

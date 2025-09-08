@@ -1,0 +1,93 @@
+body {
+  margin: 0px;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+div#background {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/fond_madera.jpg);
+  padding-top: 20px;
+  background-size: cover;
+}
+
+div#gallery {
+  width: 800px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+
+#background img {
+  height: 150px;
+  margin: 0px;
+}
+
+#background figure {
+  float: left;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 2px 3px black;
+  transition: .3s;
+}
+
+figure.perro1 {
+  transform : rotate(-10deg);
+  z-index: 1;
+}
+
+figure.perro2 {
+  transform : rotate(15deg);
+  z-index: 2;
+}
+
+figure.perro3 {
+  transform : rotate(-25deg);
+  z-index: 1;
+}
+
+figure.perro4 {
+  transform : rotate(5deg);
+  z-index:1;
+}
+
+figure.perro5 {
+  transform : rotate(5deg);
+  z-index:1;
+}
+
+figure.perro6 {
+  transform : rotate(-8deg);
+  z-index:1;
+}
+
+figure.perro7 {
+  transform : rotate(2deg);
+  z-index:1;
+}
+
+figure.perro8 {
+  transform : rotate(-13deg);
+  z-index:1;
+}
+
+figure.perro9 {
+  transform : rotate(-7deg);
+  z-index:1;
+}
+
+figure.perro10 {
+  transform : rotate(2deg);
+  z-index:1;
+}
+
+
+#background figure:hover {
+  box-shadow: 5px 10px 100px black;
+  transform: scale(1.5);
+  z-index: 20;
+}

@@ -1,0 +1,92 @@
+.efecto6 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.efecto6 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s linear;
+}
+
+.efecto6 .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(219, 127, 8, 0.7);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.efecto6 h2 {
+  font-size: 1rem; /* más chico */
+  margin: 0 0 0.5rem;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.efecto6 .divider {
+  width: 40%;
+  height: 1px;
+  background: #fff;
+  margin: 0.5rem 0;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.efecto6 p {
+  font-size: 0.8rem; /* más chico */
+  margin: 0 0 1rem;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+  transition-delay: 0.1s;
+}
+
+.efecto6 a.info {
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  background: #6b2470;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.2s;
+  margin-top: 0.5rem;
+}
+
+.efecto6:hover img {
+  transform: scale(1.1);
+}
+
+.efecto6:hover .mask {
+  opacity: 1;
+}
+
+.efecto6:hover h2,
+.efecto6:hover p,
+.efecto6:hover a.info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.efecto6:hover .divider {
+  opacity: 1;
+  transform: scaleX(1);
+}

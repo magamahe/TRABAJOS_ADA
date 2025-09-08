@@ -1,0 +1,130 @@
+/* Variables manuales */
+:root {
+  --thick: 3px;
+  --pad: 0.7em;
+  --extra: calc(var(--pad) * 1.2);
+  --color: #f26522;
+}
+
+.boton.ocho {
+  background: #2d2d2d;
+  color: white;
+  padding: var(--pad) var(--extra);
+  display: inline-block;
+  border: var(--thick) solid transparent;
+  position: relative;
+  font-size: 1.2em;
+  cursor: pointer;
+  letter-spacing: 0.07em;
+  overflow: hidden;
+}
+
+.boton.ocho .text {
+  font-family: "Roboto", monospace;
+  transform: translate3d(0, var(--pad), 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
+  position: relative;
+  z-index: 2;
+}
+
+.boton.ocho::after {
+  position: absolute;
+  content: '';
+  bottom: calc(-1 * var(--thick));
+  left: var(--extra);
+  right: var(--extra);
+  height: var(--thick);
+  background: var(--color);
+  transition: 
+    transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
+    right 0.2s cubic-bezier(.04,.48,0,1) 0.6s,
+    left 0.4s cubic-bezier(.04,.48,0,1) 0.6s;
+  transform-origin: left;
+}
+
+.boton.ocho .line {
+  position: absolute;
+  background: var(--color);
+}
+
+.boton.ocho .line.-right,
+.boton.ocho .line.-left {
+  width: var(--thick);
+  bottom: calc(-1 * var(--thick));
+  top: calc(-1 * var(--thick));
+  transform: scale3d(1,0,1);
+}
+
+.boton.ocho .line.-top,
+.boton.ocho .line.-bottom {
+  height: var(--thick);
+  left: calc(-1 * var(--thick));
+  right: calc(-1 * var(--thick));
+  transform: scale3d(0,1,1);
+}
+
+.boton.ocho .line.-right {
+  right: calc(-1 * var(--thick));
+  transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
+  transform-origin: top;
+}
+
+.boton.ocho .line.-top {
+  top: calc(-1 * var(--thick));
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
+
+.boton.ocho .line.-left {
+  left: calc(-1 * var(--thick));
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
+
+.boton.ocho .line.-bottom {
+  bottom: calc(-1 * var(--thick));
+  transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
+  transform-origin: right;
+}
+
+/* HOVER */
+.boton.ocho:hover .text {
+  transform: translate3d(0,0,0);
+  transition: transform 0.6s cubic-bezier(.2,0,0,1) 0.4s;
+}
+
+.boton.ocho:hover::after {
+  transform: scale3d(0,1,1);
+  right: calc(-1 * var(--thick));
+  left: calc(-1 * var(--thick));
+  transform-origin: right;
+  transition: 
+    transform 0.2s cubic-bezier(1,0,.65,1.01) 0.17s,
+    right 0.2s cubic-bezier(1,0,.65,1.01),
+    left 0s 0.3s;
+}
+
+.boton.ocho:hover .line {
+  transform: scale3d(1,1,1);
+}
+
+.boton.ocho:hover .line.-right {
+  transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.2s;
+  transform-origin: bottom;
+}
+
+.boton.ocho:hover .line.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+
+.boton.ocho:hover .line.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+
+.boton.ocho:hover .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0,.53,.29,1) 0.56s;
+  transform-origin: left;
+}

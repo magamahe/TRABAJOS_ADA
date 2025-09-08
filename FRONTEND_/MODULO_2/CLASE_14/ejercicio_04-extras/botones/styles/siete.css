@@ -1,0 +1,53 @@
+/* Botón SEIS (adaptado y corregido) */
+.boton.siete {
+  background: transparent;
+  color: #fff; /* Texto blanco al inicio */
+  border: 2px solid #000;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.boton.siete span {
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+  color: inherit; /* usa el color del botón */
+}
+
+/* Fondos animados */
+.boton.siete::before,
+.boton.siete::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+/* Estado inicial */
+.boton.siete::before {
+  transform: scaleY(1);
+}
+
+.boton.siete::after {
+  transform: scaleX(1);
+}
+
+/* Hover: el fondo desaparece */
+.boton.siete:hover::before {
+  transform: scaleY(0);
+}
+
+.boton.siete:hover::after {
+  transform: scaleX(0);
+}
+
+/* Texto cambia a negro en hover */
+.boton.siete:hover span {
+  color: #000;
+}

@@ -1,0 +1,12 @@
+/* Efecto 3: Girar + overlay */
+.efecto3 figcaption {
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+  opacity: 0;
+}
+
+.efecto3:hover figcaption {
+  transform: rotateX(0deg);
+  opacity: 1;
+  transition: all 0.6s ease;
+}

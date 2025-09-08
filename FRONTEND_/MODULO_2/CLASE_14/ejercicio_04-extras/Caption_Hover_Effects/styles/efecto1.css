@@ -1,0 +1,8 @@
+/* Efecto 1: Zoom + Fade */
+.efecto1:hover img {
+  transform: scale(1.2);
+}
+
+.efecto1:hover figcaption {
+  opacity: 1;
+}

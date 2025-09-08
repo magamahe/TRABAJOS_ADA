@@ -1,0 +1,17 @@
+/* Este código corrige el efecto del último botón */
+figure:hover figcaption {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+figure figcaption h3 {
+  margin-top: 70px;
+}
+
+figure figcaption span {
+  display: block;
+}
+
+figure figcaption a {
+  margin-top: 30px;
+}

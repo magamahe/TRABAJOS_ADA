@@ -1,0 +1,92 @@
+/* naira.css */
+.boton.naira {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #37474f;
+    background: #fff;
+    color: #37474f;
+    transition: background-color 0.3s;
+}
+
+.boton.naira::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: #37474f;
+    z-index: 1; /* Changed to z-index 1 to be above text */
+    transform: translate3d(0, -100%, 0) rotate3d(0, 0, 1, -10deg);
+}
+
+.boton.naira.naira-up::before {
+    transform: translate3d(0, 100%, 0) rotate3d(0, 0, 1, 10deg);
+}
+
+.boton.naira span {
+    display: block;
+    padding: 1em 2em;
+    transition: transform 0.3s cubic-bezier(0.75, 0, 0.125, 1), opacity 0.3s;
+    position: relative;
+    z-index: 3;
+}
+
+.boton.naira i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -100%, 0);
+    z-index: 2;
+    color: #fff;
+    transition: transform 0.3s cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.boton.naira.naira-up i {
+    transform: translate3d(-50%, 100%, 0);
+}
+
+/* Animations on hover */
+.boton.naira:hover::before {
+    animation: anim-naira-down 0.3s forwards ease-in;
+}
+
+.boton.naira.naira-up:hover::before {
+    animation: anim-naira-up 0.3s forwards ease-in;
+}
+
+.boton.naira:hover span {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+}
+
+.boton.naira.naira-up:hover span {
+    transform: translate3d(0, -100%, 0);
+}
+
+.boton.naira:hover i,
+.boton.naira.naira-up:hover i {
+    transform: translate3d(-50%, -50%, 0);
+}
+
+/* Keyframes for the background animation */
+@keyframes anim-naira-down {
+    50% {
+        transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, -10deg);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
+    }
+}
+
+@keyframes anim-naira-up {
+    50% {
+        transform: translate3d(0, 50%, 0) rotate3d(0, 0, 1, 10deg);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(0, 0%, 0) rotate3d(0, 0, 1, 0deg);
+    }
+}

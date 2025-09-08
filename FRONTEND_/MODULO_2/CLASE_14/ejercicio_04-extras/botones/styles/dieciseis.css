@@ -1,0 +1,50 @@
+/* sacnite.css */
+.boton.sacnite {
+    width: 70px;
+    height: 70px;
+    min-width: 0;
+    padding: 0;
+    color: #fff;
+    transition: color 0.3s;
+    background: none;
+    border: none;
+    border-radius: 50%; /* Makes the button a circle */
+    position: relative;
+    overflow: hidden;
+}
+
+.boton.sacnite i {
+    font-size: 22px;
+    width: 22px;
+}
+
+.boton.sacnite > span {
+    position: absolute;
+    opacity: 0; /* Hides the text */
+    pointer-events: none;
+}
+
+/* This is the pseudo-element that creates the initial solid circle */
+.boton.sacnite::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    z-index: -1;
+    box-shadow: inset 0 0 0 35px #37474f; /* The key to the solid fill */
+    transform: scale3d(0.9, 0.9, 1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+/* On hover, the solid circle transforms into a thin ring */
+.boton.sacnite:hover {
+    color: #37474f;
+}
+
+.boton.sacnite:hover::before {
+    box-shadow: inset 0 0 0 2px #37474f;
+    transform: scale3d(1, 1, 1);
+}

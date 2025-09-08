@@ -1,0 +1,63 @@
+:root {
+  --white: #ececec;
+  --black: #333333;
+  --yellow: #ffff00;
+  --purple: #8a19ff;
+}
+
+.boton.doce {
+  position: relative;
+  letter-spacing: 0.25em;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  font-size: 28px;
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+}
+
+/* Pseudo elementos: mitades de color */
+.boton.doce::before,
+.boton.doce::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transform: skewX(30deg);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -1;
+}
+
+/* Mitad izquierda */
+.boton.doce::before {
+  background-color: var(--yellow);
+  top: -1rem;
+  left: 0rem;
+}
+
+/* Mitad derecha */
+.boton.doce::after {
+  background-color: var(--purple);
+  top: 1rem;
+  left: 8rem;
+}
+
+/* Hover: las mitades se unen y se alinean */
+.boton.doce:hover::before,
+.boton.doce:hover::after {
+  top: 0;
+  transform: skewX(0deg);
+}
+
+.boton.doce:hover::after {
+  left: 0rem;
+}
+
+.boton.doce:hover::before {
+  left: 8.75rem;
+}
