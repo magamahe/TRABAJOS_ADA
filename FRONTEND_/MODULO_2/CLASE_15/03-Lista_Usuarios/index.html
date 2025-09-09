@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA DE USUARIOS</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <section class="users-widget">
+        <header class="users-widget__header">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <path d="M20 8v6"></path>
+                <path d="M23 11h-6"></path>
+            </svg>
+            <h2 class="users-widget__title">Users</h2>
+        </header>
+
+        <ul class="users-widget__list">
+            <li class="user-item">
+                <span class="user-item__avatar avatar--blue">
+                    <span>JT</span>
+                </span>
+                <span class="user-item__name">Juan Turner</span>
+            </li>
+            <li class="user-item user-item--active">
+                <span class="user-item__avatar avatar--green-light">
+                    <span>EK</span>
+                </span>
+                <span class="user-item__name">Edna Kelly</span>
+            </li>
+            <li class="user-item">
+                <span class="user-item__avatar avatar--pink">
+                    <span>JP</span>
+                </span>
+                <span class="user-item__name">Joshua Palmer</span>
+            </li>
+            <li class="user-item">
+                <span class="user-item__avatar avatar--red">
+                    <span>MF</span>
+                </span>
+                <span class="user-item__name">Micheal Ferguson</span>
+            </li>
+            <li class="user-item">
+                <span class="user-item__avatar avatar--green-dark">
+                    <span>OF</span>
+                </span>
+                <span class="user-item__name">Olive Fleming</span>
+            </li>
+        </ul>
+
+        <button class="users-widget__button">
+            <span>View all</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </button>
+    </section>
+</body>
+
+</html>

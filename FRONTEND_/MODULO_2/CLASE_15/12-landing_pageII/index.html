@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FineOak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <a class="main-nav__brand" href="index.html">FineOak</a>
+            <button class="main-nav__toggler" aria-controls="main-nav__list" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="main-nav__toggler-icon"></span>
+                <span class="main-nav__toggler-icon"></span>
+                <span class="main-nav__toggler-icon"></span>
+            </button>
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html" class="main-nav__link">Home</a></li>
+                <li class="main-nav__item"><a href="services.html" class="main-nav__link">Services</a></li>
+                <li class="main-nav__item"><a href="about.html" class="main-nav__link">About</a></li>
+                <li class="main-nav__item"><a href="gallery.html" class="main-nav__link">Gallery</a></li>
+                <li class="main-nav__item main-nav__item--dropdown">
+                    <a href="#" class="main-nav__link main-nav__link--dropdown">Pages</a>
+                    <ul class="main-nav__dropdown-menu">
+                        <li><a href="about.html" class="main-nav__dropdown-item">About Us</a></li>
+                        <li><a href="portfolio.html" class="main-nav__dropdown-item">Portfolio</a></li>
+                        <li><a href="portfolio-single.html" class="main-nav__dropdown-item">Portfolio Single</a></li>
+                        <li class="main-nav__item--sub-dropdown">
+                            <a href="#" class="main-nav__dropdown-item main-nav__dropdown-item--sub-menu"><span>Sub Menu</span></a>
+                            <ul class="main-nav__sub-menu">
+                                <li><a href="#" class="main-nav__sub-menu-item">Second Level Menu</a></li>
+                                <li><a href="#" class="main-nav__sub-menu-item">Second Level Menu</a></li>
+                                <li><a href="#" class="main-nav__sub-menu-item">Second Level Menu</a></li>
+                                <li><a href="#" class="main-nav__sub-menu-item">Second Level Menu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="services.html" class="main-nav__dropdown-item">Services</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav__item"><a href="contact.html" class="main-nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="slider">
+            <ul class="slider__slides">
+                <li class="slider__item slider__item--overlay" style="background-image: url(img/slider_1.jpg)">
+                    <article class="slider__text-box">
+                        <h1 class="slider__heading">Bringing Style And Comfort For Customer Satisfaction</h1>
+                    </article>
+                </li>
+                <li class="slider__item slider__item--overlay" style="background-image: url(img/slider_2.jpg)">
+                    <article class="slider__text-box">
+                        <h1 class="slider__heading">Affordable Solutions For Better Living</h1>
+                    </article>
+                </li>
+                <li class="slider__item slider__item--overlay" style="background-image: url(img/slider_3.jpg)">
+                    <article class="slider__text-box">
+                        <h1 class="slider__heading">We Bring Ideas To Life</h1>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="welcome-section">
+            <article class="welcome-section__intro">
+                <h2 class="welcome-section__title">Welcome To Our Website</h2>
+                <p class="welcome-section__subtitle">Another website template by <a href="https://uicookies.com/">uicookies.com</a></p>
+            </article>
+            <article class="welcome-section__text-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum saepe magnam natus perferendis corrupti tenetur quidem suscipit eaque blanditiis corporis veniam molestias qui culpa veritatis officiis eum. Doloribus quos minus quas reprehenderit! Ad provident sunt totam culpa tenetur? Libero maxime molestiae cumque excepturi.</p>
+                <p>Eveniet tempora a nisi aut debitis! Recusandae dolores vero autem expedita nihil asperiores maxime modi ducimus nemo dicta nulla dolore? Inventore necessitatibus non laboriosam eos quod dignissimos soluta sunt id fugiat debitis nam omnis? A ullam minima excepturi nulla totam necessitatibus illum modi exercitationem blanditiis quaerat at fugit ad eveniet ipsum error quod sit cumque impedit!</p>
+            </article>
+        </section>
+
+        <section class="services-section">
+            <header class="section-heading">
+                <h2>What We Offer</h2>
+            </header>
+            <div class="services-section__grid">
+                <article class="service-card">
+                    <figure class="service-card__image-container">
+                        <img src="img/img_sm_1.jpg" alt="Decor Design" class="service-card__image">
+                    </figure>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Decor Design</h3>
+                        <p class="service-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <figure class="service-card__image-container">
+                        <img src="img/img_sm_3.jpg" alt="Residential Design" class="service-card__image">
+                    </figure>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Residential Design</h3>
+                        <p class="service-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <figure class="service-card__image-container">
+                        <img src="img/img_sm_2.jpg" alt="Interior Design" class="service-card__image">
+                    </figure>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Interior Design</h3>
+                        <p class="service-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <figure class="service-card__image-container">
+                        <img src="img/img_sm_4.jpg" alt="Commercial Design" class="service-card__image">
+                    </figure>
+                    <div class="service-card__content">
+                        <h3 class="service-card__title">Commercial Design</h3>
+                        <p class="service-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <header class="section-heading">
+                <h2>Portfolio</h2>
+            </header>
+            <div class="portfolio-section__gallery">
+                <figure class="portfolio-item">
+                    <a href="portfolio-single.html" class="portfolio-item__link">
+                        <img src="img/work_1.jpg" alt="Work 1" class="portfolio-item__image">
+                    </a>
+                </figure>
+                <figure class="portfolio-item">
+                    <a href="portfolio-single.html" class="portfolio-item__link">
+                        <img src="img/work_2.jpg" alt="Work 2" class="portfolio-item__image">
+                    </a>
+                </figure>
+                <figure class="portfolio-item">
+                    <a href="portfolio-single.html" class="portfolio-item__link">
+                        <img src="img/work_3.jpg" alt="Work 3" class="portfolio-item__image">
+                    </a>
+                </figure>
+                <figure class="portfolio-item">
+                    <a href="portfolio-single.html" class="portfolio-item__link">
+                        <img src="img/work_4.jpg" alt="Work 4" class="portfolio-item__image">
+                    </a>
+                </figure>
+                <figure class="portfolio-item">
+                    <a href="portfolio-single.html" class="portfolio-item__link">
+                        <img src="img/work_5.jpg" alt="Work 5" class="portfolio-item__image">
+                    </a>
+                </figure>
+                <figure class="portfolio-item">
+                    <a href="portfolio-single.html" class="portfolio-item__link">
+                        <img src="img/work_6.jpg" alt="Work 6" class="portfolio-item__image">
+                    </a>
+                </figure>
+                <figure class="portfolio-item">
+                    <a href="portfolio-single.html" class="portfolio-item__link">
+                        <img src="img/work_7.jpg" alt="Work 7" class="portfolio-item__image">
+                    </a>
+                </figure>
+            </div>
+        </section>
+
+        <section class="clients-section">
+            <header class="section-heading">
+                <h2>Our Clients</h2>
+                <p class="section-heading__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+            </header>
+            <div class="clients-section__logo-grid">
+                <figure class="client-logo">
+                    <img src="img/client_1.png" alt="Client 1" class="client-logo__image">
+                </figure>
+                <figure class="client-logo">
+                    <img src="img/client_2.png" alt="Client 2" class="client-logo__image">
+                </figure>
+                <figure class="client-logo">
+                    <img src="img/client_3.png" alt="Client 3" class="client-logo__image">
+                </figure>
+                <figure class="client-logo">
+                    <img src="img/client_4.png" alt="Client 4" class="client-logo__image">
+                </figure>
+            </div>
+        </section>
+
+        <section class="why-choose-us-section">
+            <header class="section-heading">
+                <h2>Why Choose Us</h2>
+                <p class="section-heading__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+            </header>
+            <div class="why-choose-us-section__grid">
+                <article class="reason-card">
+                    <span class="reason-card__icon icon-mobile3"></span>
+                    <div class="reason-card__content">
+                        <h3 class="reason-card__title">Consectetur Adipisicing</h3>
+                        <p class="reason-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                    </div>
+                </article>
+                <article class="reason-card">
+                    <span class="reason-card__icon icon-presentation"></span>
+                    <div class="reason-card__content">
+                        <h3 class="reason-card__title">Aliquid Dolorum Saepe</h3>
+                        <p class="reason-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                    </div>
+                </article>
+                <article class="reason-card">
+                    <span class="reason-card__icon icon-circle-compass"></span>
+                    <div class="reason-card__content">
+                        <h3 class="reason-card__title">Eveniet Tempora Anisi</h3>
+                        <p class="reason-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                    </div>
+                </article>
+                <article class="reason-card">
+                    <span class="reason-card__icon icon-lightbulb"></span>
+                    <div class="reason-card__content">
+                        <h3 class="reason-card__title">Laboriosam Quod Dignissimos</h3>
+                        <p class="reason-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                    </div>
+                </article>
+                <article class="reason-card">
+                    <span class="reason-card__icon icon-magnifying-glass2"></span>
+                    <div class="reason-card__content">
+                        <h3 class="reason-card__title">Asperiores Maxime Modi</h3>
+                        <p class="reason-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                    </div>
+                </article>
+                <article class="reason-card">
+                    <span class="reason-card__icon icon-browser2"></span>
+                    <div class="reason-card__content">
+                        <h3 class="reason-card__title">Libero Maxime Molestiae</h3>
+                        <p class="reason-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <header class="section-heading">
+                <h2>Testimonial</h2>
+            </header>
+            <div class="testimonial-section__carousel">
+                <article class="testimonial-card">
+                    <figure class="testimonial-card__author-photo">
+                        <img src="img/person_1.jpg" alt="Author 1">
+                    </figure>
+                    <blockquote class="testimonial-card__quote">
+                        &ldquo;Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained.&rdquo;
+                        <cite class="testimonial-card__author">&mdash; Ferdinand A. Porsche <br> <span>Design Lead at AirBNB</span></cite>
+                    </blockquote>
+                </article>
+                <article class="testimonial-card">
+                    <figure class="testimonial-card__author-photo">
+                        <img src="img/person_2.jpg" alt="Author 2">
+                    </figure>
+                    <blockquote class="testimonial-card__quote">
+                        &ldquo;Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.&rdquo;
+                        <cite class="testimonial-card__author">&mdash; Steve Jobs <br> <span>Co-Founder Square</span></cite>
+                    </blockquote>
+                </article>
+                <article class="testimonial-card">
+                    <figure class="testimonial-card__author-photo">
+                        <img src="img/person_3.jpg" alt="Author 3">
+                    </figure>
+                    <blockquote class="testimonial-card__quote">
+                        &ldquo;I think design would be better if designers were much more skeptical about its applications. If you believe in the potency of your craft, where you choose to dole it out is not something to take lightly.&rdquo;
+                        <cite class="testimonial-card__author">&mdash; Frank Chimero <br> <span>Creative Director at Twitter</span></cite>
+                    </blockquote>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <section class="main-footer__social">
+            <ul class="main-footer__social-list">
+                <li><a href="#" class="main-footer__social-link"><i class="icon-twitter"></i></a></li>
+                <li><a href="#" class="main-footer__social-link"><i class="icon-facebook"></i></a></li>
+                <li><a href="#" class="main-footer__social-link"><i class="icon-github"></i></a></li>
+                <li><a href="#" class="main-footer__social-link"><i class="icon-dribbble"></i></a></li>
+                <li><a href="#" class="main-footer__social-link"><i class="icon-linkedin"></i></a></li>
+                <li><a href="#" class="main-footer__social-link"><i class="icon-youtube"></i></a></li>
+            </ul>
+        </section>
+        <section class="main-footer__copywrite">
+            <p class="main-footer__copywrite-text">
+                &copy; 2017 <a href="https://uicookies.com/">uiCookies:FineOak</a>. All Rights Reserved. <br> Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="https://uicookies.com/">uicookies.com</a>
+            </p>
+        </section>
+    </footer>
+
+</body>
+</html>

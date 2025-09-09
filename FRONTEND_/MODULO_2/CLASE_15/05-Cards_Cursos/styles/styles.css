@@ -1,0 +1,102 @@
+body {
+    background-color: #f0f4f7;
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+}
+
+/* Sección principal y encabezado */
+.courses-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.courses-header__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.courses-header__view-all {
+    text-decoration: none;
+    color: #4c87b7;
+    font-weight: 600;
+}
+
+/* Grilla de tarjetas (CSS Grid) */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para cada tarjeta de curso */
+.course-card {
+    position: relative; /* ¡Importante para posicionar la cinta! */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px; /* Para que todas tengan la misma altura */
+    overflow: hidden; /* Para que la cinta no desborde */
+}
+
+.course-card__price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.course-card__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: auto; /* Empuja la calificación hacia abajo */
+}
+
+.course-card__rating {
+    margin-top: 1rem;
+    color: #f0a500;
+    font-size: 0.9rem;
+}
+
+.rating-text {
+    color: #888;
+    margin-left: 0.5rem;
+}
+
+/* Estilos para la cinta de descuento */
+.course-card__ribbon {
+    position: absolute;
+    top: 1rem;
+    right: -1.78rem;
+    width: 100px;
+    background-color: #e63946;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.25rem 0;
+    transform: rotate(45deg); /* Gira la cinta 45 grados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}

@@ -1,0 +1,115 @@
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal del widget */
+.users-widget {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 1.5rem;
+}
+
+/* Encabezado */
+.users-widget__header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.users-widget__header svg {
+    color: #333;
+    margin-right: 0.5rem;
+}
+
+.users-widget__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Lista de usuarios */
+.users-widget__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elemento individual de la lista */
+.user-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+/* Estado activo o al pasar el cursor */
+.user-item:hover,
+.user-item--active {
+    background-color: #f5f5f5;
+}
+
+/* Avatar */
+.user-item__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+/* Colores de los avatares */
+.avatar--blue { background-color: #5d81b4; }
+.avatar--green-light { background-color: #93c47d; }
+.avatar--pink { background-color: #ef87a4; }
+.avatar--red { background-color: #e06c75; }
+.avatar--green-dark { background-color: #6a9b83; }
+
+/* Nombre del usuario */
+.user-item__name {
+    color: #333;
+}
+
+/* Botón "View all" */
+.users-widget__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.75rem 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #313d50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.users-widget__button:hover {
+    background-color: #212a36;
+}
+
+.users-widget__button svg {
+    margin-left: 0.5rem;
+    color: white;
+}

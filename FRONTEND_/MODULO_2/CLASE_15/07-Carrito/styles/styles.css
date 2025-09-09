@@ -1,0 +1,203 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fce0f3 0%, #a7c7ed 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Main Cart Container */
+.cart-container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cart Header */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-header h1 {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 0;
+}
+
+.cart-total {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Cart Items Section */
+.cart-items {
+    padding: 0 20px;
+    padding-bottom: 15px; /* Adjust if needed */
+}
+
+/* Individual Cart Item */
+.cart-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto; /* thumbnail | details | quantity | remove */
+    gap: 15px;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-of-type {
+    border-bottom: none;
+}
+
+.item-thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    background-color: #f0f0f0; /* Placeholder background */
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-name {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 0 0 3px 0;
+    font-weight: 500;
+}
+
+.item-color {
+    font-size: 0.8rem;
+    color: #777;
+    margin: 0;
+}
+
+/* Quantity Control */
+.item-quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 30px; /* Overall height of control */
+}
+
+.quantity-button {
+    background-color: #f9f9f9;
+    border: none;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #555;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-button:hover {
+    background-color: #eee;
+}
+
+.quantity-button svg {
+    width: 14px; /* Adjust SVG size */
+    height: 14px;
+    stroke-width: 2.5;
+}
+
+
+.item-quantity-input {
+    width: 30px; /* Width of the number input */
+    border: none;
+    text-align: center;
+    -moz-appearance: textfield; /* Hide arrows in Firefox */
+    font-size: 0.9rem;
+    color: #333;
+    padding: 0;
+    height: 100%;
+}
+
+.item-quantity-input::-webkit-outer-spin-button,
+.item-quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove Button */
+.item-remove {
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px; /* Space from quantity control */
+    display: flex; /* To center SVG */
+    align-items: center;
+    justify-content: center;
+}
+
+.item-remove:hover {
+    color: #e63946; /* Red on hover */
+}
+
+.item-remove svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 2.5;
+}
+
+
+/* Cart Footer and Pay Button */
+.cart-footer {
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.pay-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #ff6b8e, #ff9b7a);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 107, 142, 0.4);
+    transition: transform 0.2s ease-in-out;
+}
+
+.pay-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .cart-container {
+        border-radius: 0;
+        max-width: 100%;
+    }
+    .cart-header, .cart-items, .cart-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

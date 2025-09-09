@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Card</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <main class="movie-card-container">
+        <article class="movie-card">
+            
+            <header class="movie-card__header">
+                <h1 class="movie-card__title">Star Wars: The Last Jedi</h1>
+                <p class="movie-card__genre">Action & Adventure</p>
+                <div class="movie-card__rating">
+                    <span class="movie-card__rating--value">7.4</span> / <span class="movie-card__rating--total">10</span>
+                </div>
+            </header>
+
+            <section class="movie-card__content">
+                <figure class="movie-card__poster">
+                    <img src="https://m.media-amazon.com/images/I/91CNBAb75PL._AC_SY879_.jpg" alt="Poster de Star Wars: The Last Jedi" class="movie-card__poster-image">
+                </figure>
+                
+                <article class="movie-card__details">
+                    <section class="movie-card__about">
+                        <h2 class="movie-card__subtitle">About the Movie</h2>
+                        <p class="movie-card__description">In Lucasfilm’s Star Wars: The Last Jedi, the Skywalker saga continues as the heroes of The Force Awakens join the galactic legends in an epic adventure that unlocks new mysteries of the Force and shocking revelations of the past.</p>
+                    </section>
+
+                    <section class="movie-card__credits">
+                        <address class="movie-card__credits-group">
+                            <h3 class="movie-card__subtitle">Actors</h3>
+                            <ul class="movie-card__list">
+                                <li>Oscar Isaac</li>
+                                <li>Mark Hamill</li>
+                                <li>Daisy Ridley</li>
+                                <li>John Boyega</li>
+                                <li>Kelly Marie Tran</li>
+                            </ul>
+                            <a href="#" class="movie-card__more">More</a>
+                        </address>
+
+                        <address class="movie-card__credits-group">
+                            <h3 class="movie-card__subtitle">Director</h3>
+                            <p class="movie-card__person">Rian Johnson</p>
+                        </address>
+                        
+                        <address class="movie-card__credits-group">
+                            <h3 class="movie-card__subtitle">Producers</h3>
+                            <ul class="movie-card__list">
+                                <li>Kathleen Kennedy</li>
+                                <li>Ram Bergman</li>
+                            </ul>
+                        </address>
+                        
+                        <address class="movie-card__credits-group">
+                            <h3 class="movie-card__subtitle">Screenwriter</h3>
+                            <p class="movie-card__person">Rian Johnson</p>
+                        </address>
+                    </section>
+                </article>
+            </section>
+            
+            <footer class="movie-card__footer">
+                <span class="movie-card__price">$19.00</span>
+                <button class="movie-card__button movie-card__button--buy">BUY</button>
+                <button class="movie-card__button movie-card__button--trailer">WATCH TRAILER</button>
+            </footer>
+
+        </article>
+    </main>
+
+</body>
+</html>

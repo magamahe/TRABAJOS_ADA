@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANBAN</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+
+<body>
+    <section class="task-board">
+        <header class="task-board__header">
+            <div class="task-board__gradient-bar"></div>
+            <div class="task-board__title-row">
+                <h2 class="task-board__title">In progress</h2>
+            </div>
+        </header>
+
+        <section class="task-board__cards">
+            <article class="task-card">
+                <div class="task-card__logo-wrapper">
+                    <img src="https://pngimg.com/uploads/uber/uber_PNG24.png" alt="Uber logo" class="task-card__logo">
+                </div>
+                <div class="task-card__content">
+                    <header class="task-card__top-info">
+                        <span class="task-card__priority task-card__priority--high">High</span>
+                        <span class="task-card__date">18 Dec, 2017</span>
+                    </header>
+                    <h3 class="task-card__title">Prepare structural documentation</h3>
+                    <ul class="task-card__tags">
+                        <li class="task-card__tag">Development</li>
+                        <li class="task-card__tag">Architecture</li>
+                    </ul>
+                    <ul class="task-card__stats">
+                        <li class="task-card__stat">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>3 people work on this</span>
+                        </li>
+                        <li class="task-card__stat">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V3a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <span>17 comments</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="task-card">
+                <div class="task-card__logo-wrapper">
+                    <img src="https://www.pngplay.com/wp-content/uploads/13/Bosch-Logo-Transparent-Background.png" alt="Bosch logo" class="task-card__logo">
+                </div>
+                <div class="task-card__content">
+                    <header class="task-card__top-info">
+                        <span class="task-card__priority task-card__priority--medium">Medium</span>
+                        <span class="task-card__date">18 Dec, 2017</span>
+                    </header>
+                    <h3 class="task-card__title">Update requirements list</h3>
+                    <ul class="task-card__tags">
+                        <li class="task-card__tag">Development</li>
+                        <li class="task-card__tag">Management</li>
+                    </ul>
+                    <ul class="task-card__stats">
+                        <li class="task-card__stat">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>2 people work on this</span>
+                        </li>
+                        <li class="task-card__stat">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V3a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <span>8 comments</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="task-card">
+                <div class="task-card__logo-wrapper">
+                    <img src="https://www.pngplay.com/wp-content/uploads/13/Bosch-Logo-Transparent-Background.png" alt="Bosch logo" class="task-card__logo">
+                </div>
+                <div class="task-card__content">
+                    <header class="task-card__top-info">
+                        <span class="task-card__priority task-card__priority--low">Low</span>
+                        <span class="task-card__date">18 Dec, 2017</span>
+                    </header>
+                    <h3 class="task-card__title">New UI for dashboard</h3>
+                    <ul class="task-card__tags">
+                        <li class="task-card__tag">Development</li>
+                        <li class="task-card__tag">Architecture</li>
+                    </ul>
+                    <ul class="task-card__stats">
+                        <li class="task-card__stat">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>7 people work on this</span>
+                        </li>
+                        <li class="task-card__stat">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V3a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <span>7 comments</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="task-card">
+                <div class="task-card__logo-wrapper">
+                    <img src="https://i.pinimg.com/736x/e9/df/34/e9df347c3d805ee7e289afd505acf319.jpg" alt="Adidas logo" class="task-card__logo">
+                </div>
+                <div class="task-card__content">
+                    <header class="task-card__top-info">
+                        <span class="task-card__priority task-card__priority--low">Low</span>
+                        <span class="task-card__date">18 Dec, 2017</span>
+                    </header>
+                    <h3 class="task-card__title">Initial landing page concepts</h3>
+                    <ul class="task-card__tags">
+                        <li class="task-card__tag">Development</li>
+                        <li class="task-card__tag">Architecture</li>
+                    </ul>
+                    <ul class="task-card__stats">
+                        <li class="task-card__stat">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>4 people work on this</span>
+                        </li>
+                        <li class="task-card__stat">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V3a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <span>2 comments</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <button class="add-card-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <span>Add new card</span>
+        </button>
+    </section>
+</body>
+
+
+</html>

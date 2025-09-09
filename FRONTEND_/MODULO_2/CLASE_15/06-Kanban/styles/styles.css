@@ -1,0 +1,186 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal del tablero */
+.task-board {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    overflow: hidden; 
+}
+
+/* Barra de gradiente en el encabezado */
+.task-board__gradient-bar {
+    height: 6px;
+    background: linear-gradient(to right, #7b59e5, #4c87b7, #74b88b);
+}
+
+.task-board__title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.task-board__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: #444;
+}
+
+.task-board__date {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Contenedor de las tarjetas */
+.task-board__cards {
+    padding: 0 1.5rem;
+}
+
+/* Estilos para cada tarjeta individual */
+.task-card {
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem; /* Ajustamos el padding para la nueva estructura */
+    margin-bottom: 1rem;
+    display: flex; /* La tarjeta es el contenedor principal flexbox */
+    gap: 1.5rem; /* Espacio entre el logo y el contenido */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+/* El nuevo contenedor del logo */
+.task-card__logo-wrapper {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Evita que el logo se encoja */
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* La imagen del logo dentro del wrapper */
+.task-card__logo {
+    width: 70%; 
+    height: 70%;
+    object-fit: contain;
+}
+
+/* El nuevo contenedor para el resto del contenido de la tarjeta */
+.task-card__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* El encabezado dentro del contenido */
+.task-card__top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* El resto de las clases... */
+.task-card__priority {
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.task-card__date {
+    font-size: 0.7rem;
+    color: #888;
+}
+
+/* Colores de las etiquetas de prioridad */
+.task-card__priority--high { background-color: #e63946; }
+.task-card__priority--medium { background-color: #f1a941; }
+.task-card__priority--low { background-color: #6a9b83; }
+
+.task-card__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5624a5;
+    margin: 0.5rem 0;
+}
+
+.task-card__tags {
+    margin-bottom: 1rem;
+    list-style: none; /* Elimina las viñetas */
+    padding: 0;
+    /* margin: 0; */
+}
+
+.task-card__tag {
+    background-color: #e8e8e8;
+    border-radius: 6px;
+    padding: 0.25rem 0.6rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.task-card__stats {
+    margin-top: 0; /* Asegura que no tenga un margen superior inesperado */
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0; /* Asegura que no empuje el contenido de abajo */
+}
+
+.task-card__stat {
+    display: flex;
+    align-items: center;
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.task-card__stat svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.25rem;
+    color: #888;
+}
+
+/* Botón para agregar nueva tarjeta */
+.add-card-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+    border-top: 1px solid #e0e0e0;
+}
+
+.add-card-button svg {
+    margin-right: 0.5rem;
+    color: #666;
+    width: 18px;
+    height: 18px;
+}

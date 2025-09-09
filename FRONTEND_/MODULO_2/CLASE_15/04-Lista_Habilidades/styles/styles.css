@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(135deg, #1f4068, #3080c5);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal de la tarjeta */
+.skills-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 1.5rem;
+}
+
+/* Encabezado */
+.skills-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.skills-card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.skills-card__view-all {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #4c87b7;
+    transition: color 0.2s ease;
+}
+
+.skills-card__view-all:hover {
+    color: #306a92;
+}
+
+/* Lista de categorías */
+.skills-card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elemento individual de la lista */
+.skill-item {
+    position: relative; /* ¡IMPORTANTE! Para posicionar el ::before */
+    display: flex;
+    align-items: center;
+    /* Quita el border-left de aquí si lo tenías */
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+    padding: 1rem; /* Deja el padding para el contenido */
+    padding-left: 1.5rem; /* Ajusta el padding para que el contenido no quede debajo del pseudo-elemento */
+}
+
+.skill-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ESTILOS PARA EL PSEUDO-ELEMENTO ::before QUE CREARÁ LA BARRA LATERAL */
+.skill-item::before {
+    content: ''; /* Obligatorio para los pseudo-elementos */
+    position: absolute; /* Para posicionarlo libremente */
+    top: 0; /* Arriba del li */
+    left: 0; /* Izquierda del li */
+    height: 100%; /* La altura total del li */
+    width: 6px; /* El ancho de la barra */
+    border-radius: 8px 0 0 8px; /* Bordes redondeados solo a la izquierda */
+    /* El background-color se definirá con las clases de modificador */
+}
+
+/* Clases para los colores específicos del PSEUDO-ELEMENTO */
+.skill-item--design::before {
+    background-color: #f75583;
+}
+
+.skill-item--frontend::before {
+    background-color: #6c9ce3;
+}
+
+.skill-item--devops::before {
+    background-color: #f1a941;
+}
+
+/* Contenido (título y cursos) */
+.skill-item__content {
+    display: flex;
+    flex-direction: column;
+    /* Elimina el margin-left que antes tenías para la barra */
+}
+
+.skill-item__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.skill-item__courses {
+    font-size: 0.85rem;
+    color: #888;
+    margin: 0;
+    margin-top: 0.25rem;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRITO</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <main class="cart-container">
+        <header class="cart-header">
+            <h1>My Cart</h1>
+            <output class="cart-total">$145</output>
+        </header>
+
+        <section class="cart-items">
+            <article class="cart-item">
+                <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&h=400&w=400"
+                    alt="Printed lightweight scarf" class="item-thumbnail">
+                <section class="item-details">
+                    <p class="item-name">Printed lightweight scarf</p>
+                    <p class="item-color">Colour: light/pastel grey</p>
+                </section>
+                <form class="item-quantity-control">
+                    <button type="button" aria-label="Decrease quantity" class="quantity-button down">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <input type="number" value="1" min="1" class="item-quantity-input" aria-label="Item quantity">
+                    <button type="button" aria-label="Increase quantity" class="quantity-button up">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="18 15 12 9 6 15"></polyline>
+                        </svg>
+                    </button>
+                </form>
+                <button type="button" aria-label="Remove item" class="item-remove">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </article>
+
+            <article class="cart-item">
+                <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&h=400&w=400"
+                    alt="Bow check blouse" class="item-thumbnail">
+                <section class="item-details">
+                    <p class="item-name">Bow check blouse</p>
+                    <p class="item-color">Colour: red</p>
+                </section>
+                <form class="item-quantity-control">
+                    <button type="button" aria-label="Decrease quantity" class="quantity-button down">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <input type="number" value="1" min="1" class="item-quantity-input" aria-label="Item quantity">
+                    <button type="button" aria-label="Increase quantity" class="quantity-button up">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="18 15 12 9 6 15"></polyline>
+                        </svg>
+                    </button>
+                </form>
+                <button type="button" aria-label="Remove item" class="item-remove">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </article>
+
+            <article class="cart-item">
+                <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&h=400&w=400"
+                    alt="Flap tote bag" class="item-thumbnail">
+                <section class="item-details">
+                    <p class="item-name">Flap tote bag</p>
+                    <p class="item-color">Colour: pastel pink</p>
+                </section>
+                <form class="item-quantity-control">
+                    <button type="button" aria-label="Decrease quantity" class="quantity-button down">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <input type="number" value="1" min="1" class="item-quantity-input" aria-label="Item quantity">
+                    <button type="button" aria-label="Increase quantity" class="quantity-button up">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="18 15 12 9 6 15"></polyline>
+                        </svg>
+                    </button>
+                </form>
+                <button type="button" aria-label="Remove item" class="item-remove">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </article>
+        </section>
+
+        <footer class="cart-footer">
+            <button class="pay-button">PAY NOW</button>
+        </footer>
+    </main>
+</body>
+
+</html>
