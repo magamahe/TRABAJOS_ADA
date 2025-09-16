@@ -1,0 +1,14 @@
+[
+  {
+    "id": "15b56105-f083-4160-b0b3-bcc8ab2d10fe",
+    "nombre": "Ana",
+    "email": "ana@example.com",
+    "contraseña": "1234"
+  },
+  {
+    "id": "ea6c7d67-cc45-4ee5-b018-70fc0fe44ca5",
+    "nombre": "Ana",
+    "email": "ana@example.com",
+    "contraseña": "1234"
+  }
+]
